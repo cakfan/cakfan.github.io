@@ -1,6 +1,18 @@
+// var ambilJSON = function(url, callback){
+//     fetch('https://www.instagram.com/demi.demik/?__a=1', {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json'}
+// })
+// .then(res => res.json())
+// .then((out) => {
+
+// }).catch(err => console.error(err));
+// }
+
 var getJSON = function(url, callback) {
 var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.responseType = 'json';
 
 xhr.onload = function() {
