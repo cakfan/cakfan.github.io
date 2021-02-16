@@ -29,7 +29,7 @@ setInterval(function(){
         document.getElementById('jumlah_pengikut').innerHTML = formated
         document.getElementById('nama_lengkap').innerHTML = nama
         document.getElementById('img_profile').src = imgUrl
-        console.log(imgUrl);
+        console.log(formated);
     }
     });
 }, 1000);
