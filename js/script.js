@@ -14,7 +14,7 @@ setInterval(function(){
             var text = result.graphql.user.edge_followed_by.count
             var formated = String(text).replace(/(.)(?=(\d{3})+$)/g,'$1.')
             // document.getElementById('jumlah_pengikut').innerHTML = formated
-            document.getElementById('nama_lengkap').textContent = nama
+            document.getElementById('nama_lengkap').textContent = ama+"\n"+formated
             document.getElementById('img_profile').src = imgUrl
             console.log(nama+"\n"+formated);
         },
