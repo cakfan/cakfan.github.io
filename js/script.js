@@ -22,25 +22,25 @@ $.ajax({
     }
 });
 
-var getJSON = function(url, callback) {
-var xhr = new XMLHttpRequest();
-xhr.open('GET', url, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-// xhr.responseType = 'json';
+// var getJSON = function(url, callback) {
+// var xhr = new XMLHttpRequest();
+// xhr.open('GET', url, true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
+// // xhr.responseType = 'json';
 
-xhr.onload = function() {
+// xhr.onload = function() {
 
-    var status = xhr.status;
+//     var status = xhr.status;
     
-    if (status == 200) {
-        callback(null, xhr.response);
-    } else {
-        callback(status);
-    }
-};
+//     if (status == 200) {
+//         callback(null, xhr.response);
+//     } else {
+//         callback(status);
+//     }
+// };
 
-xhr.send();
-};
+// xhr.send();
+// };
 
 // setInterval(function(){ 
 //     getJSON('https://www.instagram.com/demi.demik/?__a=1',  function(err, data) {
