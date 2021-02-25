@@ -15,7 +15,7 @@ $.ajax({
         document.getElementById('jumlah_pengikut').innerHTML = formated
         document.getElementById('nama_lengkap').innerHTML = nama
         document.getElementById('img_profile').src = imgUrl
-        console.log(result);
+        console.log(nama+"\n"+formated);
     },
     error: function () {
         console.log("error");
