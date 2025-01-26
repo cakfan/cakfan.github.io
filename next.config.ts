@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "cakfan.github.io",
-  assetPrefix: "cakfan.github.io",
+  basePath: "/",
+  assetPrefix: "/",
 };
 
 export default nextConfig;
