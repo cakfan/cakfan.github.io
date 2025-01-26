@@ -76,6 +76,12 @@ jobs:
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Verify Output Directory
+        run: |
+          if [ ! -d "./out" ]; then
+            echo "Error: Output directory './out' not found."
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
