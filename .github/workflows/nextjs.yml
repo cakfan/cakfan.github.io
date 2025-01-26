@@ -24,7 +24,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/bun.lock" ]; then
+          if [ -f "${{ github.workspace }}/bun.lockb" ]; then
             echo "manager=bun" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=bunx" >> $GITHUB_OUTPUT
@@ -75,7 +75,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build && ${{ steps.detect-package-manager.outputs.runner }} next export
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
