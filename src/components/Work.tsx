@@ -4,7 +4,7 @@ export default function Work() {
       id="work"
       className="flex min-h-screen w-full items-center justify-center"
     >
-      <div className="flex w-full flex-col gap-4 md:w-1/2">
+      <div className="flex w-full flex-col gap-4 px-10 md:w-1/2 md:px-0">
         <h2 className="border-none text-2xl font-bold lg:text-6xl">
           💻What I Do?
         </h2>

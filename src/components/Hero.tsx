@@ -9,7 +9,7 @@ export default function Hero() {
       id="home"
       className="flex min-h-screen w-full items-center justify-center"
     >
-      <div className="flex w-full flex-col gap-4 md:w-1/2">
+      <div className="flex w-full flex-col gap-4 px-10 md:w-1/2 md:px-0">
         <h1 className="text-2xl font-bold lg:text-6xl">
           Hi, I&apos;m Taufan F.
         </h1>
