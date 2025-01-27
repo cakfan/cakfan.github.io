@@ -25,6 +25,10 @@ export default function Work() {
             <span className="font-bold">TailwindCSS</span>: Designing sleek,
             responsive UI
           </li>
+          <li>
+            <span className="font-bold">Git</span>: Ensuring seamless version
+            control and collaboration on projects.
+          </li>
         </ul>
       </div>
     </section>
