@@ -119,7 +119,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding bg-muted/30">
+    <section id="projects" aria-label="Projects" className="section-padding bg-muted/30">
       <div className="container-section">
         <div className="max-w-3xl mx-auto mb-12">
           <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">

@@ -8,7 +8,7 @@ const techs = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding">
+    <section id="about" aria-label="About" className="section-padding">
       <div className="container-section">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">

@@ -7,6 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
+      aria-label="Hero"
       className="relative min-h-screen flex items-center justify-center"
     >
       <div className="container-section flex flex-col items-center text-center gap-6 pt-20">
