@@ -1,40 +1,75 @@
-import { assets } from "@/assets";
-import Image from "next/image";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
+import Image from "next/image";
+import { ArrowDown, FileText } from "lucide-react";
+import { assets } from "@/assets";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-screen w-full items-center justify-center"
+      className="relative min-h-screen flex items-center justify-center"
     >
-      <div className="flex w-full flex-col gap-4 px-10 md:w-1/2 md:px-0">
-        <h1 className="text-2xl font-bold lg:text-6xl">
-          Hi, I&apos;m Taufan F.
+      <div className="container-section flex flex-col items-center text-center gap-6 pt-20">
+        <div
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-sm text-muted-foreground bg-muted/50 opacity-0 animate-slide-up"
+          style={{ animationDelay: "100ms" }}
+        >
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          Available for opportunities
+        </div>
+
+        <h1
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight opacity-0 animate-slide-up"
+          style={{ animationDelay: "250ms" }}
+        >
+          Hi, I&apos;m{" "}
+          <span className="text-blue-500">Taufan Fatahillah</span>
         </h1>
-        <span className="text-lead">
-          I&apos;m a freelance developer based in Jember, Indonesia, passionate
-          about crafting fast, modern, and user-friendly web applications.
-        </span>
-        <div className="flex">
+
+        <p
+          className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed opacity-0 animate-fade-in"
+          style={{ animationDelay: "450ms" }}
+        >
+          Front-End Engineer specializing in building fast, modern, and
+          user-friendly web applications with Next.js, React, and TypeScript.
+        </p>
+
+        <div
+          className="flex flex-wrap items-center justify-center gap-4 mt-2 opacity-0 animate-fade-in"
+          style={{ animationDelay: "650ms" }}
+        >
           <Link
-            className={buttonVariants({ variant: "link", size: "icon" })}
-            href="https://linkedin.com/in/cakfan"
-            target="_blank"
+            href="#projects"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
           >
-            <Image src={assets.linkedin} alt="LinkedIn" className="w-6" />
+            View Projects
+            <ArrowDown size={16} />
           </Link>
           <Link
-            className={buttonVariants({ variant: "link", size: "icon" })}
-            href="https://instagram.com/withcakfan"
+            href="https://linkedin.com/in/cakfan"
             target="_blank"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >
-            <Image
-              src={assets.instagram}
-              alt="LinkedIn"
-              className="w-6 dark:invert"
-            />
+            <Image src={assets.linkedin} alt="LinkedIn" className="w-4" />
+            LinkedIn
+          </Link>
+          <Link
+            href="https://github.com/cakfan"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
+          >
+            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </Link>
+          <Link
+            href="/CV_Taufan_Fatahillah.pdf"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
+          >
+            <FileText size={16} />
+            CV
           </Link>
         </div>
       </div>

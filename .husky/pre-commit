@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Run lint before commit
-bun run lint
-
-# Run build before commit
-bun run build
