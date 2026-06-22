@@ -50,6 +50,7 @@ export const metadata: Metadata = {
       "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
     url: siteUrl,
     siteName: "Taufan Fatahillah",
+    images: [{ url: `${siteUrl}/og.png`, width: 1200, height: 630 }],
     type: "website",
     locale: "en_US",
   },
@@ -58,6 +59,7 @@ export const metadata: Metadata = {
     title: "Taufan Fatahillah — Front-End Engineer",
     description:
       "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS.",
+    images: [`${siteUrl}/og.png`],
   },
 };
 
