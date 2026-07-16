@@ -40,6 +40,7 @@ export default function Projects() {
                     src={`/projects/${project.slug}.jpg`}
                     alt={`${project.name} screenshot`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 768px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

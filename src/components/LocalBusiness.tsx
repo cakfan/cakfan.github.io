@@ -30,9 +30,10 @@ function BusinessCard({ item }: { item: LocalBusinessItem }) {
     >
       <div className="relative aspect-video overflow-hidden bg-muted">
         <Image
-          src={`/projects/${item.slug}.png`}
+          src={`/projects/${item.slug}.jpg`}
           alt={`${item.name} screenshot`}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 448px"
           className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
         />
       </div>
