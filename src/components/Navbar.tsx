@@ -1,17 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation, type Locale } from "@/lib/i18n";
 
+let listeners: Array<() => void> = [];
+
+function emitChange() {
+  for (const listener of listeners) listener();
+}
+
+function subscribe(callback: () => void) {
+  listeners.push(callback);
+  return () => {
+    listeners = listeners.filter((l) => l !== callback);
+  };
+}
+
+function getSnapshot() {
+  return localStorage.getItem("theme") !== "light";
+}
+
+function getServerSnapshot() {
+  return false;
+}
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return localStorage.getItem("theme") !== "light";
-  });
+  const dark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const { t, locale, setLocale } = useTranslation();
 
   const navLinks = [
@@ -35,9 +53,9 @@ export default function Navbar() {
 
   const toggleDark = () => {
     const next = !dark;
-    setDark(next);
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
+    emitChange();
   };
 
   const toggleLocale = () => {
