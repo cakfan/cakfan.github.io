@@ -8,7 +8,10 @@ import { useTranslation, type Locale } from "@/lib/i18n";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem("theme") !== "light";
+  });
   const { t, locale, setLocale } = useTranslation();
 
   const navLinks = [
@@ -26,10 +29,8 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const isDark = localStorage.getItem("theme") !== "light";
-    setDark(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+    document.documentElement.classList.toggle("dark", dark);
+  }, [dark]);
 
   const toggleDark = () => {
     const next = !dark;

@@ -52,6 +52,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional: mounted flag prevents hydration mismatch
     setLocaleState(getInitialLocale());
     setMounted(true);
   }, []);
