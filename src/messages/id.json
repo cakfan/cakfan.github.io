@@ -208,6 +208,27 @@
       }
     ]
   },
+  "cv": {
+    "profile": "Full-Stack Developer yang bersemangat dengan spesialisasi di Next.js, React, TypeScript, dan TailwindCSS. Berpengalaman dalam membangun aplikasi web modern yang cepat, responsif, dan ramah pengguna. Aktif dalam pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berbasis di Jember, Indonesia.",
+    "skills": {
+      "frontEnd": "React, Next.js, TypeScript, JavaScript, TailwindCSS, Shadcn-UI, HTML5, CSS3",
+      "backEnd": "Express.js, NestJS, Git, Docker, REST API, VS Code",
+      "mobile": "Android (Kotlin) — sekedar tahu"
+    },
+    "education": {
+      "degree": "D3 Teknologi Informasi / Teknik Komputer",
+      "detail": "Program studi terkait Teknologi Informasi dan Teknik Komputer"
+    },
+    "certs": [
+      "Dicoding — Belajar Membuat Aplikasi Android (Kotlin)",
+      "Dicoding — Belajar Fundamental Front-End Web Development",
+      "BuildWithAngga — Kelas Next.js & TailwindCSS"
+    ],
+    "languages": [
+      "Bahasa Indonesia (Aktif)",
+      "Bahasa Inggris (Pasif — membaca & menulis teknis)"
+    ]
+  },
   "contact": {
     "heading": "Kontak",
     "subtitle": "Yuk kerja sama",

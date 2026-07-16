@@ -83,7 +83,7 @@ export default function Hero() {
             Instagram
           </Link>
           <Link
-            href="/CV_Taufan_Fatahillah.pdf"
+            href="/cv"
             target="_blank"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >

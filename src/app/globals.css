@@ -176,3 +176,26 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+@media print {
+  :root,
+  :root .dark {
+    --background: 97% 0 0;
+    --foreground: 14.5% 0 0;
+    --card: 100% 0 0;
+    --card-foreground: 14.5% 0 0;
+    --popover: 100% 0 0;
+    --popover-foreground: 14.5% 0 0;
+    --primary: 14.5% 0 0;
+    --primary-foreground: 100% 0 0;
+    --secondary: 90% 0 0;
+    --secondary-foreground: 14.5% 0 0;
+    --muted: 90% 0 0;
+    --muted-foreground: 48% 0 0;
+    --accent: 90% 0 0;
+    --accent-foreground: 14.5% 0 0;
+    --border: 85% 0 0;
+    --input: 85% 0 0;
+    --ring: 14.5% 0 0;
+  }
+}

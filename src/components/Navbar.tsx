@@ -3,7 +3,8 @@
 import { useState, useEffect, useSyncExternalStore } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useTranslation, type Locale } from "@/lib/i18n";
+import { useTranslation } from "@/lib/i18n";
+import LanguageToggle from "./LanguageToggle";
 
 let listeners: Array<() => void> = [];
 
@@ -30,7 +31,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const dark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-  const { t, locale, setLocale } = useTranslation();
+  const { t } = useTranslation();
 
   const navLinks = [
     { label: t("nav.home"), href: "#home" },
@@ -56,11 +57,6 @@ export default function Navbar() {
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
     emitChange();
-  };
-
-  const toggleLocale = () => {
-    const next: Locale = locale === "en" ? "id" : "en";
-    setLocale(next);
   };
 
   return (
@@ -90,13 +86,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <button
-            onClick={toggleLocale}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer px-2 py-1 rounded hover:bg-muted"
-            aria-label="Toggle language"
-          >
-            {locale === "en" ? "ID" : "EN"}
-          </button>
+          <LanguageToggle />
           <button
             onClick={toggleDark}
             className="p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
@@ -107,13 +97,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={toggleLocale}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer px-2 py-1 rounded hover:bg-muted"
-            aria-label="Toggle language"
-          >
-            {locale === "en" ? "ID" : "EN"}
-          </button>
+          <LanguageToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
