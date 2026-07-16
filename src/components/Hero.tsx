@@ -69,6 +69,15 @@ export default function Hero() {
             GitHub
           </Link>
           <Link
+            href="https://instagram.com/withcakfan"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
+          >
+            <Image src={assets.instagramBlack} alt="Instagram" className="w-4 block dark:hidden" />
+            <Image src={assets.instagramWhite} alt="Instagram" className="w-4 hidden dark:block" />
+            Instagram
+          </Link>
+          <Link
             href="/CV_Taufan_Fatahillah.pdf"
             target="_blank"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
