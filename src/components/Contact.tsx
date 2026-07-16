@@ -1,26 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, MapPin } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" aria-label="Contact" className="section-padding bg-muted/30">
       <div className="container-section">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            Contact
+            {t("contact.heading")}
           </h2>
           <p className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
-            Let&apos;s work together
+            {t("contact.subtitle")}
           </p>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            I&apos;m currently open for freelance projects and full-time
-            opportunities. Feel free to reach out!
+            {t("contact.description")}
           </p>
 
           <div className="flex flex-col items-center gap-4 mb-10">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin size={16} />
-              Jember, East Java, Indonesia
+              {t("contact.location")}
             </div>
             <Link
               href="https://linkedin.com/in/cakfan"
@@ -50,7 +54,7 @@ export default function Contact() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
           >
             <Mail size={16} />
-            Get in Touch
+            {t("contact.cta")}
           </Link>
         </div>
       </div>

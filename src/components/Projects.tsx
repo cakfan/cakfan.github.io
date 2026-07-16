@@ -1,132 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-
-const projects = [
-  {
-    name: "Wadde",
-    slug: "bwa-wadde",
-    description: "Landing page dark mode untuk SaaS platform dengan multiple pages (Pricing, Contact, About, Sign In), testimonial slider, dan mobile app promotion.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    demo: "https://cakfan.github.io/bwa-wadde/",
-    github: "https://github.com/cakfan/bwa-wadde",
-  },
-  {
-    name: "Supacars",
-    slug: "supacars",
-    description: "Landing page rental & jual-beli mobil dengan dealer listings, search filters, dan Google Maps integration.",
-    tech: ["HTML", "Tailwind CSS", "Swiper JS"],
-    demo: "https://cakfan.github.io/supacars/",
-    github: "https://github.com/cakfan/supacars",
-  },
-  {
-    name: "PastiLaris",
-    slug: "pastilaris",
-    description: "SaaS landing page — template untuk membantu perusahaan berkembang dengan fitur automasi, real-time analytics, dan high protection.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    demo: "https://cakfan.github.io/pastilaris/",
-    github: "https://github.com/cakfan/pastilaris",
-  },
-  {
-    name: "Moviez Streaming",
-    slug: "bwa-moviez",
-    description: "Mobile UI streaming film dengan featured movies, kategori Disney, dan star ratings — dibangun dengan Next.js.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper JS"],
-    demo: "https://cakfan.github.io/bwa-moviez/",
-    github: "https://github.com/cakfan/bwa-moviez",
-  },
-  {
-    name: "Transaction Dashboard",
-    slug: "transaction-dashboard",
-    description: "Store dashboard untuk transaksi top-up game dengan overview spending, riwayat transaksi, dan status tracking (pending/success/failed).",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    demo: "https://cakfan.github.io/transaction-dashboard/",
-    github: "https://github.com/cakfan/transaction-dashboard",
-  },
-  {
-    name: "Resto",
-    slug: "resto",
-    description: "Fuddy — landing page restoran dengan featured restaurants, city-based filtering, expert chefs profiles, dan reservasi online.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    demo: "https://cakfan.github.io/resto/",
-    github: "https://github.com/cakfan/resto",
-  },
-  {
-    name: "Foodyar",
-    slug: "foodyar",
-    description: "Landing page food recipe dengan kategori healthy food, lunch, vege desert, dan shake, lengkap dengan chef testimonials.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    demo: "https://cakfan.github.io/foodyar/",
-    github: "https://github.com/cakfan/foodyar",
-  },
-  {
-    name: "Pricing Pro",
-    slug: "pricing-pro",
-    description: "Halaman pricing dengan tiered subscription cards (Basic/Gold), FAQ accordion, dan responsive design.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    demo: "https://cakfan.github.io/pricing-pro/",
-    github: "https://github.com/cakfan/pricing-pro",
-  },
-  {
-    name: "Detail Product",
-    slug: "detail-product-mobile",
-    description: "Mobile product detail screen untuk e-commerce dengan color/size selectors, quantity counter, image gallery, dan sticky bottom cart.",
-    tech: ["HTML", "Tailwind CSS", "Swiper JS"],
-    demo: "https://cakfan.github.io/detail-product-mobile/",
-    github: "https://github.com/cakfan/detail-product-mobile",
-  },
-  {
-    name: "DawahPlay",
-    slug: null,
-    description: "Platform streaming kajian Islam tanpa iklan, memberikan pengalaman menonton yang nyaman dan fokus.",
-    tech: ["Next.js", "TailwindCSS"],
-    demo: "https://dawahplay.vercel.app",
-    github: "https://github.com/cakfan",
-  },
-  {
-    name: "DelokFilm",
-    slug: null,
-    description: "Platform web untuk browsing dan mengelola film serta drama Asia, terinspirasi dari MyDramaList.",
-    tech: ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"],
-    demo: "https://delokfilm.vercel.app",
-    github: "https://github.com/cakfan/delok-film-web",
-  },
-  {
-    name: "Introvesia.com",
-    slug: null,
-    description: "Berkontribusi sebagai volunteer dalam pengembangan platform untuk personal growth dan self-reflection.",
-    tech: ["Next.js", "TypeScript"],
-    demo: "https://introvesia.com",
-    github: "https://github.com/Introvesia",
-  },
-  {
-    name: "Dockeranium",
-    slug: null,
-    description: "Docker control panel modern — panel kontrol Docker berbasis web yang intuitif. Kontributor open-source.",
-    tech: ["TypeScript"],
-    demo: null,
-    github: "https://github.com/Introvesia/dockeranium",
-  },
-  {
-    name: "E-Commerce Admin & Store",
-    slug: null,
-    description: "Sistem manajemen e-commerce lengkap dengan admin dashboard dan toko online.",
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
-    demo: null,
-    github: "https://github.com/cakfan/ecommerce-admin",
-  },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export default function Projects() {
+  const { t, tArray } = useTranslation();
+  const projects = tArray<{
+    name: string;
+    slug: string | null;
+    description: string;
+    tech: string[];
+    demo: string | null;
+    github: string;
+  }>("projects.items");
+
   return (
     <section id="projects" aria-label="Projects" className="section-padding bg-muted/30">
       <div className="container-section">
         <div className="max-w-3xl mx-auto mb-12">
           <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            Projects
+            {t("projects.heading")}
           </h2>
           <p className="text-2xl sm:text-3xl font-semibold tracking-tight">
-            Things I&apos;ve built
+            {t("projects.subtitle")}
           </p>
         </div>
 

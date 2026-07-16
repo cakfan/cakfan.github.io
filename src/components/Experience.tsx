@@ -1,43 +1,25 @@
-const experiences = [
-  {
-    role: "UI Engineer / Jr. UI Engineer",
-    company: "BuildWithAngga",
-    period: "Mar 2025 – Jan 2026",
-    description: [
-      "Mengembangkan antarmuka pengguna modern menggunakan Next.js dan TailwindCSS",
-      "Berkolaborasi dengan tim untuk menghadirkan solusi front-end yang scalable",
-    ],
-  },
-  {
-    role: "Volunteer",
-    company: "Kerja IT Jepang",
-    period: "Des 2024 – Jan 2025",
-    description: [
-      "Berkontribusi dalam proyek pengembangan web sebagai relawan",
-      "Beradaptasi dengan lingkungan kerja internasional",
-    ],
-  },
-  {
-    role: "Android Developer & Web Developer",
-    company: "Freelance",
-    period: "Jan 2020 – Sekarang",
-    description: [
-      "Mengembangkan aplikasi Android dan web untuk berbagai klien",
-      "Membangun solusi end-to-end dari desain hingga deployment",
-    ],
-  },
-];
+"use client";
+
+import { useTranslation } from "@/lib/i18n";
 
 export default function Experience() {
+  const { t, tArray } = useTranslation();
+  const experiences = tArray<{
+    role: string;
+    company: string;
+    period: string;
+    descriptions: string[];
+  }>("experience.items");
+
   return (
     <section id="experience" aria-label="Experience" className="section-padding">
       <div className="container-section">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            Experience
+            {t("experience.heading")}
           </h2>
           <p className="text-2xl sm:text-3xl font-semibold tracking-tight mb-10">
-            Where I&apos;ve worked
+            {t("experience.subtitle")}
           </p>
 
           <div className="relative">
@@ -53,7 +35,7 @@ export default function Experience() {
                   <h3 className="font-semibold">{exp.role}</h3>
                   <p className="text-sm text-blue-500 mb-2">{exp.company}</p>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    {exp.description.map((item, i) => (
+                    {exp.descriptions.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
                   </ul>

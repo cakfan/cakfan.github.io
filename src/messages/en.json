@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode"
+  },
+  "hero": {
+    "available": "Available for opportunities",
+    "greeting": "Hi, I'm",
+    "name": "Taufan Fatahillah",
+    "subtitle": "Front-End Engineer specializing in building fast, modern, and user-friendly web applications with Next.js, React, and TypeScript.",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "heading": "About",
+    "tagline": "Crafting digital experiences through clean code & design",
+    "bio": "I'm a Front-End Engineer based in Jember, Indonesia, with a passion for building fast, accessible, and user-centric web applications. I specialize in modern JavaScript frameworks and tools, turning complex problems into elegant solutions. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects."
+  },
+  "experience": {
+    "heading": "Experience",
+    "subtitle": "Where I've worked",
+    "items": [
+      {
+        "role": "UI Engineer / Jr. UI Engineer",
+        "company": "BuildWithAngga",
+        "period": "Mar 2025 – Jan 2026",
+        "descriptions": [
+          "Developed modern user interfaces using Next.js and TailwindCSS",
+          "Collaborated with the team to deliver scalable front-end solutions"
+        ]
+      },
+      {
+        "role": "Volunteer",
+        "company": "Kerja IT Jepang",
+        "period": "Dec 2024 – Jan 2025",
+        "descriptions": [
+          "Contributed to web development projects as a volunteer",
+          "Adapted to an international work environment"
+        ]
+      },
+      {
+        "role": "Android Developer & Web Developer",
+        "company": "Freelance",
+        "period": "Jan 2020 – Present",
+        "descriptions": [
+          "Developed Android and web applications for various clients",
+          "Built end-to-end solutions from design to deployment"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "subtitle": "Things I've built",
+    "items": [
+      {
+        "name": "Wadde",
+        "description": "Dark mode landing page for a SaaS platform with multiple pages (Pricing, Contact, About, Sign In), testimonial slider, and mobile app promotion.",
+        "demo": "https://cakfan.github.io/bwa-wadde/",
+        "github": "https://github.com/cakfan/bwa-wadde",
+        "slug": "bwa-wadde",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Supacars",
+        "description": "Car rental & buy-sell landing page with dealer listings, search filters, and Google Maps integration.",
+        "demo": "https://cakfan.github.io/supacars/",
+        "github": "https://github.com/cakfan/supacars",
+        "slug": "supacars",
+        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "PastiLaris",
+        "description": "SaaS landing page — template to help companies grow with automation features, real-time analytics, and high protection.",
+        "demo": "https://cakfan.github.io/pastilaris/",
+        "github": "https://github.com/cakfan/pastilaris",
+        "slug": "pastilaris",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Moviez Streaming",
+        "description": "Mobile UI film streaming with featured movies, Disney categories, and star ratings — built with Next.js.",
+        "demo": "https://cakfan.github.io/bwa-moviez/",
+        "github": "https://github.com/cakfan/bwa-moviez",
+        "slug": "bwa-moviez",
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "Transaction Dashboard",
+        "description": "Store dashboard for game top-up transactions with spending overview, transaction history, and status tracking (pending/success/failed).",
+        "demo": "https://cakfan.github.io/transaction-dashboard/",
+        "github": "https://github.com/cakfan/transaction-dashboard",
+        "slug": "transaction-dashboard",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Resto",
+        "description": "Restaurant landing page with featured restaurants, city-based filtering, expert chef profiles, and online reservations.",
+        "demo": "https://cakfan.github.io/resto/",
+        "github": "https://github.com/cakfan/resto",
+        "slug": "resto",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Foodyar",
+        "description": "Food recipe landing page with healthy food, lunch, vege dessert, and shake categories, complete with chef testimonials.",
+        "demo": "https://cakfan.github.io/foodyar/",
+        "github": "https://github.com/cakfan/foodyar",
+        "slug": "foodyar",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Pricing Pro",
+        "description": "Pricing page with tiered subscription cards (Basic/Gold), FAQ accordion, and responsive design.",
+        "demo": "https://cakfan.github.io/pricing-pro/",
+        "github": "https://github.com/cakfan/pricing-pro",
+        "slug": "pricing-pro",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Detail Product",
+        "description": "Mobile product detail screen for e-commerce with color/size selectors, quantity counter, image gallery, and sticky bottom cart.",
+        "demo": "https://cakfan.github.io/detail-product-mobile/",
+        "github": "https://github.com/cakfan/detail-product-mobile",
+        "slug": "detail-product-mobile",
+        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "DawahPlay",
+        "description": "Islamic study streaming platform with no ads, providing a comfortable and focused viewing experience.",
+        "demo": "https://dawahplay.vercel.app",
+        "github": "https://github.com/cakfan",
+        "slug": null,
+        "tech": ["Next.js", "TailwindCSS"]
+      },
+      {
+        "name": "DelokFilm",
+        "description": "Web platform for browsing and managing films and Asian dramas, inspired by MyDramaList.",
+        "demo": "https://delokfilm.vercel.app",
+        "github": "https://github.com/cakfan/delok-film-web",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"]
+      },
+      {
+        "name": "Introvesia.com",
+        "description": "Contributed as a volunteer in developing a platform for personal growth and self-reflection.",
+        "demo": "https://introvesia.com",
+        "github": "https://github.com/Introvesia",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript"]
+      },
+      {
+        "name": "Dockeranium",
+        "description": "Docker control panel modern — an intuitive web-based Docker control panel. Open-source contributor.",
+        "demo": null,
+        "github": "https://github.com/Introvesia/dockeranium",
+        "slug": null,
+        "tech": ["TypeScript"]
+      },
+      {
+        "name": "E-Commerce Admin & Store",
+        "description": "Complete e-commerce management system with admin dashboard and online store.",
+        "demo": null,
+        "github": "https://github.com/cakfan/ecommerce-admin",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "subtitle": "Let's work together",
+    "description": "I'm currently open for freelance projects and full-time opportunities. Feel free to reach out!",
+    "location": "Jember, East Java, Indonesia",
+    "cta": "Get in Touch"
+  },
+  "footer": {
+    "reserved": "All rights reserved.",
+    "backToTop": "Back to top"
+  }
+}

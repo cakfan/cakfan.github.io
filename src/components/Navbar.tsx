@@ -3,19 +3,21 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
-];
+import { useTranslation, type Locale } from "@/lib/i18n";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dark, setDark] = useState(false);
+  const { t, locale, setLocale } = useTranslation();
+
+  const navLinks = [
+    { label: t("nav.home"), href: "#home" },
+    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.projects"), href: "#projects" },
+    { label: t("nav.experience"), href: "#experience" },
+    { label: t("nav.contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -34,6 +36,11 @@ export default function Navbar() {
     setDark(next);
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
+  };
+
+  const toggleLocale = () => {
+    const next: Locale = locale === "en" ? "id" : "en";
+    setLocale(next);
   };
 
   return (
@@ -64,6 +71,13 @@ export default function Navbar() {
             </a>
           ))}
           <button
+            onClick={toggleLocale}
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer px-2 py-1 rounded hover:bg-muted"
+            aria-label="Toggle language"
+          >
+            {locale === "en" ? "ID" : "EN"}
+          </button>
+          <button
             onClick={toggleDark}
             className="p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
             aria-label="Toggle dark mode"
@@ -72,13 +86,22 @@ export default function Navbar() {
           </button>
         </div>
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={toggleLocale}
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer px-2 py-1 rounded hover:bg-muted"
+            aria-label="Toggle language"
+          >
+            {locale === "en" ? "ID" : "EN"}
+          </button>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </nav>
 
       {menuOpen && (
@@ -99,7 +122,7 @@ export default function Navbar() {
               className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
               {dark ? <Sun size={16} /> : <Moon size={16} />}
-              {dark ? "Light Mode" : "Dark Mode"}
+              {dark ? t("nav.lightMode") : t("nav.darkMode")}
             </button>
           </div>
         </div>

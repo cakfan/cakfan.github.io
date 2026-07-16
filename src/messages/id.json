@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Saya",
+    "projects": "Proyek",
+    "experience": "Pengalaman",
+    "contact": "Kontak",
+    "lightMode": "Mode Terang",
+    "darkMode": "Mode Gelap"
+  },
+  "hero": {
+    "available": "Open untuk peluang baru",
+    "greeting": "Hai, saya",
+    "name": "Taufan Fatahillah",
+    "subtitle": "Front-End Engineer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan dengan Next.js, React, dan TypeScript.",
+    "viewProjects": "Lihat Proyek"
+  },
+  "about": {
+    "heading": "Tentang Saya",
+    "tagline": "Membangun pengalaman digital lewat kode & desain yang rapi",
+    "bio": "Saya Front-End Engineer yang berdomisili di Jember, Indonesia. Saya punya ketertarikan besar membangun aplikasi web yang cepat, bisa diakses semua orang, dan berpusat pada kebutuhan pengguna. Saya menguasai berbagai framework dan tools JavaScript modern, dan senang mengubah masalah rumit menjadi solusi yang elegan. Kalau lagi nggak coding, saya biasanya eksplor teknologi baru atau kontribusi di proyek open-source."
+  },
+  "experience": {
+    "heading": "Pengalaman",
+    "subtitle": "Tempat saya pernah bekerja",
+    "items": [
+      {
+        "role": "UI Engineer / Jr. UI Engineer",
+        "company": "BuildWithAngga",
+        "period": "Mar 2025 – Jan 2026",
+        "descriptions": [
+          "Mengembangkan antarmuka pengguna modern pakai Next.js dan TailwindCSS",
+          "Berkolaborasi bareng tim untuk deliver solusi front-end yang scalable"
+        ]
+      },
+      {
+        "role": "Volunteer",
+        "company": "Kerja IT Jepang",
+        "period": "Des 2024 – Jan 2025",
+        "descriptions": [
+          "Aktif di proyek pengembangan web sebagai relawan",
+          "Beradaptasi di lingkungan kerja yang internasional"
+        ]
+      },
+      {
+        "role": "Android Developer & Web Developer",
+        "company": "Freelance",
+        "period": "Jan 2020 – Sekarang",
+        "descriptions": [
+          "Membangun aplikasi Android dan web untuk berbagai klien",
+          "Mengerjakan proyek end-to-end dari desain sampai deployment"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Proyek",
+    "subtitle": "Beberapa yang pernah saya bangun",
+    "items": [
+      {
+        "name": "Wadde",
+        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimonial, dan promosi mobile app.",
+        "demo": "https://cakfan.github.io/bwa-wadde/",
+        "github": "https://github.com/cakfan/bwa-wadde",
+        "slug": "bwa-wadde",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Supacars",
+        "description": "Landing page jual-beli dan rental mobil dengan daftar dealer, fitur pencarian, dan integrasi Google Maps.",
+        "demo": "https://cakfan.github.io/supacars/",
+        "github": "https://github.com/cakfan/supacars",
+        "slug": "supacars",
+        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "PastiLaris",
+        "description": "Template landing page SaaS — membantu perusahaan berkembang lewat fitur otomasi, analytics real-time, dan keamanan tingkat tinggi.",
+        "demo": "https://cakfan.github.io/pastilaris/",
+        "github": "https://github.com/cakfan/pastilaris",
+        "slug": "pastilaris",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Moviez Streaming",
+        "description": "UI mobile untuk streaming film dengan daftar film unggulan, kategori Disney, dan rating bintang — dibangun pakai Next.js.",
+        "demo": "https://cakfan.github.io/bwa-moviez/",
+        "github": "https://github.com/cakfan/bwa-moviez",
+        "slug": "bwa-moviez",
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "Transaction Dashboard",
+        "description": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran, riwayat transaksi, dan pelacakan status (pending/success/failed).",
+        "demo": "https://cakfan.github.io/transaction-dashboard/",
+        "github": "https://github.com/cakfan/transaction-dashboard",
+        "slug": "transaction-dashboard",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Resto",
+        "description": "Landing page restoran dengan daftar restoran pilihan, filter berdasarkan kota, profil chef, dan fitur reservasi online.",
+        "demo": "https://cakfan.github.io/resto/",
+        "github": "https://github.com/cakfan/resto",
+        "slug": "resto",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Foodyar",
+        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimonial dari chef.",
+        "demo": "https://cakfan.github.io/foodyar/",
+        "github": "https://github.com/cakfan/foodyar",
+        "slug": "foodyar",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Pricing Pro",
+        "description": "Halaman pricing dengan kartu langganan bertingkat (Basic/Gold), FAQ accordion, dan desain responsif.",
+        "demo": "https://cakfan.github.io/pricing-pro/",
+        "github": "https://github.com/cakfan/pricing-pro",
+        "slug": "pricing-pro",
+        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
+      },
+      {
+        "name": "Detail Product",
+        "description": "Layar detail produk mobile untuk e-commerce dengan pemilihan warna/ukuran, penghitung jumlah, galeri gambar, dan keranjang yang menempel di bawah.",
+        "demo": "https://cakfan.github.io/detail-product-mobile/",
+        "github": "https://github.com/cakfan/detail-product-mobile",
+        "slug": "detail-product-mobile",
+        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
+      },
+      {
+        "name": "DawahPlay",
+        "description": "Platform streaming kajian Islam bebas iklan, dibuat supaya penonton bisa nyaman dan fokus.",
+        "demo": "https://dawahplay.vercel.app",
+        "github": "https://github.com/cakfan",
+        "slug": null,
+        "tech": ["Next.js", "TailwindCSS"]
+      },
+      {
+        "name": "DelokFilm",
+        "description": "Platform web buat jelajah dan kelola film serta drama Asia, terinspirasi dari MyDramaList.",
+        "demo": "https://delokfilm.vercel.app",
+        "github": "https://github.com/cakfan/delok-film-web",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"]
+      },
+      {
+        "name": "Introvesia.com",
+        "description": "Berperan sebagai volunteer dalam pengembangan platform untuk personal growth dan self-reflection.",
+        "demo": "https://introvesia.com",
+        "github": "https://github.com/Introvesia",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript"]
+      },
+      {
+        "name": "Dockeranium",
+        "description": "Panel kontrol Docker modern berbasis web yang intuitif. Berkontribusi sebagai open-source contributor.",
+        "demo": null,
+        "github": "https://github.com/Introvesia/dockeranium",
+        "slug": null,
+        "tech": ["TypeScript"]
+      },
+      {
+        "name": "E-Commerce Admin & Store",
+        "description": "Sistem manajemen e-commerce lengkap dengan admin dashboard dan toko online.",
+        "demo": null,
+        "github": "https://github.com/cakfan/ecommerce-admin",
+        "slug": null,
+        "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Kontak",
+    "subtitle": "Yuk kerja sama",
+    "description": "Saya lagi open buat proyek freelance dan peluang full-time. Kalau tertarik, langsung aja hubungi saya!",
+    "location": "Jember, Jawa Timur, Indonesia",
+    "cta": "Hubungi Saya"
+  },
+  "footer": {
+    "reserved": "Hak cipta dilindungi.",
+    "backToTop": "Kembali ke atas"
+  }
+}

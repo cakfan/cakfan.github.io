@@ -3,6 +3,7 @@ import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { I18nProvider } from "@/lib/i18n";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -111,6 +112,10 @@ export default function RootLayout({
                   } else {
                     document.documentElement.classList.add('dark');
                   }
+                  var locale = localStorage.getItem('locale');
+                  if (locale === 'id' || locale === 'en') {
+                    document.documentElement.lang = locale;
+                  }
                 } catch(e) {}
               })();
             `,
@@ -118,15 +123,17 @@ export default function RootLayout({
         />
       </head>
       <body className={`${outfit.variable} ${ovo.variable} antialiased`}>
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:rounded-md"
-        >
-          Skip to content
-        </a>
-        <Navbar />
-        <main id="main-content">{children}</main>
-        <Footer />
+        <I18nProvider>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:rounded-md"
+          >
+            Skip to content
+          </a>
+          <Navbar />
+          <main id="main-content">{children}</main>
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowDown, FileText } from "lucide-react";
 import { assets } from "@/assets";
+import { useTranslation } from "@/lib/i18n";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -16,23 +21,22 @@ export default function Hero() {
           style={{ animationDelay: "100ms" }}
         >
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          Available for opportunities
+          {t("hero.available")}
         </div>
 
         <h1
           className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight opacity-0 animate-slide-up"
           style={{ animationDelay: "250ms" }}
         >
-          Hi, I&apos;m{" "}
-          <span className="text-blue-500">Taufan Fatahillah</span>
+          {t("hero.greeting")}{" "}
+          <span className="text-blue-500">{t("hero.name")}</span>
         </h1>
 
         <p
           className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed opacity-0 animate-fade-in"
           style={{ animationDelay: "450ms" }}
         >
-          Front-End Engineer specializing in building fast, modern, and
-          user-friendly web applications with Next.js, React, and TypeScript.
+          {t("hero.subtitle")}
         </p>
 
         <div
@@ -43,7 +47,7 @@ export default function Hero() {
             href="#projects"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
           >
-            View Projects
+            {t("hero.viewProjects")}
             <ArrowDown size={16} />
           </Link>
           <Link
