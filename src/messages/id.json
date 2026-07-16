@@ -4,6 +4,7 @@
     "about": "Tentang Saya",
     "projects": "Proyek",
     "experience": "Pengalaman",
+    "localBusiness": "Bisnis Lokal",
     "contact": "Kontak",
     "lightMode": "Mode Terang",
     "darkMode": "Mode Gelap"
@@ -168,6 +169,32 @@
         "github": "https://github.com/cakfan/ecommerce-admin",
         "slug": null,
         "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      }
+    ]
+  },
+  "localBusiness": {
+    "heading": "Bisnis Lokal",
+    "subtitle": "Website nyata yang saya buat untuk bisnis di Jember",
+    "items": [
+      {
+        "name": "DKM Cakes & Cookies",
+        "category": "Kue & Cookies",
+        "description": "Kue, cookies & hantaran premium halal dari Jember — dipanggang segar setiap hari sejak 2013.",
+        "address": "Pesona Surya Milenia B4 No 5, Kaliwates, Jember",
+        "hours": "Setiap hari, 08.00 – 18.00 WIB",
+        "phone": "081 7080 1311",
+        "demo": "https://cakfan.github.io/dkmcakes/",
+        "slug": "dkmcakes"
+      },
+      {
+        "name": "EmasAji",
+        "category": "Kursus Mengemudi",
+        "description": "Kursus mengemudi terpercaya di Jember — instruktur privat, jadwal fleksibel, armada terawat.",
+        "address": "Perumahan Muktisari BBG 14-15, Pakem, Kranjingan, Sumbersari, Jember",
+        "hours": "Setiap hari, 07.00 – 18.00 (Jumat libur)",
+        "phone": "0822-3259-0089",
+        "demo": "https://cakfan.github.io/emasaji/",
+        "slug": "emasaji"
       }
     ]
   },

@@ -4,6 +4,7 @@
     "about": "About",
     "projects": "Projects",
     "experience": "Experience",
+    "localBusiness": "Local Business",
     "contact": "Contact",
     "lightMode": "Light Mode",
     "darkMode": "Dark Mode"
@@ -168,6 +169,32 @@
         "github": "https://github.com/cakfan/ecommerce-admin",
         "slug": null,
         "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      }
+    ]
+  },
+  "localBusiness": {
+    "heading": "Local Business",
+    "subtitle": "Real websites I built for businesses in Jember",
+    "items": [
+      {
+        "name": "DKM Cakes & Cookies",
+        "category": "Cakes & Cookies",
+        "description": "Premium halal cakes, cookies & hantaran from Jember — fresh baked every day since 2013.",
+        "address": "Pesona Surya Milenia B4 No 5, Kaliwates, Jember",
+        "hours": "Every day, 08:00 – 18:00 WIB",
+        "phone": "081 7080 1311",
+        "demo": "https://cakfan.github.io/dkmcakes/",
+        "slug": "dkmcakes"
+      },
+      {
+        "name": "EmasAji",
+        "category": "Driving School",
+        "description": "Trusted driving school in Jember — private instructors, flexible schedule, well-maintained fleet.",
+        "address": "Perumahan Muktisari BBG 14-15, Pakem, Kranjingan, Sumbersari, Jember",
+        "hours": "Every day, 07:00 – 18:00 (Friday off)",
+        "phone": "0822-3259-0089",
+        "demo": "https://cakfan.github.io/emasaji/",
+        "slug": "emasaji"
       }
     ]
   },

@@ -18,6 +18,7 @@ export default function Navbar() {
     { label: t("nav.home"), href: "#home" },
     { label: t("nav.about"), href: "#about" },
     { label: t("nav.projects"), href: "#projects" },
+    { label: t("nav.localBusiness"), href: "#local-business" },
     { label: t("nav.experience"), href: "#experience" },
     { label: t("nav.contact"), href: "#contact" },
   ];
