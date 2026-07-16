@@ -26,6 +26,16 @@
     "subtitle": "Tempat saya pernah bekerja",
     "items": [
       {
+        "role": "Full-Stack Developer",
+        "company": "Freelance",
+        "period": "Feb 2026 – Sekarang",
+        "descriptions": [
+          "Membangun aplikasi web full-stack",
+          "Vibe coding dengan framework modern",
+          "Membuat antarmuka front-end yang responsif dan performa"
+        ]
+      },
+      {
         "role": "UI Engineer / Jr. UI Engineer",
         "company": "BuildWithAngga",
         "period": "Mar 2025 – Jan 2026",
@@ -46,7 +56,7 @@
       {
         "role": "Android Developer & Web Developer",
         "company": "Freelance",
-        "period": "Jan 2020 – Sekarang",
+        "period": "2020 – 2024",
         "descriptions": [
           "Membangun aplikasi Android dan web untuk berbagai klien",
           "Mengerjakan proyek end-to-end dari desain sampai deployment"

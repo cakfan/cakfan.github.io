@@ -28,11 +28,11 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto grid gap-8">
+        <div className="max-w-4xl mx-auto columns-1 sm:columns-2 gap-8">
           {projects.map((project) => (
             <div
               key={project.name}
-              className="group rounded-xl border bg-background overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="group rounded-xl border bg-background overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 break-inside-avoid mb-8"
             >
               {project.slug && (
                 <div className="relative aspect-video overflow-hidden bg-muted">
@@ -40,7 +40,7 @@ export default function Projects() {
                     src={`/projects/${project.slug}.jpg`}
                     alt={`${project.name} screenshot`}
                     fill
-                    sizes="(max-width: 768px) 100vw, 768px"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 448px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
