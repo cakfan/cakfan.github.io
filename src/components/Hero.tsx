@@ -7,12 +7,6 @@ import { assets } from "@/assets";
 import { useTranslation } from "@/lib/i18n";
 import LetterGlitch from "./LetterGlitch";
 
-const socialLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com/in/cakfan", icon: "linkedin" as const },
-  { label: "GitHub", href: "https://github.com/cakfan", icon: "github" as const },
-  { label: "Instagram", href: "https://instagram.com/withcakfan", icon: "instagram" as const },
-];
-
 export default function Hero() {
   const { t } = useTranslation();
 
@@ -66,7 +60,8 @@ export default function Hero() {
             target="_blank"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >
-            <Image src={assets.linkedin} alt="LinkedIn" className="w-4" />
+            <Image src={assets.linkedinBlack} alt="LinkedIn" className="w-4 block dark:hidden" />
+            <Image src={assets.linkedinWhite} alt="LinkedIn" className="w-4 hidden dark:block" />
             LinkedIn
           </Link>
           <Link
@@ -74,7 +69,8 @@ export default function Hero() {
             target="_blank"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >
-            <Image src={assets.github} alt="GitHub" className="w-4" />
+            <Image src={assets.githubBlack} alt="GitHub" className="w-4 block dark:hidden" />
+            <Image src={assets.githubWhite} alt="GitHub" className="w-4 hidden dark:block" />
             GitHub
           </Link>
           <Link
