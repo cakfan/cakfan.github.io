@@ -57,7 +57,7 @@ export default function CvPage() {
       </div>
 
       <div className="cv-content pt-20 pb-16 px-4 sm:px-8">
-        <div className="max-w-[800px] mx-auto bg-background rounded-xl shadow-lg border overflow-hidden">
+        <div className="max-w-200 mx-auto bg-background rounded-xl shadow-lg border overflow-hidden">
           <div className="p-8 sm:p-12">
             <div className="text-center mb-8 pb-6 border-b-2 border-blue-500">
               <h1 className="text-3xl font-bold tracking-tight mb-1">
