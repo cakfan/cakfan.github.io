@@ -39,6 +39,8 @@ export const metadata: Metadata = {
     "Web Developer",
     "Indonesia",
   ],
+  authors: [{ name: "Taufan Fatahillah" }],
+  creator: "Taufan Fatahillah",
   robots: {
     index: true,
     follow: true,
@@ -46,13 +48,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Taufan Fatahillah — Front-End Engineer",
     description:
       "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
     url: siteUrl,
     siteName: "Taufan Fatahillah",
-    images: [{ url: `${siteUrl}/og.png`, width: 1200, height: 630 }],
+    images: [
+      {
+        url: `${siteUrl}/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "Taufan Fatahillah — Front-End Engineer Portfolio",
+      },
+    ],
     type: "website",
     locale: "en_US",
   },
@@ -73,6 +85,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
