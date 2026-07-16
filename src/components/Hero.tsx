@@ -57,7 +57,6 @@ export default function Hero() {
           <SocialLinks mode="hero" />
           <Link
             href="/cv"
-            target="_blank"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >
             <FileText size={16} />
