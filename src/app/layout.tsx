@@ -3,6 +3,7 @@ import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackToTopButton from "@/components/BackToTopButton";
 import { I18nProvider } from "@/lib/i18n";
 
 const outfit = Outfit({
@@ -133,6 +134,7 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content">{children}</main>
           <Footer />
+          <BackToTopButton />
         </I18nProvider>
       </body>
     </html>
