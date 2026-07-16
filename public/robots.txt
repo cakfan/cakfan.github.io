@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cakfan.github.io/sitemap.xml

@@ -1,36 +1,17 @@
 "use client";
 
-import { useState, useEffect, useSyncExternalStore } from "react";
+import { useState } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/lib/i18n";
+import { useDarkMode } from "@/hooks/useDarkMode";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 import LanguageToggle from "./LanguageToggle";
-
-let listeners: Array<() => void> = [];
-
-function emitChange() {
-  for (const listener of listeners) listener();
-}
-
-function subscribe(callback: () => void) {
-  listeners.push(callback);
-  return () => {
-    listeners = listeners.filter((l) => l !== callback);
-  };
-}
-
-function getSnapshot() {
-  return localStorage.getItem("theme") !== "light";
-}
-
-function getServerSnapshot() {
-  return false;
-}
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const dark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const scrolled = useScrollPosition(40);
+  const { isDark, toggle: toggleDark } = useDarkMode();
   const { t } = useTranslation();
 
   const navLinks = [
@@ -41,23 +22,6 @@ export default function Navbar() {
     { label: t("nav.experience"), href: "#experience" },
     { label: t("nav.contact"), href: "#contact" },
   ];
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
-
-  const toggleDark = () => {
-    const next = !dark;
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-    emitChange();
-  };
 
   return (
     <header
@@ -92,7 +56,7 @@ export default function Navbar() {
             className="p-2 rounded-full hover:bg-muted transition-colors cursor-pointer"
             aria-label="Toggle dark mode"
           >
-            {dark ? <Sun size={16} /> : <Moon size={16} />}
+            {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </div>
 
@@ -125,8 +89,8 @@ export default function Navbar() {
               onClick={toggleDark}
               className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
-              {dark ? <Sun size={16} /> : <Moon size={16} />}
-              {dark ? t("nav.lightMode") : t("nav.darkMode")}
+              {isDark ? <Sun size={16} /> : <Moon size={16} />}
+              {isDark ? t("nav.lightMode") : t("nav.darkMode")}
             </button>
           </div>
         </div>

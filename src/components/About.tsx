@@ -1,6 +1,7 @@
 "use client";
 
 import TechBadge from "./ui/TechBadge";
+import SectionHeader from "./ui/SectionHeader";
 import { useTranslation } from "@/lib/i18n";
 
 const techs = [
@@ -16,13 +17,8 @@ export default function About() {
     <section id="about" aria-label="About" className="section-padding">
       <div className="container-section">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            {t("about.heading")}
-          </h2>
-          <p className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6">
-            {t("about.tagline")}
-          </p>
-          <p className="text-muted-foreground leading-relaxed mb-8">
+          <SectionHeader heading={t("about.heading")} subtitle={t("about.tagline")} className="mb-0" />
+          <p className="text-muted-foreground leading-relaxed mb-8 mt-6">
             {t("about.bio")}
           </p>
           <div className="flex flex-wrap gap-2">

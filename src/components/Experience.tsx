@@ -1,26 +1,18 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n";
+import type { Experience } from "@/lib/types";
+import SectionHeader from "./ui/SectionHeader";
 
-export default function Experience() {
+export default function ExperienceSection() {
   const { t, tArray } = useTranslation();
-  const experiences = tArray<{
-    role: string;
-    company: string;
-    period: string;
-    descriptions: string[];
-  }>("experience.items");
+  const experiences = tArray<Experience>("experience.items");
 
   return (
     <section id="experience" aria-label="Experience" className="section-padding">
       <div className="container-section">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            {t("experience.heading")}
-          </h2>
-          <p className="text-2xl sm:text-3xl font-semibold tracking-tight mb-10">
-            {t("experience.subtitle")}
-          </p>
+          <SectionHeader heading={t("experience.heading")} subtitle={t("experience.subtitle")} className="mb-10" />
 
           <div className="relative">
             <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border" />

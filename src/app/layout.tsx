@@ -48,9 +48,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
   openGraph: {
     title: "Taufan Fatahillah — Front-End Engineer",
     description:
@@ -97,7 +94,7 @@ export default function RootLayout({
               url: siteUrl,
               jobTitle: "Front-End Engineer",
               sameAs: [
-                "https://www.linkedin.com/in/taufanfatahillah",
+                "https://www.linkedin.com/in/cakfan",
                 "https://github.com/cakfan",
                 "https://www.instagram.com/withcakfan",
               ],

@@ -1,5 +1,6 @@
 import linkedin from "./linkedin.svg";
 import instagramWhite from "./instagram-white.svg";
 import instagramBlack from "./instagram-black.svg";
+import github from "./github.svg";
 
-export const assets = { linkedin, instagramWhite, instagramBlack };
+export const assets = { linkedin, instagramWhite, instagramBlack, github };

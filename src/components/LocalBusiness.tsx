@@ -2,21 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ChevronDown, MapPin, Clock, Phone, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/lib/i18n";
-
-interface LocalBusinessItem {
-  name: string;
-  category: string;
-  description: string;
-  address: string;
-  hours: string;
-  phone: string;
-  demo: string;
-  slug: string;
-}
+import type { LocalBusinessItem } from "@/lib/types";
+import SectionHeader from "./ui/SectionHeader";
+import Image from "next/image";
 
 function BusinessCard({ item }: { item: LocalBusinessItem }) {
   const [expanded, setExpanded] = useState(false);
@@ -110,14 +101,7 @@ export default function LocalBusiness() {
       className="section-padding"
     >
       <div className="container-section">
-        <div className="max-w-3xl mx-auto mb-12">
-          <h2 className="text-sm font-semibold text-blue-500 tracking-widest uppercase mb-3">
-            {t("localBusiness.heading")}
-          </h2>
-          <p className="text-2xl sm:text-3xl font-semibold tracking-tight">
-            {t("localBusiness.subtitle")}
-          </p>
-        </div>
+        <SectionHeader heading={t("localBusiness.heading")} subtitle={t("localBusiness.subtitle")} />
 
         <div className="max-w-4xl mx-auto grid gap-8 sm:grid-cols-2 items-start">
           {items.map((item) => (

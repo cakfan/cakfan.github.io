@@ -1,17 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 
 export default function BackToTopButton() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const visible = useScrollPosition(300);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

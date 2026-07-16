@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, type CSSProperties } from "react";
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 interface LetterGlitchProps {
   glitchColors?: string[];
@@ -68,6 +69,7 @@ export default function LetterGlitch({
   characters = DEFAULT_CHARACTERS,
   opacity = 0.15,
 }: LetterGlitchProps) {
+  const { isDark } = useDarkMode();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number>(0);
   const letters = useRef<Letter[]>([]);
@@ -187,30 +189,19 @@ export default function LetterGlitch({
 
     context.current = canvas.getContext("2d");
 
-    const updateTheme = () => {
-      const dark = document.documentElement.classList.contains("dark");
-      if (!glitchColors) {
-        colorsRef.current = dark ? DEFAULT_COLORS_DARK : DEFAULT_COLORS_LIGHT;
-        letters.current.forEach((letter) => {
-          letter.color = getRandomColor();
-          letter.targetColor = getRandomColor();
-          letter.colorProgress = 0;
-        });
-        drawLetters();
-      }
-      if (containerRef.current) {
-        const vc = dark ? "0,0,0" : "255,255,255";
-        containerRef.current.style.setProperty("--vignette-color", vc);
-      }
-    };
-
-    updateTheme();
-
-    const observer = new MutationObserver(updateTheme);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+    if (!glitchColors) {
+      colorsRef.current = isDark ? DEFAULT_COLORS_DARK : DEFAULT_COLORS_LIGHT;
+      letters.current.forEach((letter) => {
+        letter.color = getRandomColor();
+        letter.targetColor = getRandomColor();
+        letter.colorProgress = 0;
+      });
+      drawLetters();
+    }
+    if (containerRef.current) {
+      const vc = isDark ? "0,0,0" : "255,255,255";
+      containerRef.current.style.setProperty("--vignette-color", vc);
+    }
 
     resizeCanvas();
     lastGlitchTime.current = Date.now();
@@ -244,10 +235,9 @@ export default function LetterGlitch({
     return () => {
       cancelAnimationFrame(animationRef.current);
       window.removeEventListener("resize", handleResize);
-      observer.disconnect();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [glitchSpeed, smooth]);
+  }, [isDark, glitchSpeed, smooth]);
 
   const containerStyle: CSSProperties = {
     position: "relative",
