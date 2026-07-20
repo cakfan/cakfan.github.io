@@ -15,12 +15,12 @@ export default function HomeHero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-sm text-muted-foreground bg-muted/50 mb-8">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            {config.availability}
+            {t("home.availability")}
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
             {config.title}{" "}
-            <span className="text-teal italic">{config.positioningTagline}</span>
+            <span className="text-teal italic">{t("home.tagline")}</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
