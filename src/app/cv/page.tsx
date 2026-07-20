@@ -10,7 +10,7 @@ import BulletList from "@/components/ui/BulletList";
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-6 last:mb-0">
-      <h2 className="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 pb-1 border-b border-border">
+      <h2 className="text-xs font-bold uppercase tracking-widest text-teal mb-2 pb-1 border-b border-border">
         {title}
       </h2>
       {children}
@@ -59,11 +59,11 @@ export default function CvPage() {
       <div className="cv-content pt-20 pb-16 px-4 sm:px-8">
         <div className="max-w-200 mx-auto bg-background rounded-xl shadow-lg border overflow-hidden">
           <div className="p-8 sm:p-12">
-            <div className="text-center mb-8 pb-6 border-b-2 border-blue-500">
+            <div className="text-center mb-8 pb-6 border-b-2 border-teal">
               <h1 className="text-3xl font-bold tracking-tight mb-1">
                 Taufan Fatahillah
               </h1>
-              <p className="text-blue-500 font-medium">
+              <p className="text-teal font-medium">
                 Full-Stack Developer
               </p>
               <div className="text-sm text-muted-foreground mt-2 flex flex-wrap items-center justify-center gap-x-2">
@@ -93,7 +93,7 @@ export default function CvPage() {
                         {exp.period}
                       </span>
                     </div>
-                    <p className="text-sm text-blue-500 font-medium mb-1">
+                    <p className="text-sm text-teal font-medium mb-1">
                       {exp.role}
                     </p>
                     <BulletList items={exp.descriptions} />
@@ -125,7 +125,7 @@ export default function CvPage() {
                   <div key={project.name}>
                     <div className="flex items-baseline justify-between mb-0.5">
                       <span className="text-sm font-semibold">{project.name}</span>
-                      <span className="text-xs text-blue-500 ml-4">
+                      <span className="text-xs text-teal ml-4">
                         {project.tech.join(", ")}
                       </span>
                     </div>
@@ -148,7 +148,7 @@ export default function CvPage() {
                   <div key={biz.name}>
                     <div className="flex items-baseline justify-between mb-0.5">
                       <span className="text-sm font-semibold">{biz.name}</span>
-                      <span className="text-xs text-blue-500 ml-4">{biz.category}</span>
+                      <span className="text-xs text-teal ml-4">{biz.category}</span>
                     </div>
                     <p className="text-sm text-muted-foreground mb-0.5">{biz.description}</p>
                     <span className="text-xs text-muted-foreground">

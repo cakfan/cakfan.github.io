@@ -2,24 +2,50 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
+    "work": "Work",
     "experience": "Experience",
-    "localBusiness": "Local Business",
     "contact": "Contact",
     "lightMode": "Light Mode",
-    "darkMode": "Dark Mode"
+    "darkMode": "Dark Mode",
+    "backToTop": "Back to top"
   },
   "hero": {
     "available": "Available for opportunities",
     "greeting": "Hi, I'm",
     "name": "Taufan Fatahillah",
-    "subtitle": "Front-End Engineer specializing in building fast, modern, and user-friendly web applications with Next.js, React, and TypeScript.",
+    "subtitle": "Full-Stack Developer specializing in building fast, modern, and user-friendly web applications with Next.js, React, and TypeScript.",
     "viewProjects": "View Projects"
+  },
+  "home": {
+    "subtitle": "End-to-end ownership of web products — from first commit to production deploy. Currently based in Jember, Indonesia.",
+    "viewWork": "View Work",
+    "getInTouch": "Get in Touch",
+    "philosophyHeading": "How I Work",
+    "philosophyP1": "I don't ship demos. I ship products that solve real problems for real businesses.",
+    "philosophyP2": "My work with local businesses in Jember — a bakery and a driving school — taught me that great engineering isn't about the latest framework. It's about understanding what the business needs, making the right technical decisions, and owning the result end to end.",
+    "philosophyP3": "Every project I take on gets the same standard: fast, accessible, search-friendly, and built to last.",
+    "philosophyReadMore": "Read more about my approach",
+    "ctaHeading": "Let's build something that matters.",
+    "ctaSubtitle": "Open to full-time opportunities and meaningful freelance projects.",
+    "featuredHeading": "Featured Work",
+    "featuredViewAll": "View all"
   },
   "about": {
     "heading": "About",
-    "tagline": "Crafting digital experiences through clean code & design",
-    "bio": "I'm a Front-End Engineer based in Jember, Indonesia, with a passion for building fast, accessible, and user-centric web applications. I specialize in modern JavaScript frameworks and tools, turning complex problems into elegant solutions. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects."
+    "subtitle": "The short version",
+    "bio1": "I'm {name}, a {title} based in Jember, East Java. I build web products that solve real problems for real businesses.",
+    "bio2": "Most of my work in the past year has been building websites for local businesses in Jember — a halal bakery and a driving school. Not landing page templates. Real production sites that handle real customers, real orders, and real trust.",
+    "bio3": "Before that, I spent time at BuildWithAngga developing production UIs with Next.js, volunteered on web projects with an international team at Kerja IT Jepang, and spent four years freelancing on Android and web apps for diverse clients.",
+    "bio4": "What I care about is building things that work. Fast load times. Clean code. Good SEO. Accessible interfaces. The stuff that actually matters when a real user opens your site on a slow connection in a small town.",
+    "bio5": "I'm currently open to full-time opportunities where I can contribute to products that have real impact.",
+    "techHeading": "Tech I work with",
+    "frontEnd": "Front-End",
+    "backEnd": "Back-End",
+    "tools": "Tools",
+    "frontEndList": "React, Next.js, TypeScript, TailwindCSS, Shadcn-UI",
+    "backEndList": "Express.js, NestJS, REST API",
+    "toolsList": "Git, Docker, VS Code",
+    "seeWork": "See what I've built →"
   },
   "experience": {
     "heading": "Experience",
@@ -63,6 +89,35 @@
         ]
       }
     ]
+  },
+  "work": {
+    "all": "All",
+    "clientWork": "Client Work",
+    "engineering": "Engineering",
+    "experiments": "Experiments",
+    "noProjects": "No projects in this category yet.",
+    "filterLabel": "Filter by category",
+    "pageHeading": "Work",
+    "pageSubtitle": "Things I've built",
+    "pageDescription": "Client work, engineering projects, and experiments — organized by impact.",
+    "businessContext": "Business Context",
+    "approachDecisions": "Approach & Decisions",
+    "challenges": "Challenges",
+    "aboutProject": "About this project",
+    "results": "Results",
+    "businessDetails": "Business Details",
+    "address": "Address:",
+    "hours": "Hours:",
+    "phone": "Phone:",
+    "moreWork": "More Work",
+    "viewAllWork": "← View all work",
+    "liveSite": "Live Site",
+    "sourceCode": "Source Code",
+    "category": {
+      "client-work": "Client Work",
+      "engineering": "Engineering",
+      "experiment": "Experiments"
+    }
   },
   "projects": {
     "heading": "Projects",
@@ -250,11 +305,14 @@
     "heading": "Contact",
     "subtitle": "Let's work together",
     "description": "I'm currently open for freelance projects and full-time opportunities. Feel free to reach out!",
-    "location": "Jember, East Java, Indonesia",
-    "cta": "Get in Touch"
+    "email": "Email",
+    "emailAddress": "withcakfan@gmail.com",
+    "locationLabel": "Location",
+    "locationValue": "Taufan Fatahillah · Jember, East Java, Indonesia",
+    "findOnline": "Find me online",
+    "seeWork": "See what I've built →"
   },
   "footer": {
-    "reserved": "All rights reserved.",
-    "backToTop": "Back to top"
+    "reserved": "All rights reserved."
   }
 }

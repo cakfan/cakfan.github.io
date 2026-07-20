@@ -5,7 +5,6 @@ import Image from "next/image";
 import { ArrowDown, FileText } from "lucide-react";
 import { assets } from "@/assets";
 import { useTranslation } from "@/lib/i18n";
-import LetterGlitch from "./LetterGlitch";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -16,10 +15,6 @@ export default function Hero() {
       aria-label="Hero"
       className="relative min-h-screen flex items-center justify-center"
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <LetterGlitch opacity={0.18} />
-      </div>
-
       <div className="container-section flex flex-col items-center text-center gap-6 pt-20 relative z-10">
         <div
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-sm text-muted-foreground bg-muted/50 opacity-0 animate-slide-up"
@@ -34,7 +29,7 @@ export default function Hero() {
           style={{ animationDelay: "250ms" }}
         >
           {t("hero.greeting")}{" "}
-          <span className="text-blue-500">{t("hero.name")}</span>
+          <span style={{ color: "oklch(var(--teal))" }}>{t("hero.name")}</span>
         </h1>
 
         <p

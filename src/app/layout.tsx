@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
-import { Outfit, Ovo } from "next/font/google";
+import { Newsreader, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
 import { I18nProvider } from "@/lib/i18n";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const newsreader = Newsreader({
+  variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
-const ovo = Ovo({
-  variable: "--font-ovo",
+const geist = Geist({
+  variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const siteUrl = "https://cakfan.github.io";
@@ -23,14 +24,14 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Taufan Fatahillah — Front-End Engineer",
+    default: "Taufan Fatahillah — Full-Stack Developer",
     template: "%s | Taufan Fatahillah",
   },
   description:
-    "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
+    "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
   keywords: [
     "Taufan Fatahillah",
-    "Front-End Engineer",
+    "Full-Stack Developer",
     "Next.js",
     "React",
     "TypeScript",
@@ -49,9 +50,9 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Taufan Fatahillah — Front-End Engineer",
+    title: "Taufan Fatahillah — Full-Stack Developer",
     description:
-      "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
+      "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
     url: siteUrl,
     siteName: "Taufan Fatahillah",
     images: [
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og.png`,
         width: 1200,
         height: 630,
-        alt: "Taufan Fatahillah — Front-End Engineer Portfolio",
+        alt: "Taufan Fatahillah — Full-Stack Developer Portfolio",
       },
     ],
     type: "website",
@@ -67,9 +68,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taufan Fatahillah — Front-End Engineer",
+    title: "Taufan Fatahillah — Full-Stack Developer",
     description:
-      "Front-End Engineer specializing in Next.js, React, TypeScript, and TailwindCSS.",
+      "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS.",
     images: [`${siteUrl}/og.png`],
   },
 };
@@ -82,8 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -92,7 +93,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Taufan Fatahillah",
               url: siteUrl,
-              jobTitle: "Front-End Engineer",
+              jobTitle: "Full-Stack Developer",
               sameAs: [
                 "https://www.linkedin.com/in/cakfan",
                 "https://github.com/cakfan",
@@ -110,7 +111,7 @@ export default function RootLayout({
               url: siteUrl,
               name: "Taufan Fatahillah",
               description:
-                "Front-End Engineer portfolio — Next.js, React, TypeScript, TailwindCSS.",
+                "Full-Stack Developer portfolio — Next.js, React, TypeScript, TailwindCSS.",
             }),
           }}
         />
@@ -135,7 +136,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${outfit.variable} ${ovo.variable} antialiased`}>
+      <body className={`${newsreader.variable} ${geist.variable} antialiased`}>
         <I18nProvider>
           <a
             href="#main-content"

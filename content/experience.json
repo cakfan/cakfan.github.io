@@ -1,0 +1,40 @@
+[
+  {
+    "period": "Feb 2026 – Present",
+    "role": "Full-Stack Developer",
+    "organization": "Freelance",
+    "bullets": [
+      "Delivering end-to-end web applications for clients — from requirements gathering to production deployment",
+      "Implementing performant front-end interfaces with modern frameworks, reducing load times and improving user engagement",
+      "Building full-stack solutions that handle real business workflows, not just UI prototypes"
+    ]
+  },
+  {
+    "period": "Mar 2025 – Jan 2026",
+    "role": "UI Engineer / Jr. UI Engineer",
+    "organization": "BuildWithAngga",
+    "bullets": [
+      "Developed production-ready user interfaces using Next.js and TailwindCSS for scalable web platforms",
+      "Collaborated cross-functionally to ship front-end solutions that aligned with product and business goals",
+      "Improved component reusability and code maintainability across multiple project iterations"
+    ]
+  },
+  {
+    "period": "Dec 2024 – Jan 2025",
+    "role": "Volunteer",
+    "organization": "Kerja IT Jepang",
+    "bullets": [
+      "Contributed to web development projects in an international, cross-cultural team environment",
+      "Adapted quickly to unfamiliar development workflows and communication practices"
+    ]
+  },
+  {
+    "period": "2020 – 2024",
+    "role": "Android Developer & Web Developer",
+    "organization": "Freelance",
+    "bullets": [
+      "Built and shipped Android and web applications for diverse clients across multiple industries",
+      "Managed the full development lifecycle — design, development, testing, and deployment"
+    ]
+  }
+]

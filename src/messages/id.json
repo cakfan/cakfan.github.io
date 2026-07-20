@@ -2,24 +2,50 @@
   "nav": {
     "home": "Beranda",
     "about": "Tentang Saya",
-    "projects": "Proyek",
+    "work": "Karya",
     "experience": "Pengalaman",
-    "localBusiness": "Bisnis Lokal",
     "contact": "Kontak",
     "lightMode": "Mode Terang",
-    "darkMode": "Mode Gelap"
+    "darkMode": "Mode Gelap",
+    "backToTop": "Kembali ke atas"
   },
   "hero": {
     "available": "Open untuk peluang baru",
     "greeting": "Hai, saya",
     "name": "Taufan Fatahillah",
-    "subtitle": "Front-End Engineer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan dengan Next.js, React, dan TypeScript.",
+    "subtitle": "Full-Stack Developer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan dengan Next.js, React, dan TypeScript.",
     "viewProjects": "Lihat Proyek"
+  },
+  "home": {
+    "subtitle": "Tanggung jawab penuh dari produk web — dari commit pertama sampai deploy production. Sekarang berdomisili di Jember, Indonesia.",
+    "viewWork": "Lihat Karya",
+    "getInTouch": "Hubungi Saya",
+    "philosophyHeading": "Cara Kerja Saya",
+    "philosophyP1": "Saya nggak bikin demo. Saya bikin produk yang solve masalah nyata untuk bisnis nyata.",
+    "philosophyP2": "Pengalaman kerja sama bisnis lokal di Jember — toko kue dan kursus mengemudi — ngajarin saya kalau engineering yang bagus bukan soal framework terbaru. Tapi soal ngerti kebutuhan bisnis, ambil keputusan teknis yang tepat, dan tanggung jawab hasilnya dari awal sampai akhir.",
+    "philosophyP3": "Setiap proyek yang saya tangani dapat standar yang sama: cepat, bisa diakses semua orang, ramah SEO, dan dibuat untuk bertahan lama.",
+    "philosophyReadMore": "Baca lebih lanjut soal pendekatan saya",
+    "ctaHeading": "Yuk bangun sesuatu yang berarti.",
+    "ctaSubtitle": "Open untuk peluang full-time dan proyek freelance yang bermakna.",
+    "featuredHeading": "Karya Unggulan",
+    "featuredViewAll": "Lihat semua"
   },
   "about": {
     "heading": "Tentang Saya",
-    "tagline": "Membangun pengalaman digital lewat kode & desain yang rapi",
-    "bio": "Saya Front-End Engineer yang berdomisili di Jember, Indonesia. Saya punya ketertarikan besar membangun aplikasi web yang cepat, bisa diakses semua orang, dan berpusat pada kebutuhan pengguna. Saya menguasai berbagai framework dan tools JavaScript modern, dan senang mengubah masalah rumit menjadi solusi yang elegan. Kalau lagi nggak coding, saya biasanya eksplor teknologi baru atau kontribusi di proyek open-source."
+    "subtitle": "Versi singkat",
+    "bio1": "Saya {name}, seorang {title} yang berdomisili di Jember, Jawa Timur. Saya membangun produk web yang menyelesaikan masalah nyata untuk bisnis nyata.",
+    "bio2": "Sebagian besar pekerjaan saya tahun ini adalah membangun website untuk bisnis lokal di Jember — toko kue halal dan kursus mengemudi. Bukan template landing page. Website production asli yang menangani pelanggan asli, pesanan asli, dan kepercayaan asli.",
+    "bio3": "Sebelumnya, saya menghabiskan waktu di BuildWithAngga mengembangkan UI production dengan Next.js, menjadi relawan di proyek web dengan tim internasional di Kerja IT Jepang, dan empat tahun freelance di aplikasi Android dan web untuk berbagai klien.",
+    "bio4": "Yang saya pedulikan adalah membangun sesuatu yang berfungsi. Load time cepat. Kode bersih. SEO bagus. Interface yang bisa diakses semua orang. Hal-hal yang benar-benar penting ketika pengguna nyata buka situsmu di koneksi lambat di kota kecil.",
+    "bio5": "Saya sekarang open untuk peluang full-time di mana saya bisa berkontribusi pada produk yang punya dampak nyata.",
+    "techHeading": "Teknologi yang saya pakai",
+    "frontEnd": "Front-End",
+    "backEnd": "Back-End",
+    "tools": "Tools",
+    "frontEndList": "React, Next.js, TypeScript, TailwindCSS, Shadcn-UI",
+    "backEndList": "Express.js, NestJS, REST API",
+    "toolsList": "Git, Docker, VS Code",
+    "seeWork": "Lihat apa yang pernah saya bangun →"
   },
   "experience": {
     "heading": "Pengalaman",
@@ -63,6 +89,35 @@
         ]
       }
     ]
+  },
+  "work": {
+    "all": "Semua",
+    "clientWork": "Klien",
+    "engineering": "Engineering",
+    "experiments": "Eksperimen",
+    "noProjects": "Belum ada proyek di kategori ini.",
+    "filterLabel": "Filter berdasarkan kategori",
+    "pageHeading": "Karya",
+    "pageSubtitle": "Beberapa yang pernah saya bangun",
+    "pageDescription": "Klien, proyek engineering, dan eksperimen — diurutkan berdasarkan dampak.",
+    "businessContext": "Konteks Bisnis",
+    "approachDecisions": "Pendekatan & Keputusan",
+    "challenges": "Tantangan",
+    "aboutProject": "Tentang proyek ini",
+    "results": "Hasil",
+    "businessDetails": "Detail Bisnis",
+    "address": "Alamat:",
+    "hours": "Jam:",
+    "phone": "Telepon:",
+    "moreWork": "Karya Lainnya",
+    "viewAllWork": "← Lihat semua karya",
+    "liveSite": "Situs Live",
+    "sourceCode": "Kode Sumber",
+    "category": {
+      "client-work": "Klien",
+      "engineering": "Engineering",
+      "experiment": "Eksperimen"
+    }
   },
   "projects": {
     "heading": "Proyek",
@@ -250,11 +305,14 @@
     "heading": "Kontak",
     "subtitle": "Yuk kerja sama",
     "description": "Saya lagi open buat proyek freelance dan peluang full-time. Kalau tertarik, langsung aja hubungi saya!",
-    "location": "Jember, Jawa Timur, Indonesia",
-    "cta": "Hubungi Saya"
+    "email": "Email",
+    "emailAddress": "withcakfan@gmail.com",
+    "locationLabel": "Lokasi",
+    "locationValue": "Taufan Fatahillah · Jember, Jawa Timur, Indonesia",
+    "findOnline": "Temui saya di",
+    "seeWork": "Lihat apa yang pernah saya bangun →"
   },
   "footer": {
-    "reserved": "Hak cipta dilindungi.",
-    "backToTop": "Kembali ke atas"
+    "reserved": "Hak cipta dilindungi."
   }
 }

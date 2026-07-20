@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#E8E8E4"/>
+  <rect x="0" y="0" width="800" height="500" fill="none" stroke="#C8C8C4" stroke-width="2"/>
+  <text x="400" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#9A9A96" text-anchor="middle" font-weight="500">Screenshot coming soon</text>
+  <text x="400" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#B0B0AC" text-anchor="middle">cakfan.github.io</text>
+</svg>
