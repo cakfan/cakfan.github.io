@@ -33,7 +33,7 @@ function BusinessCard({ item }: { item: LocalBusinessItem }) {
         <div className="flex items-start justify-between mb-2">
           <div>
             <h3 className="text-lg font-semibold">{item.name}</h3>
-            <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-500 font-medium">
+            <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-teal/10 text-teal font-medium">
               {item.category}
             </span>
           </div>

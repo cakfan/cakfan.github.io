@@ -34,7 +34,7 @@ export default function ProjectCard({ name, slug, description, demo, github, tec
           <div>
             <h3 className="text-lg font-semibold">{name}</h3>
             {category && (
-              <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-500 font-medium">
+              <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-teal/10 text-teal font-medium">
                 {category}
               </span>
             )}

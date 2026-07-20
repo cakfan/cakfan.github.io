@@ -1,19 +1,15 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import LocalBusiness from "@/components/LocalBusiness";
-import Projects from "@/components/Projects";
-import ExperienceSection from "@/components/Experience";
-import Contact from "@/components/Contact";
+import HomeHero from "@/components/home/home-hero";
+import FeaturedCaseStudy from "@/components/home/featured-case-study";
+import Philosophy from "@/components/home/philosophy";
+import HomeCta from "@/components/home/home-cta";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <LocalBusiness />
-      <Projects />
-      <ExperienceSection />
-      <Contact />
+      <HomeHero />
+      <FeaturedCaseStudy />
+      <Philosophy />
+      <HomeCta />
     </>
   );
 }

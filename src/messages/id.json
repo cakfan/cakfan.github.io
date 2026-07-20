@@ -2,24 +2,52 @@
   "nav": {
     "home": "Beranda",
     "about": "Tentang Saya",
-    "projects": "Proyek",
+    "work": "Karya",
     "experience": "Pengalaman",
-    "localBusiness": "Bisnis Lokal",
     "contact": "Kontak",
     "lightMode": "Mode Terang",
-    "darkMode": "Mode Gelap"
+    "darkMode": "Mode Gelap",
+    "backToTop": "Kembali ke atas"
   },
   "hero": {
-    "available": "Open untuk peluang baru",
+    "available": "Tersedia untuk peluang baru",
     "greeting": "Hai, saya",
     "name": "Taufan Fatahillah",
-    "subtitle": "Front-End Engineer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan dengan Next.js, React, dan TypeScript.",
+    "subtitle": "Full-Stack Developer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan pakai Next.js, React, dan TypeScript.",
     "viewProjects": "Lihat Proyek"
+  },
+  "home": {
+    "subtitle": "Tanggung jawab penuh untuk produk web — dari commit pertama sampai deploy ke production. Sekarang berdomisili di Jember, Indonesia.",
+    "viewWork": "Lihat Karya",
+    "getInTouch": "Hubungi Saya",
+    "availability": "Tersedia untuk peluang full-time",
+    "tagline": "Membangun untuk hasil bisnis, bukan sekadar demo.",
+    "philosophyHeading": "Cara Kerja Saya",
+    "philosophyP1": "Saya tidak bikin demo. Saya bikin produk yang menyelesaikan masalah nyata untuk bisnis nyata.",
+    "philosophyP2": "Pengalaman kerja sama bisnis lokal di Jember — toko kue dan kursus mengemudi — mengajari saya kalau engineering yang bagus bukan soal framework terbaru. Tapi soal memahami kebutuhan bisnis, mengambil keputusan teknis yang tepat, dan bertanggung jawab atas hasilnya dari awal sampai akhir.",
+    "philosophyP3": "Setiap proyek yang saya tangani mendapat standar yang sama: cepat, bisa diakses oleh semua orang, ramah SEO, dan dibuat untuk bertahan lama.",
+    "philosophyReadMore": "Baca lebih lanjut soal pendekatan saya",
+    "ctaHeading": "Yuk bangun sesuatu yang berarti.",
+    "ctaSubtitle": "Tersedia untuk peluang full-time dan proyek freelance yang bermakna.",
+    "featuredHeading": "Karya Unggulan",
+    "featuredViewAll": "Lihat semua"
   },
   "about": {
     "heading": "Tentang Saya",
-    "tagline": "Membangun pengalaman digital lewat kode & desain yang rapi",
-    "bio": "Saya Front-End Engineer yang berdomisili di Jember, Indonesia. Saya punya ketertarikan besar membangun aplikasi web yang cepat, bisa diakses semua orang, dan berpusat pada kebutuhan pengguna. Saya menguasai berbagai framework dan tools JavaScript modern, dan senang mengubah masalah rumit menjadi solusi yang elegan. Kalau lagi nggak coding, saya biasanya eksplor teknologi baru atau kontribusi di proyek open-source."
+    "subtitle": "Versi singkat",
+    "bio1": "Saya {name}, seorang {title} yang berdomisili di Jember, Jawa Timur. Saya membangun produk web yang menyelesaikan masalah nyata untuk bisnis nyata.",
+    "bio2": "Sebagian besar pekerjaan saya tahun ini adalah membangun website untuk bisnis lokal di Jember — toko kue halal dan kursus mengemudi. Bukan template landing page. Website production beneran yang menangani pelanggan beneran, pesanan beneran, dan kepercayaan beneran.",
+    "bio3": "Sebelumnya, saya pernah di BuildWithAngga mengembangkan UI production pakai Next.js, berkontribusi sebagai relawan di proyek web bersama tim internasional di Kerja IT Jepang, dan empat tahun freelance bikin aplikasi Android dan web untuk berbagai klien.",
+    "bio4": "Yang saya pedulikan adalah membangun sesuatu yang berfungsi. Load time cepat. Kode bersih. SEO bagus. Antarmuka yang bisa diakses semua orang. Hal-hal yang benar-benar penting ketika pengguna nyata buka situsmu di koneksi lambat di kota kecil.",
+    "bio5": "Saya sekarang tersedia untuk peluang full-time di mana saya bisa berkontribusi pada produk yang punya dampak nyata.",
+    "techHeading": "Teknologi yang saya pakai",
+    "frontEnd": "Front-End",
+    "backEnd": "Back-End",
+    "tools": "Tools",
+    "frontEndList": "React, Next.js, TypeScript, TailwindCSS, Shadcn-UI",
+    "backEndList": "Express.js, NestJS, REST API",
+    "toolsList": "Git, Docker, VS Code",
+    "seeWork": "Lihat apa yang pernah saya bangun →"
   },
   "experience": {
     "heading": "Pengalaman",
@@ -31,8 +59,8 @@
         "period": "Feb 2026 – Sekarang",
         "descriptions": [
           "Membangun aplikasi web full-stack",
-          "Vibe coding dengan framework modern",
-          "Membuat antarmuka front-end yang responsif dan performa"
+          "Vibe coding pakai framework modern",
+          "Membuat antarmuka front-end yang responsif dan performa tinggi"
         ]
       },
       {
@@ -41,7 +69,7 @@
         "period": "Mar 2025 – Jan 2026",
         "descriptions": [
           "Mengembangkan antarmuka pengguna modern pakai Next.js dan TailwindCSS",
-          "Berkolaborasi bareng tim untuk deliver solusi front-end yang scalable"
+          "Berkolaborasi dengan tim untuk menghasilkan solusi front-end yang scalable"
         ]
       },
       {
@@ -49,8 +77,8 @@
         "company": "Kerja IT Jepang",
         "period": "Des 2024 – Jan 2025",
         "descriptions": [
-          "Aktif di proyek pengembangan web sebagai relawan",
-          "Beradaptasi di lingkungan kerja yang internasional"
+          "Berkontribusi di proyek pengembangan web sebagai relawan",
+          "Beradaptasi di lingkungan kerja internasional"
         ]
       },
       {
@@ -64,13 +92,42 @@
       }
     ]
   },
+  "work": {
+    "all": "Semua",
+    "clientWork": "Klien",
+    "engineering": "Engineering",
+    "experiments": "Eksperimen",
+    "noProjects": "Belum ada proyek di kategori ini.",
+    "filterLabel": "Filter berdasarkan kategori",
+    "pageHeading": "Karya",
+    "pageSubtitle": "Beberapa yang pernah saya bangun",
+    "pageDescription": "Klien, proyek engineering, dan eksperimen — diurutkan berdasarkan dampak.",
+    "businessContext": "Konteks Bisnis",
+    "approachDecisions": "Pendekatan & Keputusan",
+    "challenges": "Tantangan",
+    "aboutProject": "Tentang proyek ini",
+    "results": "Hasil",
+    "businessDetails": "Detail Bisnis",
+    "address": "Alamat:",
+    "hours": "Jam:",
+    "phone": "Telepon:",
+    "moreWork": "Karya Lainnya",
+    "viewAllWork": "← Lihat semua karya",
+    "liveSite": "Situs Live",
+    "sourceCode": "Kode Sumber",
+    "category": {
+      "client-work": "Klien",
+      "engineering": "Engineering",
+      "experiment": "Eksperimen"
+    }
+  },
   "projects": {
     "heading": "Proyek",
     "subtitle": "Beberapa yang pernah saya bangun",
     "items": [
       {
         "name": "Wadde",
-        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimonial, dan promosi mobile app.",
+        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimoni, dan promosi mobile app.",
         "demo": "https://cakfan.github.io/bwa-wadde/",
         "github": "https://github.com/cakfan/bwa-wadde",
         "slug": "bwa-wadde",
@@ -118,7 +175,7 @@
       },
       {
         "name": "Foodyar",
-        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimonial dari chef.",
+        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimoni dari chef.",
         "demo": "https://cakfan.github.io/foodyar/",
         "github": "https://github.com/cakfan/foodyar",
         "slug": "foodyar",
@@ -150,7 +207,7 @@
       },
       {
         "name": "DelokFilm",
-        "description": "Platform web buat jelajah dan kelola film serta drama Asia, terinspirasi dari MyDramaList.",
+        "description": "Platform web untuk menjelajahi dan mengelola film serta drama Asia, terinspirasi dari MyDramaList.",
         "demo": "https://delokfilm.vercel.app",
         "github": "https://github.com/cakfan/delok-film-web",
         "slug": null,
@@ -158,7 +215,7 @@
       },
       {
         "name": "Introvesia.com",
-        "description": "Berperan sebagai volunteer dalam pengembangan platform untuk personal growth dan self-reflection.",
+        "description": "Berkontribusi sebagai relawan dalam pengembangan platform untuk pengembangan diri dan refleksi pribadi.",
         "demo": "https://introvesia.com",
         "github": "https://github.com/Introvesia",
         "slug": null,
@@ -226,12 +283,12 @@
     "skills": {
       "frontEnd": "React, Next.js, TypeScript, JavaScript, TailwindCSS, Shadcn-UI, HTML5, CSS3",
       "backEnd": "Express.js, NestJS, Git, Docker, REST API, VS Code",
-      "mobile": "Android (Kotlin) — sekedar tahu",
+      "mobile": "Android (Kotlin) — sekadar tahu",
       "frontEndLabel": "Front-End",
       "backEndLabel": "Back-End & Lainnya",
       "mobileLabel": "Mobile (Basic)"
     },
-    "profile": "Full-Stack Developer yang bersemangat dengan spesialisasi di Next.js, React, TypeScript, dan TailwindCSS. Berpengalaman dalam membangun aplikasi web modern yang cepat, responsif, dan ramah pengguna. Aktif dalam pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berbasis di Jember, Indonesia.",
+    "profile": "Full-Stack Developer yang bersemangat dengan spesialisasi di Next.js, React, TypeScript, dan TailwindCSS. Berpengalaman membangun aplikasi web modern yang cepat, responsif, dan ramah pengguna. Aktif di pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berdomisili di Jember, Indonesia.",
     "education": {
       "degree": "D3 Teknologi Informasi / Teknik Komputer",
       "detail": "Program studi terkait Teknologi Informasi dan Teknik Komputer"
@@ -249,12 +306,15 @@
   "contact": {
     "heading": "Kontak",
     "subtitle": "Yuk kerja sama",
-    "description": "Saya lagi open buat proyek freelance dan peluang full-time. Kalau tertarik, langsung aja hubungi saya!",
-    "location": "Jember, Jawa Timur, Indonesia",
-    "cta": "Hubungi Saya"
+    "description": "Saya sedang terbuka untuk proyek freelance dan peluang full-time. Kalau tertarik, langsung aja hubungi saya!",
+    "email": "Email",
+    "emailAddress": "withcakfan@gmail.com",
+    "locationLabel": "Lokasi",
+    "locationValue": "Taufan Fatahillah · Jember, Jawa Timur, Indonesia",
+    "findOnline": "Temui saya di",
+    "seeWork": "Lihat apa yang pernah saya bangun →"
   },
   "footer": {
-    "reserved": "Hak cipta dilindungi.",
-    "backToTop": "Kembali ke atas"
+    "reserved": "Hak cipta dilindungi."
   }
 }

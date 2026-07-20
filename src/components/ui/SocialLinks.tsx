@@ -75,6 +75,7 @@ export default function SocialLinks({ mode = "hero" }: { mode?: SocialLinksMode 
           key={social.href}
           href={social.href}
           target="_blank"
+          rel="noopener noreferrer"
           className={styles.link}
         >
           <span className={iconStyleByMode[mode]}>
