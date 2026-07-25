@@ -6,7 +6,7 @@ import { useTranslation } from "@/lib/i18n";
 
 const techs = [
   "Next.js", "React", "TypeScript", "TailwindCSS",
-  "JavaScript", "Shadcn-UI", "Express.js", "NestJS",
+  "JavaScript", "Shadcn-UI", "Express.js", "Hono",
   "Git", "Docker", "HTML5", "CSS3",
 ];
 

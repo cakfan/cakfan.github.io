@@ -45,7 +45,7 @@
     "backEnd": "Back-End",
     "tools": "Tools",
     "frontEndList": "React, Next.js, TypeScript, TailwindCSS, Shadcn-UI",
-    "backEndList": "Express.js, NestJS, REST API",
+    "backEndList": "Express.js, Hono, REST API",
     "toolsList": "Git, Docker, VS Code",
     "seeWork": "See what I've built →"
   },
@@ -282,7 +282,7 @@
     },
     "skills": {
       "frontEnd": "React, Next.js, TypeScript, JavaScript, TailwindCSS, Shadcn-UI, HTML5, CSS3",
-      "backEnd": "Express.js, NestJS, Git, Docker, REST API, VS Code",
+      "backEnd": "Express.js, Hono, Git, Docker, REST API, VS Code",
       "mobile": "Android (Kotlin) — familiar level",
       "frontEndLabel": "Front-End",
       "backEndLabel": "Back-End & Others",
