@@ -89,7 +89,7 @@
       "Ensuring Google Maps integration and contact info are immediately accessible for walk-in customers"
     ],
     "results": "Delivered a production site that gives DKM Cakes a professional, trustworthy online presence. The site serves as the single source of truth for product offerings, location, and business hours — replacing fragmented social media as the primary customer touchpoint.",
-    "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+    "stack": ["Astro", "TypeScript", "Vanilla CSS"],
     "liveUrl": "https://cakfan.github.io/dkmcakes/",
     "githubUrl": null,
     "images": ["/projects/dkmcakes.jpg"],
@@ -139,7 +139,7 @@
       "Building trust through design for a service where safety and reliability are paramount"
     ],
     "results": "Created a professional web presence that positions EmasAji as the go-to driving school in Jember. The site provides all the information prospective students need to make a decision and a clear path to contact — streamlining the enrollment funnel.",
-    "stack": ["Next.js", "TypeScript", "TailwindCSS"],
+    "stack": ["Astro", "TypeScript", "Vanilla CSS"],
     "liveUrl": "https://cakfan.github.io/emasaji/",
     "githubUrl": null,
     "images": ["/projects/emasaji.jpg"],
