@@ -127,7 +127,7 @@
     "items": [
       {
         "name": "Wadde",
-        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimoni, dan promosi mobile app.",
+        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimoni, dan promosi mobile app — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/bwa-wadde/",
         "github": "https://github.com/cakfan/bwa-wadde",
         "slug": "bwa-wadde",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Supacars",
-        "description": "Landing page jual-beli dan rental mobil dengan daftar dealer, fitur pencarian, dan integrasi Google Maps.",
+        "description": "Landing page jual-beli dan rental mobil dengan daftar dealer, fitur pencarian, dan integrasi Google Maps — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/supacars/",
         "github": "https://github.com/cakfan/supacars",
         "slug": "supacars",
@@ -143,7 +143,7 @@
       },
       {
         "name": "PastiLaris",
-        "description": "Template landing page SaaS — membantu perusahaan berkembang lewat fitur otomasi, analytics real-time, dan keamanan tingkat tinggi.",
+        "description": "Template landing page SaaS — membantu perusahaan berkembang lewat fitur otomasi, analytics real-time, dan keamanan tingkat tinggi — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/pastilaris/",
         "github": "https://github.com/cakfan/pastilaris",
         "slug": "pastilaris",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Moviez Streaming",
-        "description": "UI mobile untuk streaming film dengan daftar film unggulan, kategori Disney, dan rating bintang — dibangun pakai Next.js.",
+        "description": "UI mobile untuk streaming film dengan daftar film unggulan, kategori Disney, dan rating bintang — dibangun pakai Next.js — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/bwa-moviez/",
         "github": "https://github.com/cakfan/bwa-moviez",
         "slug": "bwa-moviez",
@@ -159,7 +159,7 @@
       },
       {
         "name": "Transaction Dashboard",
-        "description": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran, riwayat transaksi, dan pelacakan status (pending/success/failed).",
+        "description": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran, riwayat transaksi, dan pelacakan status (pending/success/failed) — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/transaction-dashboard/",
         "github": "https://github.com/cakfan/transaction-dashboard",
         "slug": "transaction-dashboard",
@@ -167,7 +167,7 @@
       },
       {
         "name": "Resto",
-        "description": "Landing page restoran dengan daftar restoran pilihan, filter berdasarkan kota, profil chef, dan fitur reservasi online.",
+        "description": "Landing page restoran dengan daftar restoran pilihan, filter berdasarkan kota, profil chef, dan fitur reservasi online — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/resto/",
         "github": "https://github.com/cakfan/resto",
         "slug": "resto",
@@ -175,7 +175,7 @@
       },
       {
         "name": "Foodyar",
-        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimoni dari chef.",
+        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimoni dari chef — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/foodyar/",
         "github": "https://github.com/cakfan/foodyar",
         "slug": "foodyar",
@@ -183,7 +183,7 @@
       },
       {
         "name": "Pricing Pro",
-        "description": "Halaman pricing dengan kartu langganan bertingkat (Basic/Gold), FAQ accordion, dan desain responsif.",
+        "description": "Halaman pricing dengan kartu langganan bertingkat (Basic/Gold), FAQ accordion, dan desain responsif — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/pricing-pro/",
         "github": "https://github.com/cakfan/pricing-pro",
         "slug": "pricing-pro",
@@ -191,7 +191,7 @@
       },
       {
         "name": "Detail Product",
-        "description": "Layar detail produk mobile untuk e-commerce dengan pemilihan warna/ukuran, penghitung jumlah, galeri gambar, dan keranjang yang menempel di bawah.",
+        "description": "Layar detail produk mobile untuk e-commerce dengan pemilihan warna/ukuran, penghitung jumlah, galeri gambar, dan keranjang yang menempel di bawah — proyek BuildWithAngga.",
         "demo": "https://cakfan.github.io/detail-product-mobile/",
         "github": "https://github.com/cakfan/detail-product-mobile",
         "slug": "detail-product-mobile",

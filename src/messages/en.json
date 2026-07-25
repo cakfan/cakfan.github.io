@@ -127,7 +127,7 @@
     "items": [
       {
         "name": "Wadde",
-        "description": "Dark mode landing page for a SaaS platform with multiple pages (Pricing, Contact, About, Sign In), testimonial slider, and mobile app promotion.",
+        "description": "Dark mode landing page for a SaaS platform with multiple pages (Pricing, Contact, About, Sign In), testimonial slider, and mobile app promotion — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/bwa-wadde/",
         "github": "https://github.com/cakfan/bwa-wadde",
         "slug": "bwa-wadde",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Supacars",
-        "description": "Car rental & buy-sell landing page with dealer listings, search filters, and Google Maps integration.",
+        "description": "Car rental & buy-sell landing page with dealer listings, search filters, and Google Maps integration — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/supacars/",
         "github": "https://github.com/cakfan/supacars",
         "slug": "supacars",
@@ -143,7 +143,7 @@
       },
       {
         "name": "PastiLaris",
-        "description": "SaaS landing page — template to help companies grow with automation features, real-time analytics, and high protection.",
+        "description": "SaaS landing page — template to help companies grow with automation features, real-time analytics, and high protection — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/pastilaris/",
         "github": "https://github.com/cakfan/pastilaris",
         "slug": "pastilaris",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Moviez Streaming",
-        "description": "Mobile UI film streaming with featured movies, Disney categories, and star ratings — built with Next.js.",
+        "description": "Mobile UI film streaming with featured movies, Disney categories, and star ratings — built with Next.js — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/bwa-moviez/",
         "github": "https://github.com/cakfan/bwa-moviez",
         "slug": "bwa-moviez",
@@ -159,7 +159,7 @@
       },
       {
         "name": "Transaction Dashboard",
-        "description": "Store dashboard for game top-up transactions with spending overview, transaction history, and status tracking (pending/success/failed).",
+        "description": "Store dashboard for game top-up transactions with spending overview, transaction history, and status tracking (pending/success/failed) — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/transaction-dashboard/",
         "github": "https://github.com/cakfan/transaction-dashboard",
         "slug": "transaction-dashboard",
@@ -167,7 +167,7 @@
       },
       {
         "name": "Resto",
-        "description": "Restaurant landing page with featured restaurants, city-based filtering, expert chef profiles, and online reservations.",
+        "description": "Restaurant landing page with featured restaurants, city-based filtering, expert chef profiles, and online reservations — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/resto/",
         "github": "https://github.com/cakfan/resto",
         "slug": "resto",
@@ -175,7 +175,7 @@
       },
       {
         "name": "Foodyar",
-        "description": "Food recipe landing page with healthy food, lunch, vege dessert, and shake categories, complete with chef testimonials.",
+        "description": "Food recipe landing page with healthy food, lunch, vege dessert, and shake categories, complete with chef testimonials — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/foodyar/",
         "github": "https://github.com/cakfan/foodyar",
         "slug": "foodyar",
@@ -183,7 +183,7 @@
       },
       {
         "name": "Pricing Pro",
-        "description": "Pricing page with tiered subscription cards (Basic/Gold), FAQ accordion, and responsive design.",
+        "description": "Pricing page with tiered subscription cards (Basic/Gold), FAQ accordion, and responsive design — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/pricing-pro/",
         "github": "https://github.com/cakfan/pricing-pro",
         "slug": "pricing-pro",
@@ -191,7 +191,7 @@
       },
       {
         "name": "Detail Product",
-        "description": "Mobile product detail screen for e-commerce with color/size selectors, quantity counter, image gallery, and sticky bottom cart.",
+        "description": "Mobile product detail screen for e-commerce with color/size selectors, quantity counter, image gallery, and sticky bottom cart — BuildWithAngga project.",
         "demo": "https://cakfan.github.io/detail-product-mobile/",
         "github": "https://github.com/cakfan/detail-product-mobile",
         "slug": "detail-product-mobile",

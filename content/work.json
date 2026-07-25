@@ -245,7 +245,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Wadde",
-    "tagline": "Dark mode landing page for a SaaS platform with multiple pages and testimonial slider.",
+    "tagline": "Dark mode landing page for a SaaS platform with multiple pages and testimonial slider — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -257,15 +257,16 @@
     "images": ["/projects/bwa-wadde.jpg"],
     "translations": {
       "id": {
-        "tagline": "Landing page dark mode untuk platform SaaS dengan beberapa halaman dan slider testimoni."
+        "tagline": "Landing page dark mode untuk platform SaaS dengan beberapa halaman dan slider testimoni — proyek BuildWithAngga."
       }
     }
   },
   {
     "slug": "supacars",
+    "tier": 3,
     "category": "experiment",
     "title": "Supacars",
-    "tagline": "Car rental landing page with dealer listings, search filters, and Google Maps integration.",
+    "tagline": "Car rental landing page with dealer listings, search filters, and Google Maps integration — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -277,7 +278,7 @@
     "images": ["/projects/supacars.jpg"],
     "translations": {
       "id": {
-        "tagline": "Landing page sewa mobil dengan daftar dealer, filter pencarian, dan integrasi Google Maps."
+        "tagline": "Landing page sewa mobil dengan daftar dealer, filter pencarian, dan integrasi Google Maps — proyek BuildWithAngga."
       }
     }
   },
@@ -286,7 +287,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "PastiLaris",
-    "tagline": "SaaS landing page template with automation features and real-time analytics.",
+    "tagline": "SaaS landing page template with automation features and real-time analytics — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -298,7 +299,7 @@
     "images": ["/projects/pastilaris.jpg"],
     "translations": {
       "id": {
-        "tagline": "Template landing page SaaS dengan fitur otomasi dan analitik real-time."
+        "tagline": "Template landing page SaaS dengan fitur otomasi dan analitik real-time — proyek BuildWithAngga."
       }
     }
   },
@@ -307,7 +308,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Moviez Streaming",
-    "tagline": "Mobile UI film streaming with featured movies, categories, and star ratings.",
+    "tagline": "Mobile UI film streaming with featured movies, categories, and star ratings — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -319,7 +320,7 @@
     "images": ["/projects/bwa-moviez.jpg"],
     "translations": {
       "id": {
-        "tagline": "UI mobile streaming film dengan film unggulan, kategori, dan rating bintang."
+        "tagline": "UI mobile streaming film dengan film unggulan, kategori, dan rating bintang — proyek BuildWithAngga."
       }
     }
   },
@@ -328,7 +329,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Transaction Dashboard",
-    "tagline": "Store dashboard for game top-up transactions with spending overview and status tracking.",
+    "tagline": "Store dashboard for game top-up transactions with spending overview and status tracking — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -340,7 +341,7 @@
     "images": ["/projects/transaction-dashboard.jpg"],
     "translations": {
       "id": {
-        "tagline": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran dan pelacakan status."
+        "tagline": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran dan pelacakan status — proyek BuildWithAngga."
       }
     }
   },
@@ -349,7 +350,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Resto",
-    "tagline": "Restaurant landing page with city-based filtering, chef profiles, and online reservations.",
+    "tagline": "Restaurant landing page with city-based filtering, chef profiles, and online reservations — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -361,7 +362,7 @@
     "images": ["/projects/resto.jpg"],
     "translations": {
       "id": {
-        "tagline": "Landing page restoran dengan filter berdasarkan kota, profil chef, dan reservasi online."
+        "tagline": "Landing page restoran dengan filter berdasarkan kota, profil chef, dan reservasi online — proyek BuildWithAngga."
       }
     }
   },
@@ -370,7 +371,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Foodyar",
-    "tagline": "Food recipe landing page with healthy categories and chef testimonials.",
+    "tagline": "Food recipe landing page with healthy categories and chef testimonials — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -382,7 +383,7 @@
     "images": ["/projects/foodyar.jpg"],
     "translations": {
       "id": {
-        "tagline": "Landing page resep makanan dengan kategori sehat dan testimoni chef."
+        "tagline": "Landing page resep makanan dengan kategori sehat dan testimoni chef — proyek BuildWithAngga."
       }
     }
   },
@@ -391,7 +392,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Pricing Pro",
-    "tagline": "Pricing page with tiered subscription cards and FAQ accordion.",
+    "tagline": "Pricing page with tiered subscription cards and FAQ accordion — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -403,7 +404,7 @@
     "images": ["/projects/pricing-pro.jpg"],
     "translations": {
       "id": {
-        "tagline": "Halaman pricing dengan kartu langganan bertingkat dan FAQ."
+        "tagline": "Halaman pricing dengan kartu langganan bertingkat dan FAQ — proyek BuildWithAngga."
       }
     }
   },
@@ -412,7 +413,7 @@
     "tier": 3,
     "category": "experiment",
     "title": "Detail Product",
-    "tagline": "Mobile product detail screen for e-commerce with selectors and sticky cart.",
+    "tagline": "Mobile product detail screen for e-commerce with selectors and sticky cart — BuildWithAngga project.",
     "metric": null,
     "context": null,
     "approach": null,
@@ -424,7 +425,7 @@
     "images": ["/projects/detail-product-mobile.jpg"],
     "translations": {
       "id": {
-        "tagline": "Layar detail produk mobile untuk e-commerce dengan selector dan keranjang sticky."
+        "tagline": "Layar detail produk mobile untuk e-commerce dengan selector dan keranjang sticky — proyek BuildWithAngga."
       }
     }
   }
