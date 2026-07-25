@@ -236,6 +236,14 @@
         "github": "https://github.com/cakfan/ecommerce-admin",
         "slug": null,
         "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      },
+      {
+        "name": "API Wilayah Indonesia",
+        "description": "Public read-only API for Indonesian administrative region data — provinces, regencies, districts, villages with postal codes and coordinates.",
+        "demo": null,
+        "github": "https://github.com/cakfan/api-wilayah-indonesia",
+        "slug": "api-wilayah-indonesia",
+        "tech": ["Bun", "Hono", "SQLite", "Zod", "OpenAPI"]
       }
     ]
   },
