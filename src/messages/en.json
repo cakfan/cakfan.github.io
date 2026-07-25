@@ -36,7 +36,7 @@
     "heading": "About",
     "subtitle": "The short version",
     "bio1": "I'm {name}, a {title} based in Jember, East Java. I build web products that solve real problems for real businesses.",
-    "bio2": "Most of my work in the past year has been building websites for local businesses in Jember — a halal bakery and a driving school. Not landing page templates. Real production sites that handle real customers, real orders, and real trust.",
+    "bio2": "Most recently, I took the initiative to build websites for local businesses in Jember — a halal bakery and a driving school. Not landing page templates. Real production sites that handle real customers, real orders, and real trust.",
     "bio3": "Before that, I spent time at BuildWithAngga developing production UIs with Next.js, volunteered on web projects with an international team at Kerja IT Jepang, and spent four years freelancing on Android and web apps for diverse clients.",
     "bio4": "What I care about is building things that work. Fast load times. Clean code. Good SEO. Accessible interfaces. The stuff that actually matters when a real user opens your site on a slow connection in a small town.",
     "bio5": "I'm currently open to full-time opportunities where I can contribute to products that have real impact.",
@@ -94,14 +94,14 @@
   },
   "work": {
     "all": "All",
-    "clientWork": "Client Work",
+    "localBusiness": "Local Business",
     "engineering": "Engineering",
     "experiments": "Experiments",
     "noProjects": "No projects in this category yet.",
     "filterLabel": "Filter by category",
     "pageHeading": "Work",
     "pageSubtitle": "Things I've built",
-    "pageDescription": "Client work, engineering projects, and experiments — organized by impact.",
+    "pageDescription": "Local business projects, engineering projects, and experiments — organized by impact.",
     "businessContext": "Business Context",
     "approachDecisions": "Approach & Decisions",
     "challenges": "Challenges",
@@ -116,7 +116,7 @@
     "liveSite": "Live Site",
     "sourceCode": "Source Code",
     "category": {
-      "client-work": "Client Work",
+      "local-business": "Local Business",
       "engineering": "Engineering",
       "experiment": "Experiments"
     }

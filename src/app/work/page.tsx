@@ -6,7 +6,7 @@ import WorkPageClient from "@/components/work/work-page-client";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Projects and client work by Taufan Fatahillah — from local business websites to engineering experiments.",
+    "Projects and work by Taufan Fatahillah — from local business websites to engineering experiments.",
 };
 
 export default function WorkPage() {

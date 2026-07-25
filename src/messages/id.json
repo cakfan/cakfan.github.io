@@ -36,7 +36,7 @@
     "heading": "Tentang Saya",
     "subtitle": "Versi singkat",
     "bio1": "Saya {name}, seorang {title} yang berdomisili di Jember, Jawa Timur. Saya membangun produk web yang menyelesaikan masalah nyata untuk bisnis nyata.",
-    "bio2": "Sebagian besar pekerjaan saya tahun ini adalah membangun website untuk bisnis lokal di Jember — toko kue halal dan kursus mengemudi. Bukan template landing page. Website production beneran yang menangani pelanggan beneran, pesanan beneran, dan kepercayaan beneran.",
+    "bio2": "Belakangan ini, saya berinisiatif membangun website untuk bisnis lokal di Jember — toko kue halal dan kursus mengemudi. Bukan template landing page. Website production beneran yang menangani pelanggan beneran, pesanan beneran, dan kepercayaan beneran.",
     "bio3": "Sebelumnya, saya pernah di BuildWithAngga mengembangkan UI production pakai Next.js, berkontribusi sebagai relawan di proyek web bersama tim internasional di Kerja IT Jepang, dan empat tahun freelance bikin aplikasi Android dan web untuk berbagai klien.",
     "bio4": "Yang saya pedulikan adalah membangun sesuatu yang berfungsi. Load time cepat. Kode bersih. SEO bagus. Antarmuka yang bisa diakses semua orang. Hal-hal yang benar-benar penting ketika pengguna nyata buka situsmu di koneksi lambat di kota kecil.",
     "bio5": "Saya sekarang tersedia untuk peluang full-time di mana saya bisa berkontribusi pada produk yang punya dampak nyata.",
@@ -94,14 +94,14 @@
   },
   "work": {
     "all": "Semua",
-    "clientWork": "Klien",
+    "localBusiness": "Bisnis Lokal",
     "engineering": "Engineering",
     "experiments": "Eksperimen",
     "noProjects": "Belum ada proyek di kategori ini.",
     "filterLabel": "Filter berdasarkan kategori",
     "pageHeading": "Karya",
     "pageSubtitle": "Beberapa yang pernah saya bangun",
-    "pageDescription": "Klien, proyek engineering, dan eksperimen — diurutkan berdasarkan dampak.",
+    "pageDescription": "Proyek bisnis lokal, proyek engineering, dan eksperimen — diurutkan berdasarkan dampak.",
     "businessContext": "Konteks Bisnis",
     "approachDecisions": "Pendekatan & Keputusan",
     "challenges": "Tantangan",
@@ -116,7 +116,7 @@
     "liveSite": "Situs Live",
     "sourceCode": "Kode Sumber",
     "category": {
-      "client-work": "Klien",
+      "local-business": "Bisnis Lokal",
       "engineering": "Engineering",
       "experiment": "Eksperimen"
     }

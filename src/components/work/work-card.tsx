@@ -33,7 +33,7 @@ function Tier1Card({ item }: { item: WorkItem }) {
         <div className="p-6 md:p-8 flex flex-col justify-between min-w-0 md:max-w-sm">
           <div>
             <span className="text-xs font-medium text-teal uppercase tracking-widest">
-              {t("work.clientWork")}
+              {t("work.localBusiness")}
             </span>
             <h3 className="text-xl sm:text-2xl font-bold tracking-tight mt-2 mb-2">
               {item.title}

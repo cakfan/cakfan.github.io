@@ -34,7 +34,7 @@ export default function WorkPageClient({ items }: { items: WorkItem[] }) {
       {tier1.length > 0 && (
         <section className="mb-16">
           <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-6">
-            {t("work.clientWork")}
+            {t("work.localBusiness")}
           </h2>
           <div className="grid gap-8">
             {tier1.map((item) => (

@@ -17,7 +17,7 @@ export default function WorkFilter({
 
   const filters: { value: FilterOption; label: string }[] = [
     { value: "all", label: t("work.all") },
-    { value: "client-work", label: t("work.clientWork") },
+        { value: "local-business", label: t("work.localBusiness") },
     { value: "engineering", label: t("work.engineering") },
     { value: "experiment", label: t("work.experiments") },
   ];
