@@ -34,6 +34,7 @@ export interface WorkItem {
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  npmUrl?: string;
   images: string[];
   clientMeta?: {
     address?: string;

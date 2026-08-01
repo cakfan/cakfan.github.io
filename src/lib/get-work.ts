@@ -24,6 +24,7 @@ function sanitizeWorkItem(raw: Record<string, unknown>): WorkItem {
     stack: raw.stack as string[],
     liveUrl: (raw.liveUrl as string) ?? undefined,
     githubUrl: (raw.githubUrl as string) ?? undefined,
+    npmUrl: (raw.npmUrl as string) ?? undefined,
     images: raw.images as string[],
     clientMeta: raw.clientMeta
       ? {

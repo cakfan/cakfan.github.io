@@ -14,16 +14,18 @@ export default function CaseStudyHero({ item }: { item: WorkItem }) {
   return (
     <div className="mb-12">
       <div className="relative aspect-video md:aspect-[21/9] rounded-xl overflow-hidden bg-muted mb-8">
-        <ViewTransition name={`work-image-${item.slug}`}>
-          <Image
-            src={item.images[0]}
-            alt={`${item.title} screenshot`}
-            fill
-            sizes="(max-width: 768px) 100vw, 900px"
-            className="object-cover object-top"
-            priority
-          />
-        </ViewTransition>
+        {item.images[0] && (
+          <ViewTransition name={`work-image-${item.slug}`}>
+            <Image
+              src={item.images[0]}
+              alt={`${item.title} screenshot`}
+              fill
+              sizes="(max-width: 768px) 100vw, 900px"
+              className="object-cover object-top"
+              priority
+            />
+          </ViewTransition>
+        )}
       </div>
 
       <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -66,6 +68,16 @@ export default function CaseStudyHero({ item }: { item: WorkItem }) {
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
           >
             {t("work.sourceCode")}
+          </Link>
+        )}
+        {item.npmUrl && (
+          <Link
+            href={item.npmUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border text-sm font-medium hover:bg-muted transition-colors"
+          >
+            {t("work.npm")}
           </Link>
         )}
       </div>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ViewTransition } from "react";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Package } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import { assets } from "@/assets";
 import type { WorkItem } from "@/types/work";
@@ -19,15 +19,17 @@ function Tier1Card({ item }: { item: WorkItem }) {
     >
       <div className="grid md:grid-cols-[1fr,auto] gap-0">
         <div className="relative aspect-video md:aspect-[4/3] overflow-hidden bg-muted">
-          <ViewTransition name={`work-image-${item.slug}`}>
-            <Image
-              src={item.images[0]}
-              alt={`${item.title} screenshot`}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-            />
-          </ViewTransition>
+          {item.images[0] && (
+            <ViewTransition name={`work-image-${item.slug}`}>
+              <Image
+                src={item.images[0]}
+                alt={`${item.title} screenshot`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+            </ViewTransition>
+          )}
         </div>
 
         <div className="p-6 md:p-8 flex flex-col justify-between min-w-0 md:max-w-sm">
@@ -63,15 +65,17 @@ function Tier2Card({ item }: { item: WorkItem }) {
       className="group block rounded-xl border bg-background overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
     >
       <div className="relative aspect-video overflow-hidden bg-muted">
-        <ViewTransition name={`work-image-${item.slug}`}>
-          <Image
-            src={item.images[0]}
-            alt={`${item.title} screenshot`}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 384px"
-            className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-          />
-        </ViewTransition>
+        {item.images[0] && (
+          <ViewTransition name={`work-image-${item.slug}`}>
+            <Image
+              src={item.images[0]}
+              alt={`${item.title} screenshot`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 384px"
+              className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            />
+          </ViewTransition>
+        )}
       </div>
 
       <div className="p-5">
@@ -81,6 +85,17 @@ function Tier2Card({ item }: { item: WorkItem }) {
               {t("work.engineering")}
             </span>
             <h3 className="text-base font-semibold mt-1">{item.title}</h3>
+          </div>
+          <div className="flex items-center gap-1.5 shrink-0 mt-1">
+            {item.liveUrl && (
+              <ExternalLink size={13} className="text-muted-foreground" aria-hidden="true" />
+            )}
+            {item.githubUrl && (
+              <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
+            )}
+            {item.npmUrl && (
+              <Package size={13} className="text-muted-foreground" aria-hidden="true" />
+            )}
           </div>
         </div>
         <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2">
@@ -99,15 +114,17 @@ function Tier3Card({ item }: { item: WorkItem }) {
       className="group flex items-center gap-4 p-3 rounded-lg border bg-background hover:bg-muted/50 transition-colors"
     >
       <div className="relative w-16 h-12 rounded overflow-hidden bg-muted shrink-0">
-        <ViewTransition name={`work-image-${item.slug}`}>
-          <Image
-            src={item.images[0]}
-            alt={`${item.title} screenshot`}
-            fill
-            sizes="64px"
-            className="object-cover object-top"
-          />
-        </ViewTransition>
+        {item.images[0] && (
+          <ViewTransition name={`work-image-${item.slug}`}>
+            <Image
+              src={item.images[0]}
+              alt={`${item.title} screenshot`}
+              fill
+              sizes="64px"
+              className="object-cover object-top"
+            />
+          </ViewTransition>
+        )}
       </div>
       <div className="min-w-0 flex-1">
         <h3 className="text-sm font-medium truncate">{item.title}</h3>
@@ -119,6 +136,9 @@ function Tier3Card({ item }: { item: WorkItem }) {
         )}
         {item.githubUrl && (
           <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
+        )}
+        {item.npmUrl && (
+          <Package size={12} className="text-muted-foreground" aria-hidden="true" />
         )}
       </div>
     </Link>

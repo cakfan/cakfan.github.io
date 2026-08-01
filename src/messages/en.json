@@ -115,6 +115,7 @@
     "viewAllWork": "← View all work",
     "liveSite": "Live Site",
     "sourceCode": "Source Code",
+    "npm": "View on npm",
     "category": {
       "local-business": "Local Business",
       "engineering": "Engineering",
