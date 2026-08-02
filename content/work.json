@@ -19,9 +19,10 @@
     "results": "Published 4 npm packages — @ongkir-sdk/core, biteship, komerce, and hono. v1 covers read-only rates and tracking; v2 adds createShipment (Biteship creates real orders, Komerce throws CREATE_SHIPMENT_NOT_SUPPORTED per tier limits). Both adapters pass the same contract test suite, and the Hono middleware exposes the whole flow as REST endpoints.",
     "stack": ["TypeScript", "Bun", "Hono", "Biome", "Changesets"],
     "liveUrl": null,
+    "docsUrl": "https://cakfan.github.io/ongkir-sdk/",
     "githubUrl": "https://github.com/cakfan/ongkir-sdk",
     "npmUrl": "https://www.npmjs.com/package/@ongkir-sdk/core",
-    "images": ["/projects/placeholder.svg"],
+    "images": ["/projects/ongkir-sdk.jpg"],
     "translations": {
       "id": {
         "tagline": "SDK TypeScript multi-provider untuk cek tarif & lacak pengiriman Indonesia — Biteship, Komerce (RajaOngkir), Shipper — satu kontrak ShippingProvider, bawa API key sendiri, runtime-agnostic.",

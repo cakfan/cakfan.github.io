@@ -33,6 +33,7 @@ export interface WorkItem {
   results?: string;
   stack: string[];
   liveUrl?: string;
+  docsUrl?: string;
   githubUrl?: string;
   npmUrl?: string;
   images: string[];

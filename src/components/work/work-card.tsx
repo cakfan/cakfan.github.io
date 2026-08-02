@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ViewTransition } from "react";
-import { ExternalLink, Package } from "lucide-react";
+import { ExternalLink, Package, BookOpen } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import { assets } from "@/assets";
 import type { WorkItem } from "@/types/work";
@@ -90,6 +90,9 @@ function Tier2Card({ item }: { item: WorkItem }) {
             {item.liveUrl && (
               <ExternalLink size={13} className="text-muted-foreground" aria-hidden="true" />
             )}
+            {item.docsUrl && (
+              <BookOpen size={13} className="text-muted-foreground" aria-hidden="true" />
+            )}
             {item.githubUrl && (
               <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
             )}
@@ -133,6 +136,9 @@ function Tier3Card({ item }: { item: WorkItem }) {
       <div className="flex items-center gap-1 shrink-0">
         {item.liveUrl && (
           <ExternalLink size={12} className="text-muted-foreground" aria-hidden="true" />
+        )}
+        {item.docsUrl && (
+          <BookOpen size={12} className="text-muted-foreground" aria-hidden="true" />
         )}
         {item.githubUrl && (
           <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
