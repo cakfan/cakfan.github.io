@@ -14,7 +14,7 @@ export default function Philosophy() {
           {t("home.philosophyHeading")}
         </h2>
 
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+        <div className="space-y-6 text-lg text-muted-foreground leading-[1.75] text-pretty">
           <p>{t("home.philosophyP1")}</p>
           <p>{t("home.philosophyP2")}</p>
           <p>{t("home.philosophyP3")}</p>

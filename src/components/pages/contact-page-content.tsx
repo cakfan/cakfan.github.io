@@ -14,7 +14,7 @@ export default function ContactPageContent() {
         <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
           {t("contact.heading")}
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-balance">
           {t("contact.subtitle")}
         </h1>
 

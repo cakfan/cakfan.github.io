@@ -10,7 +10,7 @@ export default function TechStack({
       {items.map((item) => (
         <li
           key={item}
-          className="text-xs text-muted-foreground tracking-wide"
+          className="text-sm text-muted-foreground tracking-wide"
         >
           {item}
         </li>

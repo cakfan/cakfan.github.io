@@ -10,7 +10,7 @@ export default function HomeCta() {
   return (
     <section className="py-20 border-t">
       <div className="container-section text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 text-balance">
           {t("home.ctaHeading")}
         </h2>
         <p className="text-muted-foreground mb-8 max-w-md mx-auto">

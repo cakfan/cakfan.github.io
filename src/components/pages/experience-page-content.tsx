@@ -12,7 +12,7 @@ export default function ExperiencePageContent() {
         <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
           {t("experience.heading")}
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12 text-balance">
           {t("experience.subtitle")}
         </h1>
 
@@ -34,9 +34,9 @@ export default function ExperiencePageContent() {
                 </div>
                 <h3 className="font-semibold">{exp.role}</h3>
                 <p className="text-sm text-teal mb-3">{exp.company}</p>
-                <ul className="text-sm text-muted-foreground space-y-1.5">
+                <ul className="text-base text-muted-foreground space-y-1.5">
                   {exp.descriptions.map((bullet, j) => (
-                    <li key={j} className="flex gap-2">
+                    <li key={j} className="flex gap-2 leading-relaxed">
                       <span className="text-teal/60 shrink-0" aria-hidden="true">—</span>
                       <span>{bullet}</span>
                     </li>

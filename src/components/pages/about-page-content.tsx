@@ -14,11 +14,11 @@ export default function AboutPageContent() {
         <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
           {t("about.heading")}
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-balance">
           {t("about.subtitle")}
         </h1>
 
-        <div className="space-y-6 text-muted-foreground leading-relaxed">
+        <div className="space-y-6 text-base lg:text-lg text-muted-foreground leading-[1.75] text-pretty">
           <p>{t("about.bio1").replace("{name}", config.name).replace("{title}", config.title)}</p>
           <p>{t("about.bio2")}</p>
           <p>{t("about.bio3")}</p>

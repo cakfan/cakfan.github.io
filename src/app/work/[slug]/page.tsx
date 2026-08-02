@@ -29,7 +29,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
   return (
     <section className="section-padding">
-      <div className="container-section max-w-3xl mx-auto">
+      <div className="container-section max-w-2xl mx-auto">
         {work.tier === 1 ? (
           <Tier1Template work={work} />
         ) : (

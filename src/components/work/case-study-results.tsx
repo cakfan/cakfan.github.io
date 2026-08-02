@@ -3,6 +3,7 @@
 import { useTranslation } from "@/lib/i18n";
 import type { WorkItem } from "@/types/work";
 import MetricStat from "@/components/work/metric-stat";
+import Prose from "@/components/ui/Prose";
 
 export default function CaseStudyResults({ item }: { item: WorkItem }) {
   const { t } = useTranslation();
@@ -20,13 +21,7 @@ export default function CaseStudyResults({ item }: { item: WorkItem }) {
         </div>
       )}
 
-      {item.results && (
-        <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-            {item.results}
-          </p>
-        </div>
-      )}
+      {item.results && <Prose text={item.results} />}
 
       {item.clientMeta && (
         <div className="mt-8 p-6 rounded-xl border bg-muted/30">

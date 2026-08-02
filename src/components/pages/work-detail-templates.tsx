@@ -6,6 +6,7 @@ import type { WorkItem } from "@/types/work";
 import CaseStudyHero from "@/components/work/case-study-hero";
 import CaseStudyResults from "@/components/work/case-study-results";
 import CaseStudyCta from "@/components/work/case-study-cta";
+import Prose from "@/components/ui/Prose";
 
 export function Tier1Template({ work }: { work: WorkItem }) {
   const { t, locale } = useTranslation();
@@ -16,32 +17,30 @@ export function Tier1Template({ work }: { work: WorkItem }) {
       <CaseStudyHero item={w} />
 
       {w.context && (
-        <section className="py-10 border-t">
+        <section className="py-12 border-t">
           <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-6">
             {t("work.businessContext")}
           </h2>
-          <p className="text-muted-foreground leading-relaxed whitespace-pre-line max-w-prose">
-            {w.context}
-          </p>
+          <Prose text={w.context} />
         </section>
       )}
 
       {(w.approach || w.challenges) && (
-        <section className="py-10 border-t">
+        <section className="py-12 border-t">
           <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-6">
             {t("work.approachDecisions")}
           </h2>
           {w.approach && (
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line max-w-prose mb-6">
-              {w.approach}
-            </p>
+            <div className="mb-6">
+              <Prose text={w.approach} />
+            </div>
           )}
           {w.challenges && w.challenges.length > 0 && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold mb-3">{t("work.challenges")}</h3>
               <ul className="space-y-2">
                 {w.challenges.map((c, i) => (
-                  <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                  <li key={i} className="text-base text-muted-foreground flex gap-2 leading-relaxed">
                     <span className="text-teal shrink-0">—</span>
                     <span>{c}</span>
                   </li>
@@ -52,7 +51,7 @@ export function Tier1Template({ work }: { work: WorkItem }) {
         </section>
       )}
 
-      <section className="py-10 border-t">
+      <section className="py-12 border-t">
         <CaseStudyResults item={w} />
       </section>
 
@@ -70,20 +69,16 @@ export function Tier2Template({ work }: { work: WorkItem }) {
       <CaseStudyHero item={w} />
 
       {(w.approach || w.results) && (
-        <section className="py-10 border-t">
+        <section className="py-12 border-t">
           <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-6">
             {t("work.aboutProject")}
           </h2>
           {w.approach && (
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line max-w-prose mb-4">
-              {w.approach}
-            </p>
+            <div className="mb-4">
+              <Prose text={w.approach} />
+            </div>
           )}
-          {w.results && (
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line max-w-prose">
-              {w.results}
-            </p>
-          )}
+          {w.results && <Prose text={w.results} />}
         </section>
       )}
 

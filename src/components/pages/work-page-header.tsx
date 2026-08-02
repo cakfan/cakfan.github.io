@@ -10,7 +10,7 @@ export default function WorkPageHeader() {
       <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
         {t("work.pageHeading")}
       </p>
-      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-balance">
         {t("work.pageSubtitle")}
       </h1>
       <p className="text-muted-foreground text-lg">

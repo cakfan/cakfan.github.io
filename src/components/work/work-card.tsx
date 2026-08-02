@@ -40,7 +40,7 @@ function Tier1Card({ item }: { item: WorkItem }) {
             <h3 className="text-xl sm:text-2xl font-bold tracking-tight mt-2 mb-2">
               {item.title}
             </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base text-muted-foreground leading-relaxed mb-4">
               {item.tagline}
             </p>
             <TechStack items={item.stack} className="mb-4" />

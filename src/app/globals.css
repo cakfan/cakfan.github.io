@@ -47,7 +47,7 @@
     --secondary: 92% 0.003 90;
     --secondary-foreground: 14% 0.005 80;
     --muted: 92% 0.003 90;
-    --muted-foreground: 45% 0.01 80;
+    --muted-foreground: 40% 0.01 80;
     --accent: 92% 0.003 90;
     --accent-foreground: 14% 0.005 80;
     --destructive: 55% 0.22 27;
@@ -102,6 +102,9 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
   }
   html {
     scroll-behavior: smooth;
@@ -228,7 +231,7 @@
     --secondary: 92% 0.003 90;
     --secondary-foreground: 14% 0.005 80;
     --muted: 92% 0.003 90;
-    --muted-foreground: 45% 0.01 80;
+    --muted-foreground: 40% 0.01 80;
     --accent: 92% 0.003 90;
     --accent-foreground: 14% 0.005 80;
     --border: 87% 0.003 90;

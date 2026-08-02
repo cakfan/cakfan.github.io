@@ -20,7 +20,7 @@ export default function CaseStudyHero({ item }: { item: WorkItem }) {
               src={item.images[0]}
               alt={`${item.title} screenshot`}
               fill
-              sizes="(max-width: 768px) 100vw, 900px"
+              sizes="(max-width: 768px) 100vw, 672px"
               className="object-cover object-top"
               priority
             />
@@ -40,11 +40,11 @@ export default function CaseStudyHero({ item }: { item: WorkItem }) {
         )}
       </div>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-balance">
         {item.title}
       </h1>
 
-      <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+      <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed mb-8 text-pretty">
         {item.tagline}
       </p>
 
