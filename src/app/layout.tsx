@@ -83,8 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="oklch(14% 0.005 80)" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="oklch(97.5% 0.002 90)" media="(prefers-color-scheme: light)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
