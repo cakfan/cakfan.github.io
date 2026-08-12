@@ -4,6 +4,7 @@
     "about": "About",
     "work": "Work",
     "experience": "Experience",
+    "services": "Services",
     "contact": "Contact",
     "lightMode": "Light Mode",
     "darkMode": "Dark Mode",
@@ -274,6 +275,80 @@
         "slug": "emasaji"
       }
     ]
+  },
+  "services": {
+    "heading": "Services",
+    "subtitle": "Landing Page Development for Small Businesses",
+    "description": "Fast, professional, and findable on Google — built from scratch for local businesses like yours.",
+    "benefitsHeading": "Why Choose This Service",
+    "benefits": [
+      {
+        "title": "Fast & Lightweight",
+        "description": "Sites load in under 2 seconds — crucial for visitors on phones with modest connections."
+      },
+      {
+        "title": "Findable on Google",
+        "description": "Built search-engine friendly so potential customers can easily discover your business."
+      },
+      {
+        "title": "Responsive on Every Screen",
+        "description": "Looks great on phones, tablets, and laptops — since most visitors come from mobile."
+      },
+      {
+        "title": "Professional Design",
+        "description": "A modern, trustworthy look that builds customer confidence in your business."
+      },
+      {
+        "title": "Free Consultation",
+        "description": "We discuss your needs first at no cost — you only commit when it's a fit."
+      },
+      {
+        "title": "Owned End to End",
+        "description": "One person handling design, development, and deployment. Consistent, clean results."
+      }
+    ],
+    "featuresHeading": "Features You Can Get",
+    "features": [
+      "Multi-page (home, products, contact, and more)",
+      "Google Maps integration",
+      "WhatsApp button for direct chat",
+      "Product or service catalog",
+      "Contact form",
+      "Basic SEO optimization",
+      "Traffic analytics",
+      "Design tailored to your business identity"
+    ],
+    "processHeading": "How It Works",
+    "processSubtitle": "Simple and transparent from start to finish.",
+    "process": [
+      {
+        "title": "Consultation",
+        "description": "We discuss your business, target customers, and needed features. Free, no commitment."
+      },
+      {
+        "title": "Design",
+        "description": "A draft is created before coding, so you can see the direction and request changes."
+      },
+      {
+        "title": "Development",
+        "description": "Built to the same standards as enterprise products: fast, secure, and easy to manage."
+      },
+      {
+        "title": "Review & Revisions",
+        "description": "You try the site, share feedback, and revisions are made until you're happy."
+      },
+      {
+        "title": "Deploy & Handover",
+        "description": "The site goes live, connected to your domain, ready to welcome new customers."
+      }
+    ],
+    "examplesHeading": "Example Results",
+    "examplesSubtitle": "Real websites I built for businesses in Jember.",
+    "examplesVisitSite": "Visit Website",
+    "examplesViewCase": "View case study →",
+    "ctaHeading": "Need a website for your business?",
+    "ctaSubtitle": "Let's talk first — free, with no commitment.",
+    "ctaButton": "Get in Touch"
   },
   "cv": {
     "toolbar": {

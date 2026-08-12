@@ -16,9 +16,44 @@ export async function generateMetadata({ params }: WorkDetailPageProps): Promise
   const work = getWorkBySlug(slug);
   if (!work) return { title: "Not Found" };
 
+  const title = `${work.title} — Taufan Fatahillah`;
+  const siteUrl = "https://cakfan.github.io";
+  const firstImage = work.images[0];
+  let ogImage = `${siteUrl}/og.png`;
+  if (firstImage) {
+    if (firstImage.startsWith("http")) {
+      ogImage = firstImage;
+    } else if (!firstImage.endsWith(".svg")) {
+      ogImage = `${siteUrl}${firstImage}`;
+    }
+  }
+
   return {
     title: work.title,
     description: work.tagline,
+    alternates: { canonical: `${siteUrl}/work/${work.slug}` },
+    openGraph: {
+      title,
+      description: work.tagline,
+      url: `${siteUrl}/work/${work.slug}`,
+      siteName: "Taufan Fatahillah",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${work.title} screenshot`,
+        },
+      ],
+      type: "website",
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: work.tagline,
+      images: [ogImage],
+    },
   };
 }
 

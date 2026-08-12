@@ -4,6 +4,7 @@
     "about": "Tentang Saya",
     "work": "Karya",
     "experience": "Pengalaman",
+    "services": "Jasa",
     "contact": "Kontak",
     "lightMode": "Mode Terang",
     "darkMode": "Mode Gelap",
@@ -274,6 +275,80 @@
         "slug": "emasaji"
       }
     ]
+  },
+  "services": {
+    "heading": "Jasa",
+    "subtitle": "Pembuatan Landing Page untuk UMKM",
+    "description": "Website cepat, profesional, dan bisa dicari di Google — dibangun dari nol sampai jadi untuk bisnis lokal seperti kamu.",
+    "benefitsHeading": "Kenapa Jasa Ini?",
+    "benefits": [
+      {
+        "title": "Cepat & Ringan",
+        "description": "Website dimuat di bawah 2 detik — penting buat pengunjung dari HP di koneksi yang pas-pasan."
+      },
+      {
+        "title": "Muncul di Google",
+        "description": "Dibangun ramah SEO supaya calon pelanggan mudah menemukan bisnismu saat mencarinya di Google."
+      },
+      {
+        "title": "Responsive di Semua Layar",
+        "description": "Tampil rapi di HP, tablet, maupun laptop — karena sebagian besar pengunjung datang dari HP."
+      },
+      {
+        "title": "Desain Profesional",
+        "description": "Tampilan modern dan meyakinkan yang membangun kepercayaan pelanggan pada bisnismu."
+      },
+      {
+        "title": "Gratis Konsultasi",
+        "description": "Diskusi dulu soal kebutuhan tanpa biaya — kalau cocok baru lanjut ke pengerjaan."
+      },
+      {
+        "title": "Bertanggung Jawab Sampai Jadi",
+        "description": "Satu tangan yang mengerjakan desain, development, sampai deploy. Hasilnya konsisten dan rapi."
+      }
+    ],
+    "featuresHeading": "Fitur yang Bisa Disertakan",
+    "features": [
+      "Multi-halaman (beranda, produk, kontak, dan lainnya)",
+      "Integrasi Google Maps",
+      "Tombol WhatsApp untuk chat langsung",
+      "Katalog produk atau layanan",
+      "Form kontak",
+      "Optimasi SEO dasar",
+      "Analitik kunjungan",
+      "Desain sesuai identitas bisnismu"
+    ],
+    "processHeading": "Proses Pengerjaan",
+    "processSubtitle": "Sederhana dan transparan dari awal sampai selesai.",
+    "process": [
+      {
+        "title": "Konsultasi Kebutuhan",
+        "description": "Kita bahas bisnismu, target pelanggan, dan fitur yang dibutuhkan. Gratis, tanpa komitmen."
+      },
+      {
+        "title": "Desain",
+        "description": "Draft tampilan dibuat sebelum coding, biar kamu bisa lihat arahnya dan minta revisi."
+      },
+      {
+        "title": "Development",
+        "description": "Website dibangun dengan standar yang sama seperti produk enterprise: cepat, aman, dan mudah dikelola."
+      },
+      {
+        "title": "Review & Revisi",
+        "description": "Kamu mencoba websitenya, masukan diterima, dan revisi dikerjakan sampai puas."
+      },
+      {
+        "title": "Deploy & Serah Terima",
+        "description": "Website diluncurkan, terhubung ke domain, dan bisnismu siap menerima pelanggan baru."
+      }
+    ],
+    "examplesHeading": "Contoh Hasil",
+    "examplesSubtitle": "Website nyata yang saya buat untuk bisnis di Jember.",
+    "examplesVisitSite": "Kunjungi Website",
+    "examplesViewCase": "Lihat studi kasus →",
+    "ctaHeading": "Butuh website untuk bisnismu?",
+    "ctaSubtitle": "Yuk diskusi dulu — gratis, tanpa komitmen apa pun.",
+    "ctaButton": "Hubungi Saya"
   },
   "cv": {
     "toolbar": {

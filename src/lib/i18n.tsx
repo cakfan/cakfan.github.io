@@ -52,8 +52,10 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    const initialLocale = getInitialLocale();
     // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional: mounted flag prevents hydration mismatch
-    setLocaleState(getInitialLocale());
+    setLocaleState(initialLocale);
+    document.documentElement.lang = initialLocale;
     setMounted(true);
   }, []);
 
