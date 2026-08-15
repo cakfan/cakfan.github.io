@@ -42,6 +42,48 @@
     }
   },
   {
+    "slug": "accurate-mcp-server",
+    "tier": 2,
+    "category": "engineering",
+    "title": "Accurate MCP Server",
+    "tagline": "MCP server that connects AI assistants like Claude to Accurate Online data — ask about stock, invoices, or financial reports in natural language and get answers from real accounting data.",
+    "metric": {
+      "value": "7",
+      "label": "MCP tools"
+    },
+    "context": "Many Indonesian businesses run their books on Accurate Online, but that data is locked behind an OAuth-protected API that needs session handling and rate-limit awareness. This project exposes it to AI assistants through the Model Context Protocol, so non-technical users can ask about stock, invoices, and reports in plain language.",
+    "approach": "Built a stdio-based MCP server in TypeScript on Bun. The Accurate client wraps authentication — automatic OAuth login via bun run login with auto-refreshing tokens, or a static token fallback — plus session/host management, HTTP calls with retry on stale sessions and backoff on HTTP 429, and light caching for master data. Seven MCP tools cover items, sales and purchase invoices, profit & loss, cash & bank balances, and receivables aging. Raw Accurate API errors are mapped to clear Indonesian messages the AI can relay accurately.",
+    "challenges": [
+      "Mapping raw Accurate API errors (invalid_token, InsufficientScopeException, empty database lists) into clear, actionable messages for the AI",
+      "Handling OAuth token refresh automatically so users log in once instead of copy-pasting access tokens",
+      "Dealing with Accurate quirks — a redirectable API host (HTTP 308), stale sessions that need a database re-open, and rate limits on 429"
+    ],
+    "results": "A working MCP server with 7 tools for items, sales/purchase invoices, profit & loss, cash & bank, and receivables aging. Log in once with bun run login and tokens refresh automatically. Includes bun run demo to generate a question-answer transcript ready for screenshots and videos.",
+    "stack": ["TypeScript", "Bun", "MCP"],
+    "liveUrl": null,
+    "docsUrl": null,
+    "githubUrl": "https://github.com/cakfan/accurate-mcp-server",
+    "npmUrl": null,
+    "images": ["/projects/placeholder.svg"],
+    "translations": {
+      "id": {
+        "tagline": "MCP server yang menghubungkan AI assistant seperti Claude ke data Accurate Online — tanya stok barang, faktur, atau laporan keuangan dalam bahasa natural dan dapat jawaban dari data akuntansi sungguhan.",
+        "metric": {
+          "value": "7",
+          "label": "tools MCP"
+        },
+        "context": "Banyak bisnis Indonesia mencatat keuangan di Accurate Online, tapi datanya terkunci di balik API ber-OAuth yang butuh penanganan session dan rate limit. Proyek ini membuka data itu untuk AI assistant lewat Model Context Protocol, jadi pengguna non-teknis bisa tanya soal stok, faktur, dan laporan dengan bahasa biasa.",
+        "approach": "Membangun MCP server berbasis stdio dalam TypeScript di atas Bun. Accurate client membungkus autentikasi — login OAuth otomatis lewat bun run login dengan refresh token otomatis, atau fallback token statis — plus manajemen session/host, panggilan HTTP dengan retry saat session basi dan backoff saat HTTP 429, serta caching ringan untuk data master. Tujuh tools MCP mencakup barang, faktur penjualan/pembelian, laba rugi, saldo kas & bank, dan umur piutang. Error mentah dari API Accurate dipetakan ke pesan Bahasa Indonesia yang jelas agar bisa disampaikan AI dengan akurat.",
+        "challenges": [
+          "Memetakan error mentah API Accurate (invalid_token, InsufficientScopeException, daftar database kosong) jadi pesan yang jelas dan bisa ditindaklanjuti untuk AI",
+          "Menangani refresh token OAuth secara otomatis supaya pengguna cukup login sekali tanpa copy-paste access token",
+          "Menangani hal-hal khas Accurate — host API yang bisa redirect (HTTP 308), session basi yang butuh buka ulang database, dan rate limit saat HTTP 429"
+        ],
+        "results": "MCP server yang berfungsi dengan 7 tools untuk barang, faktur penjualan/pembelian, laba rugi, kas & bank, dan umur piutang. Login sekali lewat bun run login dan token di-refresh otomatis. Dilengkapi bun run demo untuk menghasilkan transkrip tanya-jawab siap pakai untuk screenshot dan video."
+      }
+    }
+  },
+  {
     "slug": "chat-widget",
     "tier": 2,
     "category": "engineering",
