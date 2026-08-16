@@ -28,9 +28,12 @@ export async function generateMetadata({ params }: WorkDetailPageProps): Promise
     }
   }
 
+  const keywords = [work.title, ...work.stack, "portfolio", "Taufan Fatahillah"];
+
   return {
     title: work.title,
     description: work.tagline,
+    keywords,
     alternates: { canonical: `${siteUrl}/work/${work.slug}` },
     openGraph: {
       title,
