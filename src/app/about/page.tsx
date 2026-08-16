@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Full-Stack Developer based in Jember, Indonesia — building for business results, not just demos.",
+  keywords: [
+    "Taufan Fatahillah",
+    "Full-Stack Developer",
+    "Jember",
+    "Indonesia",
+    "About",
+  ],
   alternates: { canonical: `${siteUrl}/about` },
   openGraph: {
     title: "About — Taufan Fatahillah",

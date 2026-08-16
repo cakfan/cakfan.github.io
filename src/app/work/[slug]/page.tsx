@@ -43,8 +43,6 @@ export async function generateMetadata({ params }: WorkDetailPageProps): Promise
       images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
           alt: `${work.title} screenshot`,
         },
       ],
@@ -65,8 +63,20 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
   const work = getWorkBySlug(slug);
   if (!work) notFound();
 
+  const siteUrl = "https://cakfan.github.io";
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Work", item: `${siteUrl}/work` },
+      { "@type": "ListItem", position: 3, name: work.title, item: `${siteUrl}/work/${work.slug}` },
+    ],
+  };
+
   return (
     <section className="section-padding">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="container-section max-w-2xl mx-auto">
         {work.tier === 1 ? (
           <Tier1Template work={work} />
