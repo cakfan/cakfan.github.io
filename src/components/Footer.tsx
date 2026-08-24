@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="border-t py-8">
       <div className="container-section flex items-center justify-center">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Taufan Fatahillah. {t("footer.reserved")}
+          &copy; {new Date().getFullYear()} Jabir Dev. {t("footer.reserved")}
         </p>
       </div>
     </footer>

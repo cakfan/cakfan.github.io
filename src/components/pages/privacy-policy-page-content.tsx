@@ -32,9 +32,10 @@ export default function PrivacyPolicyPageContent() {
             1. Introduction
           </h2>
           <p>
-            This Privacy Policy describes how Taufan Fatahillah (&quot;Developer&quot;)
-            collects, uses, and protects data when you use applications published
-            under this developer account on Google Play Store.
+            This Privacy Policy describes how Jabir Dev (&quot;Developer&quot;)
+            collects, uses, and protects data when you use the Harga Pangan
+            Indonesia application published under this developer account on
+            Google Play Store.
           </p>
 
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
