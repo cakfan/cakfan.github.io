@@ -1,5 +1,45 @@
 [
   {
+    "slug": "halal-mui",
+    "tier": 2,
+    "category": "engineering",
+    "title": "Halal MUI",
+    "tagline": "Android app to check BPJPH halal certificates & BPOM registrations in one search box — by certificate number, registration number, or product name.",
+    "metric": {
+      "value": "1K+",
+      "label": "downloads on Google Play"
+    },
+    "context": "Verifying halal status and BPOM legality in Indonesia means juggling two official websites — bpjph.halal.go.id and cekbpom.pom.go.id — both clunky on mobile and requiring users to already know which type of number they hold. Careful consumers, resellers, and business owners need a fast answer: is this product certified and legal?",
+    "approach": "Built a native Android app in Kotlin that unifies both official sources behind a single smart search box. The app auto-detects input type — a BPJPH halal certificate number (ID prefix), a BPOM registration number (MD/ML/NA/NIE), or free-text product name — and renders normalized detail views with links back to the official source. Includes voice search, an automatic on-device check history, share sheets for WhatsApp/Telegram, system-following dark theme, and EN/ID localization.",
+    "challenges": [
+      "Unifying two government data sources with different query formats into one search box without forcing users to pick a category first",
+      "Keeping result parsing resilient against changes on the official BPJPH & BPOM websites",
+      "Presenting results as helpful while keeping the unofficial-tool disclaimer prominent so users still verify with official sources"
+    ],
+    "results": "Published on Google Play with 1K+ downloads. One-search checking across BPJPH halal certificates and BPOM registrations, with voice search, automatic history, and shareable results citing official sources.",
+    "stack": ["Kotlin", "Android"],
+    "liveUrl": "https://play.google.com/store/apps/details?id=com.jabirdeveloper.halalmui",
+    "githubUrl": null,
+    "images": ["/projects/halal-mui.jpg"],
+    "translations": {
+      "id": {
+        "tagline": "Aplikasi Android untuk cek sertifikat halal BPJPH & registrasi BPOM dalam satu kotak pencarian — lewat nomor sertifikat, nomor registrasi, atau nama produk.",
+        "metric": {
+          "value": "1K+",
+          "label": "unduhan di Google Play"
+        },
+        "context": "Memverifikasi status halal dan legalitas BPOM di Indonesia berarti bolak-balik dua situs resmi — bpjph.halal.go.id dan cekbpom.pom.go.id — yang sama-sama kurang nyaman dipakai di mobile dan menuntut pengguna tahu jenis nomor yang mereka punya. Konsumen teliti, reseller, dan pemilik bisnis butuh jawaban cepat: apakah produk ini bersertifikat halal dan legal?",
+        "approach": "Membangun aplikasi Android native dengan Kotlin yang menyatukan kedua sumber resmi di balik satu kotak pencarian pintar. Aplikasi otomatis mendeteksi jenis input — nomor sertifikat halal BPJPH (awalan ID), nomor registrasi BPOM (MD/ML/NA/NIE), atau nama produk bebas — lalu menampilkan detail yang rapi dengan tautan kembali ke sumber resmi. Dilengkapi voice search, riwayat cek otomatis di perangkat, share ke WhatsApp/Telegram, dark theme mengikuti sistem, serta dukungan bahasa EN/ID.",
+        "challenges": [
+          "Menyatukan dua sumber data pemerintah dengan format query berbeda ke satu kotak pencarian tanpa memaksa pengguna pilih kategori dulu",
+          "Menjaga parsing hasil tetap tangguh saat situs resmi BPJPH & BPOM berubah",
+          "Menyajikan hasil secara membantu sambil menjaga disclaimer alat tidak resmi tetap jelas agar pengguna tetap verifikasi ke sumber resmi"
+        ],
+        "results": "Terbit di Google Play dengan 1K+ unduhan. Cek sekali pencarian lintas sertifikat halal BPJPH dan registrasi BPOM, lengkap dengan voice search, riwayat otomatis, dan hasil yang bisa dibagikan beserta sumber resminya."
+      }
+    }
+  },
+  {
     "slug": "harga-pangan",
     "tier": 2,
     "category": "engineering",

@@ -134,7 +134,7 @@ export default function CvPage() {
                     </p>
                     <span className="text-xs text-muted-foreground">
                       {project.demo
-                        ? new URL(project.demo).hostname
+                        ? project.demo.replace(/^https?:\/\//, "")
                         : project.github.replace("https://github.com/", "github.com/")}
                     </span>
                   </div>

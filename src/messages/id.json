@@ -30,7 +30,7 @@
     "philosophyReadMore": "Baca lebih lanjut soal pendekatan saya",
     "ctaHeading": "Yuk bangun sesuatu yang berarti.",
     "ctaSubtitle": "Tersedia untuk peluang full-time dan proyek freelance yang bermakna.",
-    "featuredHeading": "Karya Unggulan",
+    "featuredHeading": "Proyek Terbaru",
     "featuredViewAll": "Lihat semua"
   },
   "about": {
@@ -129,116 +129,52 @@
     "subtitle": "Beberapa yang pernah saya bangun",
     "items": [
       {
-        "name": "Wadde",
-        "description": "Landing page dark mode untuk platform SaaS dengan beberapa halaman (Pricing, Contact, About, Sign In), slider testimoni, dan promosi mobile app — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/bwa-wadde/",
-        "github": "https://github.com/cakfan/bwa-wadde",
-        "slug": "bwa-wadde",
-        "tech": ["Next.js", "TypeScript", "Tailwind CSS"]
+        "name": "Halal MUI",
+        "description": "Aplikasi Android untuk cek sertifikat halal BPJPH & registrasi BPOM dalam satu kotak pencarian — 1K+ unduhan di Google Play.",
+        "demo": "https://play.google.com/store/apps/details?id=com.jabirdeveloper.halalmui",
+        "github": null,
+        "slug": "halal-mui",
+        "tech": ["Kotlin", "Android"]
       },
       {
-        "name": "Supacars",
-        "description": "Landing page jual-beli dan rental mobil dengan daftar dealer, fitur pencarian, dan integrasi Google Maps — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/supacars/",
-        "github": "https://github.com/cakfan/supacars",
-        "slug": "supacars",
-        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
+        "name": "Harga Pangan",
+        "description": "Pantau harga pangan Indonesia ala trading view — komoditas sebagai ticker, perubahan harian berwarna, grafik historis, dan watchlist.",
+        "demo": "https://harga-pangan.vercel.app",
+        "github": "https://github.com/cakfan/harga-pangan",
+        "slug": "harga-pangan",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "PWA"]
       },
       {
-        "name": "PastiLaris",
-        "description": "Template landing page SaaS — membantu perusahaan berkembang lewat fitur otomasi, analytics real-time, dan keamanan tingkat tinggi — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/pastilaris/",
-        "github": "https://github.com/cakfan/pastilaris",
-        "slug": "pastilaris",
-        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
-      },
-      {
-        "name": "Moviez Streaming",
-        "description": "UI mobile untuk streaming film dengan daftar film unggulan, kategori Disney, dan rating bintang — dibangun pakai Next.js — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/bwa-moviez/",
-        "github": "https://github.com/cakfan/bwa-moviez",
-        "slug": "bwa-moviez",
-        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Swiper JS"]
-      },
-      {
-        "name": "Transaction Dashboard",
-        "description": "Dashboard toko untuk transaksi top-up game dengan ringkasan pengeluaran, riwayat transaksi, dan pelacakan status (pending/success/failed) — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/transaction-dashboard/",
-        "github": "https://github.com/cakfan/transaction-dashboard",
-        "slug": "transaction-dashboard",
-        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
-      },
-      {
-        "name": "Resto",
-        "description": "Landing page restoran dengan daftar restoran pilihan, filter berdasarkan kota, profil chef, dan fitur reservasi online — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/resto/",
-        "github": "https://github.com/cakfan/resto",
-        "slug": "resto",
-        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
-      },
-      {
-        "name": "Foodyar",
-        "description": "Landing page resep makanan dengan kategori healthy food, lunch, vege dessert, dan shake, dilengkapi testimoni dari chef — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/foodyar/",
-        "github": "https://github.com/cakfan/foodyar",
-        "slug": "foodyar",
-        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
-      },
-      {
-        "name": "Pricing Pro",
-        "description": "Halaman pricing dengan kartu langganan bertingkat (Basic/Gold), FAQ accordion, dan desain responsif — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/pricing-pro/",
-        "github": "https://github.com/cakfan/pricing-pro",
-        "slug": "pricing-pro",
-        "tech": ["HTML", "Tailwind CSS", "JavaScript"]
-      },
-      {
-        "name": "Detail Product",
-        "description": "Layar detail produk mobile untuk e-commerce dengan pemilihan warna/ukuran, penghitung jumlah, galeri gambar, dan keranjang yang menempel di bawah — proyek BuildWithAngga.",
-        "demo": "https://cakfan.github.io/detail-product-mobile/",
-        "github": "https://github.com/cakfan/detail-product-mobile",
-        "slug": "detail-product-mobile",
-        "tech": ["HTML", "Tailwind CSS", "Swiper JS"]
-      },
-      {
-        "name": "DawahPlay",
-        "description": "Platform streaming kajian Islam bebas iklan, dibuat supaya penonton bisa nyaman dan fokus.",
-        "demo": "https://dawahplay.vercel.app",
-        "github": "https://github.com/cakfan",
-        "slug": null,
-        "tech": ["Next.js", "TailwindCSS"]
-      },
-      {
-        "name": "DelokFilm",
-        "description": "Platform web untuk menjelajahi dan mengelola film serta drama Asia, terinspirasi dari MyDramaList.",
-        "demo": "https://delokfilm.vercel.app",
-        "github": "https://github.com/cakfan/delok-film-web",
-        "slug": null,
-        "tech": ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"]
-      },
-      {
-        "name": "Introvesia.com",
-        "description": "Berkontribusi sebagai relawan dalam pengembangan platform untuk pengembangan diri dan refleksi pribadi.",
-        "demo": "https://introvesia.com",
-        "github": "https://github.com/Introvesia",
-        "slug": null,
-        "tech": ["Next.js", "TypeScript"]
-      },
-      {
-        "name": "Dockeranium",
-        "description": "Panel kontrol Docker modern berbasis web yang intuitif. Berkontribusi sebagai open-source contributor.",
+        "name": "Ongkir SDK",
+        "description": "SDK TypeScript multi-provider untuk cek tarif & lacak pengiriman Indonesia — Biteship, Komerce, Shipper.",
         "demo": null,
-        "github": "https://github.com/Introvesia/dockeranium",
-        "slug": null,
-        "tech": ["TypeScript"]
+        "github": "https://github.com/cakfan/ongkir-sdk",
+        "slug": "ongkir-sdk",
+        "tech": ["TypeScript", "Bun", "Hono", "Biome", "Changesets"]
       },
       {
-        "name": "E-Commerce Admin & Store",
-        "description": "Sistem manajemen e-commerce lengkap dengan admin dashboard dan toko online.",
+        "name": "Accurate MCP Server",
+        "description": "MCP server yang menghubungkan AI assistant seperti Claude ke data Accurate Online — tanya stok, faktur, atau laporan keuangan dalam bahasa natural.",
         "demo": null,
-        "github": "https://github.com/cakfan/ecommerce-admin",
-        "slug": null,
-        "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+        "github": "https://github.com/cakfan/accurate-mcp-server",
+        "slug": "accurate-mcp-server",
+        "tech": ["TypeScript", "Bun", "MCP"]
+      },
+      {
+        "name": "Chat Widget",
+        "description": "Generator CSS visual untuk widget live chat YouTube — atur warna, font, layout, dan animasi dengan pratinjau real-time.",
+        "demo": "https://chat-widget-seven-lemon.vercel.app",
+        "github": "https://github.com/cakfan/chat-widget",
+        "slug": "chat-widget",
+        "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn-UI", "Zustand", "Zod"]
+      },
+      {
+        "name": "API UMKM Jember",
+        "description": "REST API read-only untuk direktori UMKM di Kabupaten Jember — data nyata bisnis lokal dari OpenStreetMap.",
+        "demo": null,
+        "github": "https://github.com/cakfan/api-umkm-jember",
+        "slug": "api-umkm-jember",
+        "tech": ["Bun", "Hono", "SQLite", "Zod", "OpenAPI"]
       },
       {
         "name": "API Wilayah Indonesia",
@@ -247,6 +183,38 @@
         "github": "https://github.com/cakfan/api-wilayah-indonesia",
         "slug": "api-wilayah-indonesia",
         "tech": ["Bun", "Hono", "SQLite", "Zod", "OpenAPI"]
+      },
+      {
+        "name": "DelokFilm",
+        "description": "Platform web untuk menjelajahi dan mengelola film serta drama Asia, terinspirasi dari MyDramaList.",
+        "demo": "https://delokfilm.vercel.app",
+        "github": "https://github.com/cakfan/delok-film-web",
+        "slug": "delokfilm",
+        "tech": ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"]
+      },
+      {
+        "name": "DawahPlay",
+        "description": "Platform streaming kajian Islam tanpa iklan, nyaman dan fokus untuk menonton.",
+        "demo": "https://dawahplay.vercel.app",
+        "github": "https://github.com/cakfan",
+        "slug": "dawahplay",
+        "tech": ["Next.js", "TailwindCSS"]
+      },
+      {
+        "name": "E-Commerce Admin & Store",
+        "description": "Sistem manajemen e-commerce lengkap dengan dashboard admin dan toko online.",
+        "demo": null,
+        "github": "https://github.com/cakfan/ecommerce-admin",
+        "slug": "ecommerce-admin",
+        "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+      },
+      {
+        "name": "Introvesia.com",
+        "description": "Berkontribusi sebagai relawan dalam pengembangan platform untuk pengembangan diri dan refleksi pribadi.",
+        "demo": "https://introvesia.com",
+        "github": "https://github.com/Introvesia",
+        "slug": "introvesia",
+        "tech": ["Next.js", "TypeScript"]
       }
     ]
   },
@@ -359,7 +327,7 @@
       "profile": "Profil",
       "experience": "Pengalaman Kerja",
       "skills": "Keahlian Teknis",
-      "projects": "Proyek Unggulan",
+      "projects": "Proyek Terbaru",
       "localBusiness": "Bisnis Lokal",
       "education": "Pendidikan",
       "certifications": "Sertifikasi & Pelatihan",
@@ -368,10 +336,10 @@
     "skills": {
       "frontEnd": "React, Next.js, TypeScript, JavaScript, TailwindCSS, Shadcn-UI, HTML5, CSS3",
       "backEnd": "Express.js, Hono, Git, Docker, REST API, VS Code",
-      "mobile": "Android (Kotlin) — sekadar tahu",
+      "mobile": "Android (Kotlin)",
       "frontEndLabel": "Front-End",
       "backEndLabel": "Back-End & Lainnya",
-      "mobileLabel": "Mobile (Basic)"
+      "mobileLabel": "Mobile"
     },
     "profile": "Full-Stack Developer yang bersemangat dengan spesialisasi di Next.js, React, TypeScript, dan TailwindCSS. Berpengalaman membangun aplikasi web modern yang cepat, responsif, dan ramah pengguna. Aktif di pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berdomisili di Jember, Indonesia.",
     "education": {

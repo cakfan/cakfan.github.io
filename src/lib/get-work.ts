@@ -59,7 +59,7 @@ export function getWorkByCategory(category: WorkCategory): WorkItem[] {
 }
 
 export function getFeaturedWork(): WorkItem | undefined {
-  return work.find((item) => item.tier === 1);
+  return work[0];
 }
 
 export function getAllExperience(): ExperienceItem[] {

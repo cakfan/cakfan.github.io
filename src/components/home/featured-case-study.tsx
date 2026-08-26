@@ -47,7 +47,7 @@ export default function FeaturedCaseStudy() {
             <div className="p-6 md:p-8 flex flex-col justify-between">
               <div>
                 <span className="text-xs font-medium text-teal uppercase tracking-widest">
-                  {t("work.localBusiness")}
+                  {t(`work.${f.category}`)}
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold tracking-tight mt-2 mb-2">
                   {f.title}
