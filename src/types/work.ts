@@ -1,5 +1,5 @@
 export type WorkTier = 1 | 2 | 3;
-export type WorkCategory = "local-business" | "engineering" | "experiment";
+export type WorkCategory = "client-work" | "engineering" | "experiment";
 
 export interface WorkMetric {
   label: string;

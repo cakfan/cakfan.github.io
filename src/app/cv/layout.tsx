@@ -5,7 +5,7 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   title: "CV — Taufan Fatahillah",
   description:
-    "Resume / CV of Taufan Fatahillah — Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS.",
+    "Resume / CV of Taufan Fatahillah — Software Engineer with experience across web, mobile, and APIs.",
   robots: {
     index: true,
     follow: true,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CV — Taufan Fatahillah",
     description:
-      "Resume / CV of Taufan Fatahillah — Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS.",
+      "Resume / CV of Taufan Fatahillah — Software Engineer with experience across web, mobile, and APIs.",
     url: `${siteUrl}/cv`,
     siteName: "Taufan Fatahillah",
     images: [

@@ -24,20 +24,22 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Taufan Fatahillah — Full-Stack Developer",
+    default: "Taufan Fatahillah — Software Engineer",
     template: "%s | Taufan Fatahillah",
   },
   description:
-    "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
+    "Software Engineer building fast, reliable applications across web, mobile, and APIs. TypeScript, React, Next.js, Kotlin.",
   keywords: [
     "Taufan Fatahillah",
+    "Software Engineer",
     "Full-Stack Developer",
     "Next.js",
     "React",
     "TypeScript",
-    "Tailwind CSS",
+    "Kotlin",
+    "Android",
+    "API",
     "Portfolio",
-    "Web Developer",
     "Indonesia",
   ],
   authors: [{ name: "Taufan Fatahillah" }],
@@ -50,9 +52,9 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Taufan Fatahillah — Full-Stack Developer",
+    title: "Taufan Fatahillah — Software Engineer",
     description:
-      "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS. Building fast, modern, and user-friendly web applications.",
+      "Software Engineer building fast, reliable applications across web, mobile, and APIs.",
     url: siteUrl,
     siteName: "Taufan Fatahillah",
     images: [
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og.png`,
         width: 1200,
         height: 630,
-        alt: "Taufan Fatahillah — Full-Stack Developer Portfolio",
+        alt: "Taufan Fatahillah — Software Engineer Portfolio",
       },
     ],
     type: "website",
@@ -68,9 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taufan Fatahillah — Full-Stack Developer",
+    title: "Taufan Fatahillah — Software Engineer",
     description:
-      "Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS.",
+      "Software Engineer building fast, reliable applications across web, mobile, and APIs.",
     images: [`${siteUrl}/og.png`],
   },
 };
@@ -93,7 +95,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Taufan Fatahillah",
               url: siteUrl,
-              jobTitle: "Full-Stack Developer",
+              jobTitle: "Software Engineer",
               sameAs: [
                 "https://www.linkedin.com/in/cakfan",
                 "https://github.com/cakfan",
@@ -111,7 +113,7 @@ export default function RootLayout({
               url: siteUrl,
               name: "Taufan Fatahillah",
               description:
-                "Full-Stack Developer portfolio — Next.js, React, TypeScript, TailwindCSS.",
+                "Software Engineer portfolio — web, mobile, and API development.",
             }),
           }}
         />

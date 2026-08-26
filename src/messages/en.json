@@ -14,32 +14,32 @@
     "available": "Available for opportunities",
     "greeting": "Hi, I'm",
     "name": "Taufan Fatahillah",
-    "subtitle": "Full-Stack Developer specializing in building fast, modern, and user-friendly web applications with Next.js, React, and TypeScript.",
+    "subtitle": "Software Engineer building fast, reliable applications across web, mobile, and APIs.",
     "viewProjects": "View Projects"
   },
   "home": {
-    "subtitle": "End-to-end ownership of web products — from first commit to production deploy. Currently based in Jember, Indonesia.",
+    "subtitle": "End-to-end software engineering — from architecture to production. Currently based in Jember, Indonesia.",
     "viewWork": "View Work",
     "getInTouch": "Get in Touch",
     "availability": "Open to full-time opportunities",
-    "tagline": "Building for business results, not just demos.",
+    "tagline": "Building software that works — across web, mobile, and APIs.",
     "philosophyHeading": "How I Work",
-    "philosophyP1": "I don't ship demos. I ship products that solve real problems for real businesses.",
-    "philosophyP2": "My work with local businesses in Jember — a bakery and a driving school — taught me that great engineering isn't about the latest framework. It's about understanding what the business needs, making the right technical decisions, and owning the result end to end.",
-    "philosophyP3": "Every project I take on gets the same standard: fast, accessible, search-friendly, and built to last.",
+    "philosophyP1": "I don't build prototypes. I engineer software that ships and scales.",
+    "philosophyP2": "From native Android apps to TypeScript SDKs, from REST APIs to AI-powered MCP servers — I work across the stack because modern software demands it. Clean architecture, type safety, and testable contracts aren'tnice-to-haves. They're the baseline.",
+    "philosophyP3": "Every project gets the same standard: fast, accessible, well-documented, and built to last.",
     "philosophyReadMore": "Read more about my approach",
-    "ctaHeading": "Let's build something that matters.",
-    "ctaSubtitle": "Open to full-time opportunities and meaningful freelance projects.",
+    "ctaHeading": "Let's build something that works.",
+    "ctaSubtitle": "Open to full-time opportunities and meaningful projects.",
     "featuredHeading": "Latest Projects",
     "featuredViewAll": "View all"
   },
   "about": {
     "heading": "About",
     "subtitle": "The short version",
-    "bio1": "I'm {name}, a {title} based in Jember, East Java. I build web products that solve real problems for real businesses.",
-    "bio2": "Most recently, I took the initiative to build websites for local businesses in Jember — a halal bakery and a driving school. Not landing page templates. Real production sites that handle real customers, real orders, and real trust.",
+    "bio1": "I'm {name}, a {title} based in Jember, East Java. I build software across web, mobile, and APIs.",
+    "bio2": "My work spans native Android apps, TypeScript SDKs, REST APIs, and full-stack web platforms. I've published npm packages, built AI-powered integrations, and shipped apps on Google Play — all driven by a focus on clean architecture and practical engineering.",
     "bio3": "Before that, I spent time at BuildWithAngga developing production UIs with Next.js, volunteered on web projects with an international team at Kerja IT Jepang, and spent four years freelancing on Android and web apps for diverse clients.",
-    "bio4": "What I care about is building things that work. Fast load times. Clean code. Good SEO. Accessible interfaces. The stuff that actually matters when a real user opens your site on a slow connection in a small town.",
+    "bio4": "What I care about is building things that work. Type safety. Clean architecture. Good documentation. Fast load times. The stuff that actually matters when software needs to run in production.",
     "bio5": "I'm currently open to full-time opportunities where I can contribute to products that have real impact.",
     "techHeading": "Tech I work with",
     "frontEnd": "Front-End",
@@ -95,15 +95,15 @@
   },
   "work": {
     "all": "All",
-    "localBusiness": "Local Business",
+    "localBusiness": "Client Work",
     "engineering": "Engineering",
     "experiments": "Experiments",
     "noProjects": "No projects in this category yet.",
     "filterLabel": "Filter by category",
     "pageHeading": "Work",
     "pageSubtitle": "Things I've built",
-    "pageDescription": "Local business projects, engineering projects, and experiments — organized by impact.",
-    "businessContext": "Business Context",
+    "pageDescription": "Client projects, engineering work, and experiments — organized by type.",
+    "businessContext": "Context",
     "approachDecisions": "Approach & Decisions",
     "challenges": "Challenges",
     "aboutProject": "About this project",
@@ -219,8 +219,8 @@
     ]
   },
   "localBusiness": {
-    "heading": "Local Business",
-    "subtitle": "Real websites I built for businesses in Jember",
+    "heading": "Client Work",
+    "subtitle": "Websites I built for businesses",
     "items": [
       {
         "name": "DKM Cakes & Cookies",
@@ -246,76 +246,76 @@
   },
   "services": {
     "heading": "Services",
-    "subtitle": "Landing Page Development for Small Businesses",
-    "description": "Fast, professional, and findable on Google — built from scratch for local businesses like yours.",
-    "benefitsHeading": "Why Choose This Service",
+    "subtitle": "Software Engineering & Development",
+    "description": "Full-cycle software development — from architecture and API design to deployment and monitoring.",
+    "benefitsHeading": "What I Bring",
     "benefits": [
       {
-        "title": "Fast & Lightweight",
-        "description": "Sites load in under 2 seconds — crucial for visitors on phones with modest connections."
+        "title": "Full-Stack Capability",
+        "description": "End-to-end development across frontend, backend, mobile, and APIs — one engineer, consistent quality."
       },
       {
-        "title": "Findable on Google",
-        "description": "Built search-engine friendly so potential customers can easily discover your business."
+        "title": "Clean Architecture",
+        "description": "Type-safe, testable, and maintainable code that scales with your product."
       },
       {
-        "title": "Responsive on Every Screen",
-        "description": "Looks great on phones, tablets, and laptops — since most visitors come from mobile."
+        "title": "Performance First",
+        "description": "Fast load times, optimized queries, and efficient resource usage — because speed matters."
       },
       {
-        "title": "Professional Design",
-        "description": "A modern, trustworthy look that builds customer confidence in your business."
+        "title": "Production Ready",
+        "description": "CI/CD pipelines, monitoring, error handling, and documentation — not just working code, but ship-ready software."
       },
       {
-        "title": "Free Consultation",
-        "description": "We discuss your needs first at no cost — you only commit when it's a fit."
+        "title": "Clear Communication",
+        "description": "Regular updates, technical documentation, and transparent progress — no black boxes."
       },
       {
-        "title": "Owned End to End",
-        "description": "One person handling design, development, and deployment. Consistent, clean results."
+        "title": "Own the Result",
+        "description": "One person handling architecture, development, and deployment. Consistent, accountable delivery."
       }
     ],
-    "featuresHeading": "Features You Can Get",
+    "featuresHeading": "What I Can Build",
     "features": [
-      "Multi-page (home, products, contact, and more)",
-      "Google Maps integration",
-      "WhatsApp button for direct chat",
-      "Product or service catalog",
-      "Contact form",
-      "Basic SEO optimization",
-      "Traffic analytics",
-      "Design tailored to your business identity"
+      "Full-stack web applications (Next.js, React, TypeScript)",
+      "REST APIs and SDKs (Hono, Bun, Node.js)",
+      "Native mobile apps (Android/Kotlin)",
+      "AI integrations (MCP servers, LLM tooling)",
+      "E-commerce and admin dashboards",
+      "Real-time data visualization",
+      "Database design and optimization",
+      "DevOps and deployment pipelines"
     ],
-    "processHeading": "How It Works",
-    "processSubtitle": "Simple and transparent from start to finish.",
+    "processHeading": "How I Work",
+    "processSubtitle": "Structured, transparent, and efficient.",
     "process": [
       {
-        "title": "Consultation",
-        "description": "We discuss your business, target customers, and needed features. Free, no commitment."
+        "title": "Discovery",
+        "description": "Understand requirements, constraints, and technical landscape before writing code."
       },
       {
-        "title": "Design",
-        "description": "A draft is created before coding, so you can see the direction and request changes."
+        "title": "Architecture",
+        "description": "Design the system — data models, API contracts, and tech stack decisions."
       },
       {
         "title": "Development",
-        "description": "Built to the same standards as enterprise products: fast, secure, and easy to manage."
+        "description": "Build iteratively with clean code, tests, and version control from day one."
       },
       {
-        "title": "Review & Revisions",
-        "description": "You try the site, share feedback, and revisions are made until you're happy."
+        "title": "Review & Iterate",
+        "description": "Feedback loops, code reviews, and refinements until it meets the standard."
       },
       {
-        "title": "Deploy & Handover",
-        "description": "The site goes live, connected to your domain, ready to welcome new customers."
+        "title": "Ship & Support",
+        "description": "Deploy to production, monitor, and maintain. The job isn't done at commit."
       }
     ],
     "examplesHeading": "Example Results",
-    "examplesSubtitle": "Real websites I built for businesses in Jember.",
-    "examplesVisitSite": "Visit Website",
+    "examplesSubtitle": "Recent projects showcasing different types of work.",
+    "examplesVisitSite": "Visit",
     "examplesViewCase": "View case study →",
-    "ctaHeading": "Need a website for your business?",
-    "ctaSubtitle": "Let's talk first — free, with no commitment.",
+    "ctaHeading": "Have a project in mind?",
+    "ctaSubtitle": "Let's discuss how I can help.",
     "ctaButton": "Get in Touch"
   },
   "cv": {
@@ -328,7 +328,7 @@
       "experience": "Work Experience",
       "skills": "Technical Skills",
       "projects": "Latest Projects",
-      "localBusiness": "Local Business",
+      "localBusiness": "Client Work",
       "education": "Education",
       "certifications": "Certifications & Training",
       "languages": "Languages"
@@ -341,7 +341,7 @@
       "backEndLabel": "Back-End & Others",
       "mobileLabel": "Mobile"
     },
-    "profile": "Passionate Full-Stack Developer specializing in Next.js, React, TypeScript, and TailwindCSS. Experienced in building modern web applications that are fast, responsive, and user-friendly. Active in open-source development and always staying up-to-date with the latest technologies. Based in Jember, Indonesia.",
+    "profile": "Software Engineer with experience across web, mobile, and APIs. Skilled in TypeScript, React, Next.js, Kotlin, and backend frameworks. Active in open-source development and always staying up-to-date with the latest technologies. Based in Jember, Indonesia.",
     "education": {
       "degree": "D3 Information Technology / Computer Engineering",
       "detail": "Information Technology and Computer Engineering study program"
@@ -359,7 +359,7 @@
   "contact": {
     "heading": "Contact",
     "subtitle": "Let's work together",
-    "description": "I'm currently open for freelance projects and full-time opportunities. Feel free to reach out!",
+    "description": "I'm currently open for full-time opportunities and interesting projects. Feel free to reach out!",
     "email": "Email",
     "emailAddress": "withcakfan@gmail.com",
     "locationLabel": "Location",

@@ -8,20 +8,20 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Projects and work by Taufan Fatahillah — from local business websites to engineering experiments.",
+    "Projects by Taufan Fatahillah — client work, engineering projects, and experiments.",
   keywords: [
     "Taufan Fatahillah",
     "Portfolio",
     "Projects",
+    "Software Engineer",
     "Next.js",
-    "Full-Stack Developer",
     "Indonesia",
   ],
   alternates: { canonical: `${siteUrl}/work` },
   openGraph: {
     title: "Work — Taufan Fatahillah",
     description:
-      "Projects and work by Taufan Fatahillah — from local business websites to engineering experiments.",
+      "Projects by Taufan Fatahillah — client work, engineering projects, and experiments.",
     url: `${siteUrl}/work`,
     siteName: "Taufan Fatahillah",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Work — Taufan Fatahillah",
     description:
-      "Projects and work by Taufan Fatahillah — from local business websites to engineering experiments.",
+      "Projects by Taufan Fatahillah — client work, engineering projects, and experiments.",
     images: [`${siteUrl}/og.png`],
   },
 };

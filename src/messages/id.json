@@ -14,32 +14,32 @@
     "available": "Tersedia untuk peluang baru",
     "greeting": "Hai, saya",
     "name": "Taufan Fatahillah",
-    "subtitle": "Full-Stack Developer yang fokus membangun aplikasi web cepat, modern, dan mudah digunakan pakai Next.js, React, dan TypeScript.",
+    "subtitle": "Software Engineer yang membangun aplikasi cepat dan andal lintas web, mobile, dan API.",
     "viewProjects": "Lihat Proyek"
   },
   "home": {
-    "subtitle": "Tanggung jawab penuh untuk produk web — dari commit pertama sampai deploy ke production. Sekarang berdomisili di Jember, Indonesia.",
+    "subtitle": "Rekayasa perangkat lunak end-to-end — dari arsitektur sampai production. Sekarang berdomisili di Jember, Indonesia.",
     "viewWork": "Lihat Karya",
     "getInTouch": "Hubungi Saya",
     "availability": "Tersedia untuk peluang full-time",
-    "tagline": "Membangun untuk hasil bisnis, bukan sekadar demo.",
+    "tagline": "Membangun perangkat lunak yang berfungsi — lintas web, mobile, dan API.",
     "philosophyHeading": "Cara Kerja Saya",
-    "philosophyP1": "Saya tidak bikin demo. Saya bikin produk yang menyelesaikan masalah nyata untuk bisnis nyata.",
-    "philosophyP2": "Pengalaman kerja sama bisnis lokal di Jember — toko kue dan kursus mengemudi — mengajari saya kalau engineering yang bagus bukan soal framework terbaru. Tapi soal memahami kebutuhan bisnis, mengambil keputusan teknis yang tepat, dan bertanggung jawab atas hasilnya dari awal sampai akhir.",
-    "philosophyP3": "Setiap proyek yang saya tangani mendapat standar yang sama: cepat, bisa diakses oleh semua orang, ramah SEO, dan dibuat untuk bertahan lama.",
+    "philosophyP1": "Saya tidak bikin prototipe. Saya merekayasa perangkat lunak yang shipping dan scalable.",
+    "philosophyP2": "Dari aplikasi Android native sampai TypeScript SDK, dari REST API sampai MCP server bertenaga AI — saya bekerja lintas stack karena perangkat lunak modern menuntutnya. Arsitektur bersih, type safety, dan kontrak yang bisa diuji bukan sekadar fitur tambahan. Itu baseline.",
+    "philosophyP3": "Setiap proyek mendapat standar yang sama: cepat, bisa diakses, terdokumentasi dengan baik, dan dibuat untuk bertahan lama.",
     "philosophyReadMore": "Baca lebih lanjut soal pendekatan saya",
-    "ctaHeading": "Yuk bangun sesuatu yang berarti.",
-    "ctaSubtitle": "Tersedia untuk peluang full-time dan proyek freelance yang bermakna.",
+    "ctaHeading": "Yuk bangun sesuatu yang berfungsi.",
+    "ctaSubtitle": "Tersedia untuk peluang full-time dan proyek yang bermakna.",
     "featuredHeading": "Proyek Terbaru",
     "featuredViewAll": "Lihat semua"
   },
   "about": {
     "heading": "Tentang Saya",
     "subtitle": "Versi singkat",
-    "bio1": "Saya {name}, seorang {title} yang berdomisili di Jember, Jawa Timur. Saya membangun produk web yang menyelesaikan masalah nyata untuk bisnis nyata.",
-    "bio2": "Belakangan ini, saya berinisiatif membangun website untuk bisnis lokal di Jember — toko kue halal dan kursus mengemudi. Bukan template landing page. Website production beneran yang menangani pelanggan beneran, pesanan beneran, dan kepercayaan beneran.",
+    "bio1": "Saya {name}, seorang {title} yang berdomisili di Jember, Jawa Timur. Saya membangun perangkat lunak lintas web, mobile, dan API.",
+    "bio2": "Pekerjaan saya mencakup aplikasi Android native, TypeScript SDK, REST API, dan platform web full-stack. Saya sudah menerbitkan package npm, membangun integrasi bertenaga AI, dan mengirim aplikasi ke Google Play — semua berfokus pada arsitektur bersih dan rekayasa yang praktis.",
     "bio3": "Sebelumnya, saya pernah di BuildWithAngga mengembangkan UI production pakai Next.js, berkontribusi sebagai relawan di proyek web bersama tim internasional di Kerja IT Jepang, dan empat tahun freelance bikin aplikasi Android dan web untuk berbagai klien.",
-    "bio4": "Yang saya pedulikan adalah membangun sesuatu yang berfungsi. Load time cepat. Kode bersih. SEO bagus. Antarmuka yang bisa diakses semua orang. Hal-hal yang benar-benar penting ketika pengguna nyata buka situsmu di koneksi lambat di kota kecil.",
+    "bio4": "Yang saya pedulikan adalah membangun sesuatu yang berfungsi. Type safety. Arsitektur bersih. Dokumentasi yang baik. Load time cepat. Hal-hal yang benar-benar penting ketika perangkat lunak harus berjalan di production.",
     "bio5": "Saya sekarang tersedia untuk peluang full-time di mana saya bisa berkontribusi pada produk yang punya dampak nyata.",
     "techHeading": "Teknologi yang saya pakai",
     "frontEnd": "Front-End",
@@ -95,15 +95,15 @@
   },
   "work": {
     "all": "Semua",
-    "localBusiness": "Bisnis Lokal",
+    "localBusiness": "Proyek Klien",
     "engineering": "Engineering",
     "experiments": "Eksperimen",
     "noProjects": "Belum ada proyek di kategori ini.",
     "filterLabel": "Filter berdasarkan kategori",
     "pageHeading": "Karya",
     "pageSubtitle": "Beberapa yang pernah saya bangun",
-    "pageDescription": "Proyek bisnis lokal, proyek engineering, dan eksperimen — diurutkan berdasarkan dampak.",
-    "businessContext": "Konteks Bisnis",
+    "pageDescription": "Proyek klien, pekerjaan engineering, dan eksperimen — diurutkan berdasarkan tipe.",
+    "businessContext": "Konteks",
     "approachDecisions": "Pendekatan & Keputusan",
     "challenges": "Tantangan",
     "aboutProject": "Tentang proyek ini",
@@ -219,8 +219,8 @@
     ]
   },
   "localBusiness": {
-    "heading": "Bisnis Lokal",
-    "subtitle": "Website nyata yang saya buat untuk bisnis di Jember",
+    "heading": "Proyek Klien",
+    "subtitle": "Website yang saya buat untuk bisnis",
     "items": [
       {
         "name": "DKM Cakes & Cookies",
@@ -246,76 +246,76 @@
   },
   "services": {
     "heading": "Jasa",
-    "subtitle": "Pembuatan Landing Page untuk UMKM",
-    "description": "Website cepat, profesional, dan bisa dicari di Google — dibangun dari nol sampai jadi untuk bisnis lokal seperti kamu.",
-    "benefitsHeading": "Kenapa Jasa Ini?",
+    "subtitle": "Rekayasa Perangkat Lunak & Pengembangan",
+    "description": "Pengembangan perangkat lunak full-cycle — dari arsitektur dan desain API sampai deployment dan monitoring.",
+    "benefitsHeading": "Yang Saya Tawarkan",
     "benefits": [
       {
-        "title": "Cepat & Ringan",
-        "description": "Website dimuat di bawah 2 detik — penting buat pengunjung dari HP di koneksi yang pas-pasan."
+        "title": "Kemampuan Full-Stack",
+        "description": "Pengembangan end-to-end lintas frontend, backend, mobile, dan API — satu engineer, kualitas konsisten."
       },
       {
-        "title": "Muncul di Google",
-        "description": "Dibangun ramah SEO supaya calon pelanggan mudah menemukan bisnismu saat mencarinya di Google."
+        "title": "Arsitektur Bersih",
+        "description": "Kode yang type-safe, bisa diuji, dan mudah dirawat seiring scaling produk."
       },
       {
-        "title": "Responsive di Semua Layar",
-        "description": "Tampil rapi di HP, tablet, maupun laptop — karena sebagian besar pengunjung datang dari HP."
+        "title": "Performa Utama",
+        "description": "Load time cepat, query optimal, dan penggunaan sumber daya yang efisien — karena kecepatan itu penting."
       },
       {
-        "title": "Desain Profesional",
-        "description": "Tampilan modern dan meyakinkan yang membangun kepercayaan pelanggan pada bisnismu."
+        "title": "Siap Production",
+        "description": "CI/CD pipeline, monitoring, error handling, dan dokumentasi — bukan cuma kode yang jalan, tapi perangkat lunak yang siap shipping."
       },
       {
-        "title": "Gratis Konsultasi",
-        "description": "Diskusi dulu soal kebutuhan tanpa biaya — kalau cocok baru lanjut ke pengerjaan."
+        "title": "Komunikasi Jelas",
+        "description": "Update rutin, dokumentasi teknis, dan progres yang transparan — tanpa kotak hitam."
       },
       {
-        "title": "Bertanggung Jawab Sampai Jadi",
-        "description": "Satu tangan yang mengerjakan desain, development, sampai deploy. Hasilnya konsisten dan rapi."
+        "title": "Tanggung Jawab Penuh",
+        "description": "Satu tangan mengerjakan arsitektur, development, dan deployment. Pengiriman yang konsisten dan bertanggung jawab."
       }
     ],
-    "featuresHeading": "Fitur yang Bisa Disertakan",
+    "featuresHeading": "Yang Bisa Saya Bangun",
     "features": [
-      "Multi-halaman (beranda, produk, kontak, dan lainnya)",
-      "Integrasi Google Maps",
-      "Tombol WhatsApp untuk chat langsung",
-      "Katalog produk atau layanan",
-      "Form kontak",
-      "Optimasi SEO dasar",
-      "Analitik kunjungan",
-      "Desain sesuai identitas bisnismu"
+      "Aplikasi web full-stack (Next.js, React, TypeScript)",
+      "REST API dan SDK (Hono, Bun, Node.js)",
+      "Aplikasi mobile native (Android/Kotlin)",
+      "Integrasi AI (MCP server, LLM tooling)",
+      "E-commerce dan admin dashboard",
+      "Visualisasi data real-time",
+      "Desain dan optimasi database",
+      "Pipeline DevOps dan deployment"
     ],
-    "processHeading": "Proses Pengerjaan",
-    "processSubtitle": "Sederhana dan transparan dari awal sampai selesai.",
+    "processHeading": "Cara Kerja",
+    "processSubtitle": "Terstruktur, transparan, dan efisien.",
     "process": [
       {
-        "title": "Konsultasi Kebutuhan",
-        "description": "Kita bahas bisnismu, target pelanggan, dan fitur yang dibutuhkan. Gratis, tanpa komitmen."
+        "title": "Discovery",
+        "description": "Pahami kebutuhan, kendala, dan lanskap teknis sebelum menulis kode."
       },
       {
-        "title": "Desain",
-        "description": "Draft tampilan dibuat sebelum coding, biar kamu bisa lihat arahnya dan minta revisi."
+        "title": "Arsitektur",
+        "description": "Rancang sistem — model data, kontrak API, dan keputusan tech stack."
       },
       {
         "title": "Development",
-        "description": "Website dibangun dengan standar yang sama seperti produk enterprise: cepat, aman, dan mudah dikelola."
+        "description": "Bangun secara iteratif dengan kode bersih, test, dan version control sejak hari pertama."
       },
       {
-        "title": "Review & Revisi",
-        "description": "Kamu mencoba websitenya, masukan diterima, dan revisi dikerjakan sampai puas."
+        "title": "Review & Iterasi",
+        "description": "Feedback loop, code review, dan penyempurnaan sampai standar terpenuhi."
       },
       {
-        "title": "Deploy & Serah Terima",
-        "description": "Website diluncurkan, terhubung ke domain, dan bisnismu siap menerima pelanggan baru."
+        "title": "Ship & Support",
+        "description": "Deploy ke production, monitor, dan maintain. Pekerjaan tidak selesai di commit."
       }
     ],
     "examplesHeading": "Contoh Hasil",
-    "examplesSubtitle": "Website nyata yang saya buat untuk bisnis di Jember.",
-    "examplesVisitSite": "Kunjungi Website",
+    "examplesSubtitle": "Proyek terbaru yang menampilkan berbagai jenis pekerjaan.",
+    "examplesVisitSite": "Kunjungi",
     "examplesViewCase": "Lihat studi kasus →",
-    "ctaHeading": "Butuh website untuk bisnismu?",
-    "ctaSubtitle": "Yuk diskusi dulu — gratis, tanpa komitmen apa pun.",
+    "ctaHeading": "Ada proyek yang ingin dikerjakan?",
+    "ctaSubtitle": "Yuk diskusi bagaimana saya bisa membantu.",
     "ctaButton": "Hubungi Saya"
   },
   "cv": {
@@ -328,7 +328,7 @@
       "experience": "Pengalaman Kerja",
       "skills": "Keahlian Teknis",
       "projects": "Proyek Terbaru",
-      "localBusiness": "Bisnis Lokal",
+      "localBusiness": "Proyek Klien",
       "education": "Pendidikan",
       "certifications": "Sertifikasi & Pelatihan",
       "languages": "Bahasa"
@@ -341,7 +341,7 @@
       "backEndLabel": "Back-End & Lainnya",
       "mobileLabel": "Mobile"
     },
-    "profile": "Full-Stack Developer yang bersemangat dengan spesialisasi di Next.js, React, TypeScript, dan TailwindCSS. Berpengalaman membangun aplikasi web modern yang cepat, responsif, dan ramah pengguna. Aktif di pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berdomisili di Jember, Indonesia.",
+    "profile": "Software Engineer dengan pengalaman lintas web, mobile, dan API. Mahir dalam TypeScript, React, Next.js, Kotlin, dan framework backend. Aktif di pengembangan open-source dan selalu mengikuti perkembangan teknologi terbaru. Berdomisili di Jember, Indonesia.",
     "education": {
       "degree": "D3 Teknologi Informasi / Teknik Komputer",
       "detail": "Program studi terkait Teknologi Informasi dan Teknik Komputer"
@@ -359,7 +359,7 @@
   "contact": {
     "heading": "Kontak",
     "subtitle": "Yuk kerja sama",
-    "description": "Saya sedang terbuka untuk proyek freelance dan peluang full-time. Kalau tertarik, langsung aja hubungi saya!",
+    "description": "Saya sedang terbuka untuk peluang full-time dan proyek menarik. Kalau tertarik, langsung aja hubungi saya!",
     "email": "Email",
     "emailAddress": "withcakfan@gmail.com",
     "locationLabel": "Lokasi",

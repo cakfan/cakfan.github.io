@@ -6,11 +6,11 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   title: "Experience",
   description:
-    "Professional experience of Taufan Fatahillah — freelance, engineering, and volunteer work.",
+    "Professional experience of Taufan Fatahillah — software engineering, freelance, and open source.",
   keywords: [
     "Taufan Fatahillah",
     "Experience",
-    "Full-Stack Developer",
+    "Software Engineer",
     "Freelance",
     "Open Source",
   ],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Experience — Taufan Fatahillah",
     description:
-      "Professional experience of Taufan Fatahillah — freelance, engineering, and volunteer work.",
+      "Professional experience of Taufan Fatahillah — software engineering, freelance, and open source.",
     url: `${siteUrl}/experience`,
     siteName: "Taufan Fatahillah",
     images: [

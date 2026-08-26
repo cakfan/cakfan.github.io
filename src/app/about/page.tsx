@@ -6,10 +6,10 @@ const siteUrl = "https://cakfan.github.io";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Full-Stack Developer based in Jember, Indonesia — building for business results, not just demos.",
+    "Software Engineer based in Jember, Indonesia — building across web, mobile, and APIs.",
   keywords: [
     "Taufan Fatahillah",
-    "Full-Stack Developer",
+    "Software Engineer",
     "Jember",
     "Indonesia",
     "About",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About — Taufan Fatahillah",
     description:
-      "Full-Stack Developer based in Jember, Indonesia — building for business results, not just demos.",
+      "Software Engineer based in Jember, Indonesia — building across web, mobile, and APIs.",
     url: `${siteUrl}/about`,
     siteName: "Taufan Fatahillah",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About — Taufan Fatahillah",
     description:
-      "Full-Stack Developer based in Jember, Indonesia — building for business results, not just demos.",
+      "Software Engineer based in Jember, Indonesia — building across web, mobile, and APIs.",
     images: [`${siteUrl}/og.png`],
   },
 };

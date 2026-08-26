@@ -64,7 +64,7 @@ export default function CvPage() {
                 Taufan Fatahillah
               </h1>
               <p className="text-teal font-medium">
-                Full-Stack Developer
+                Software Engineer
               </p>
               <div className="text-sm text-muted-foreground mt-2 flex flex-wrap items-center justify-center gap-x-2">
                 <span>Jember, East Java, Indonesia</span>

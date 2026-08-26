@@ -6,10 +6,10 @@ const siteUrl = "https://cakfan.github.io";
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Landing Page Development for Small Businesses",
-  serviceType: "Landing page development",
+  name: "Software Engineering & Development",
+  serviceType: "Software Development",
   description:
-    "Fast, SEO-friendly, mobile-responsive websites built for small businesses and UMKM in Indonesia — from consultation to deployment.",
+    "Full-cycle software development — from architecture and API design to deployment and monitoring.",
   provider: {
     "@type": "Person",
     name: "Taufan Fatahillah",
@@ -19,23 +19,19 @@ const serviceJsonLd = {
     "@type": "Country",
     name: "Indonesia",
   },
-  audience: {
-    "@type": "BusinessAudience",
-    name: "UMKM (small and medium businesses)",
-  },
-  serviceOutput: "Website",
+  serviceOutput: "Software",
   url: `${siteUrl}/services`,
 };
 
 export const metadata: Metadata = {
-  title: "Landing Page Development for Small Businesses",
+  title: "Services",
   description:
-    "Landing page and website development for UMKM in Indonesia — fast, SEO-friendly, mobile-responsive, and built for business results.",
+    "Software engineering and development services — web, mobile, APIs, and more.",
   alternates: { canonical: `${siteUrl}/services` },
   openGraph: {
-    title: "Landing Page Development for Small Businesses — Taufan Fatahillah",
+    title: "Services — Taufan Fatahillah",
     description:
-      "Landing page and website development for UMKM in Indonesia — fast, SEO-friendly, mobile-responsive, and built for business results.",
+      "Software engineering and development services — web, mobile, APIs, and more.",
     url: `${siteUrl}/services`,
     siteName: "Taufan Fatahillah",
     images: [
@@ -43,7 +39,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og.png`,
         width: 1200,
         height: 630,
-        alt: "Landing Page Development for Small Businesses",
+        alt: "Services — Taufan Fatahillah",
       },
     ],
     type: "website",
@@ -51,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landing Page Development for Small Businesses — Taufan Fatahillah",
+    title: "Services — Taufan Fatahillah",
     description:
-      "Landing page and website development for UMKM in Indonesia — fast, SEO-friendly, mobile-responsive, and built for business results.",
+      "Software engineering and development services — web, mobile, APIs, and more.",
     images: [`${siteUrl}/og.png`],
   },
 };
