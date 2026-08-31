@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     type: "profile",
     locale: "en_US",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "CV - Taufan Fatahillah",
+    description:
+      "Resume / CV of Taufan Fatahillah - Software Engineer with experience across web, mobile, and APIs.",
+    images: [`${siteUrl}/og.png`],
+  },
 };
 
 export default function CvLayout({ children }: { children: React.ReactNode }) {

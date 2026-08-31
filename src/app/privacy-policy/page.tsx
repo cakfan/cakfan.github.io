@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     "Google Play",
     "Android Apps",
   ],
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: { canonical: `${siteUrl}/privacy-policy` },
   openGraph: {
     title: "Privacy Policy — Taufan Fatahillah",

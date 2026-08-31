@@ -28,6 +28,15 @@ export const metadata: Metadata = {
   description:
     "Software engineering and development services — web, mobile, APIs, and more.",
   alternates: { canonical: `${siteUrl}/services` },
+  keywords: [
+    "Taufan Fatahillah",
+    "Software Engineer",
+    "Web Development",
+    "Mobile Development",
+    "API Development",
+    "Full-Stack Developer",
+    "Indonesia",
+  ],
   openGraph: {
     title: "Services — Taufan Fatahillah",
     description:
