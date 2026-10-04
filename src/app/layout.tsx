@@ -10,7 +10,7 @@ const newsreader = Newsreader({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  display: "swap",
 });
 
 const geist = Geist({
