@@ -480,6 +480,48 @@
     }
   },
   {
+    "slug": "tapscan",
+    "tier": 2,
+    "category": "engineering",
+    "title": "TapScan",
+    "tagline": "Android PDF scanner with on-device OCR and full-text search — no watermark, no scan limits, no account required.",
+    "metric": {
+      "value": "100%",
+      "label": "on-device — no account, no cloud"
+    },
+    "context": "Free PDF scanner apps on Google Play monetize by making the core loop painful: watermarks on every export, daily scan caps, mandatory account creation, and interstitials mid-scan. People searching for a “free PDF scanner no watermark” alternative are explicitly looking for a way out, yet most replacements just move the paywall somewhere else.",
+    "approach": "Built a native Android app in Kotlin + Jetpack Compose around one loop: scan → save → share. Capture uses the ML Kit Document Scanner API for auto edge detection and multi-page sessions. OCR runs on-device with ML Kit Text Recognition and feeds a Room-backed search index, so the library is searchable by filename and by scanned text. PDF pages are generated locally and handed straight to the Android share sheet, with no upload step anywhere. The free tier has zero watermarks and no scan caps; Pro is a single non-consumable Play Billing purchase that unlocks batch scanning, compression, password protection, and format conversion — none of it required for the core loop. Ads are limited to one banner on the library screen, never inside the scan flow.",
+    "challenges": [
+      "Keeping the whole app offline — no backend, no upload, no account — while still offering full-text search over OCR'd content",
+      "Indexing OCR text incrementally so library search stays fast without a server-side search service",
+      "Generating and manipulating PDFs on-device (merge, compress, password-protect) without pulling in a heavyweight engine",
+      "Designing a free tier that is genuinely usable, so the Pro purchase feels additive rather than a ransom"
+    ],
+    "results": "Published on Google Play. Scan → save → share has no watermarking, no daily cap, and no sign-in; OCR text is searchable from the library, and the only ad in the app sits outside the capture flow.",
+    "stack": ["Kotlin", "Jetpack Compose", "ML Kit", "Room", "Play Billing"],
+    "liveUrl": "https://play.google.com/store/apps/details?id=com.cakfan.tapscan",
+    "githubUrl": null,
+    "images": ["/projects/tapscan.jpg"],
+    "translations": {
+      "id": {
+        "tagline": "Scanner PDF Android dengan OCR on-device dan pencarian teks penuh — tanpa watermark, tanpa batas scan, tanpa akun.",
+        "metric": {
+          "value": "100%",
+          "label": "on-device — tanpa akun, tanpa cloud"
+        },
+        "context": "Aplikasi scanner PDF gratis di Google Play memonetisasi dengan membuat alur intinya menyiksa: watermark di setiap ekspor, batas scan harian, wajib bikin akun, dan interstitial di tengah proses scan. Orang yang mencari alternatif “free PDF scanner no watermark” sebenarnya sedang mencari jalan keluar, tapi sebagian besar penggantinya hanya memindahkan paywall ke tempat lain.",
+        "approach": "Membangun aplikasi Android native dengan Kotlin + Jetpack Compose yang berpusat pada satu alur: scan → simpan → bagikan. Capture memakai ML Kit Document Scanner API untuk deteksi tepi otomatis dan sesi multi-halaman. OCR berjalan on-device dengan ML Kit Text Recognition dan mengisi indeks pencarian berbasis Room, jadi library bisa dicari lewat nama file maupun teks hasil scan. Halaman PDF dibuat lokal dan langsung dikirim ke share sheet Android, tanpa langkah upload sama sekali. Free tier tanpa watermark dan tanpa batas scan; Pro adalah satu pembelian non-consumable lewat Play Billing yang membuka batch scan, kompresi, proteksi password, dan konversi format — tidak satu pun wajib untuk alur inti. Iklan dibatasi satu banner di layar library, tidak pernah di dalam alur scan.",
+        "challenges": [
+          "Menjaga seluruh aplikasi tetap offline — tanpa backend, tanpa upload, tanpa akun — sambil tetap menyediakan pencarian teks penuh atas konten hasil OCR",
+          "Mengindeks teks OCR secara bertahap supaya pencarian library tetap cepat tanpa layanan search di server",
+          "Membuat dan memanipulasi PDF di perangkat (gabung, kompresi, proteksi password) tanpa menarik engine yang berat",
+          "Merancang free tier yang benar-benar bisa dipakai, supaya pembelian Pro terasa sebagai tambahan, bukan tebusan"
+        ],
+        "results": "Terbit di Google Play. Alur scan → simpan → bagikan tanpa watermark, tanpa batas harian, dan tanpa login; teks OCR bisa dicari dari library, dan satu-satunya iklan di aplikasi berada di luar alur capture."
+      }
+    }
+  },
+  {
     "slug": "bwa-wadde",
     "tier": 3,
     "category": "experiment",
