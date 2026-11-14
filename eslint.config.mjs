@@ -8,6 +8,7 @@ const eslintConfig = defineConfig([
   globalIgnores([
     "node_modules/**",
     ".next/**",
+    ".worktrees/**",
     "docs/**",
     "out/**",
     "build/**",
