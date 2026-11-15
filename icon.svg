@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Taufan Fatahillah">
+  <rect width="32" height="32" rx="6" fill="#0C0E0D" />
+  <g stroke="#F2F4EF" stroke-width="2.5" stroke-linecap="square" fill="none">
+    <path d="M12 8V18.5C12 21.5 14 23.5 16 23.5" />
+    <path d="M8.5 13H18.5" />
+  </g>
+  <rect x="21" y="20.25" width="4.5" height="4.5" fill="#FF8A70" />
+</svg>

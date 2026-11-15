@@ -1,0 +1,72 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/2a86cguhjv1a9.js"
+3:I[33499,["$2"],"I18nProvider"]
+4:I[39756,["$2"],"default"]
+5:I[37457,["$2"],"default"]
+6:"/_next/static/chunks/1hj_wpch3usw_.js"
+7:I[22016,["$2","$6"],""]
+8:I[5014,["$2","$6"],"default"]
+c:"/_next/static/chunks/1qq510zzho5i5.js"
+d:"/_next/static/chunks/3dop11osv0vte.js"
+e:I[87668,["$2","$c","$d"],"default"]
+1d:"ViewportBoundary"
+1e:I[97367,["$2"],"$1d"]
+1f:"MetadataBoundary"
+20:I[97367,["$2"],"$1f"]
+21:"$Sreact.suspense"
+:HL["/_next/static/chunks/3qbi3xs4sbgf0.css","style"]
+a:X
+16:X
+16:C
+1a:[["children",{"s":"__PAGE__","h":160,"d":{"r":"$L1b","p":"$@1c","v":null,"s":"$a"}}]]
+17:[["children",{"s":{"n":"slug","t":"d","k":"dkm-cakes","s":[]},"h":96,"d":{"r":"$L18","p":"$@19","v":"$16","s":"$a"},"c":"$Q1a"}]]
+13:[["children",{"s":"work","h":96,"d":{"r":"$L14","p":"$@15","v":"$16","s":"$a"},"c":"$Q17"}]]
+b:[["children",{"s":"(site)","h":96,"d":{"r":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/1qq510zzho5i5.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/3dop11osv0vte.js","async":true}]],[["$","a",null,{"href":"#main-content","className":"sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-control focus:border focus:border-border focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:text-foreground","children":"Skip to content"}],["$","$Le",null,{}],["$","main",null,{"id":"main-content","className":"min-h-[60svh]","children":["$","$L4",null,{"parallelRouterKey":"children","template":"$Lf","notFound":["$L10",[]]}]}],"$L11"]]}],"p":"$@12","v":null,"s":"$a"},"c":"$Q13"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3qbi3xs4sbgf0.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/2a86cguhjv1a9.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"Sms4YG_variable FlyLvG_variable","children":[["$","head",null,{"children":[["$","meta",null,{"name":"theme-color","content":"#0A0C0B","media":"(prefers-color-scheme: dark)"}],["$","meta",null,{"name":"theme-color","content":"#F4F5F1","media":"(prefers-color-scheme: light)"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Taufan Fatahillah\",\"url\":\"https://cakfan.github.io\",\"jobTitle\":\"Software Engineer\",\"sameAs\":[\"https://www.linkedin.com/in/cakfan\",\"https://github.com/cakfan\",\"https://www.instagram.com/withcakfan\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://cakfan.github.io\",\"name\":\"Taufan Fatahillah\",\"description\":\"Software Engineer portfolio — web, mobile, and API development.\"}"}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  var theme = localStorage.getItem('theme');\n                  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;\n                  var isDark = theme === 'dark' || ((theme === 'system' || !theme) && systemDark);\n                  document.documentElement.classList.toggle('dark', isDark);\n                  var locale = localStorage.getItem('locale');\n                  if (locale === 'id' || locale === 'en') {\n                    document.documentElement.lang = locale;\n                  }\n                } catch(e) {}\n              })();\n            "}}]]}],["$","body",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}],"notFound":[["$","section",null,{"className":"flex min-h-svh items-center","children":["$","div",null,{"className":"container-section py-20","children":[["$","p",null,{"className":"label-mono text-muted-foreground","children":[["$","span",null,{"className":"text-accent","children":"404"}],["$","span",null,{"aria-hidden":"true","children":" / "}],"Not found"]}],["$","h1",null,{"className":"mt-5 max-w-[18ch] text-h1 font-semibold text-foreground","children":"Page not found."}],["$","p",null,{"className":"mt-4 max-w-[46ch] text-base leading-relaxed text-muted-foreground","children":"The page you are looking for doesn't exist or has been moved."}],["$","$L7",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 rounded-control font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-50 bg-accent text-accent-foreground hover:bg-accent/90 min-h-11 px-5 text-sm mt-8","children":[["$","$L8",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16,"strokeWidth":1.75,"aria-hidden":"true"}],"Back to home"]}]]}]}],[]]}]}]}]]}]]}],"p":"$@9","v":null,"s":"$a"},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"DKM Cakes & Cookies | Taufan Fatahillah"}],["$","meta","1",{"name":"description","content":"E-commerce website that helped a local Jember bakery reach more customers online."}],["$","meta","2",{"name":"author","content":"Taufan Fatahillah"}],["$","meta","3",{"name":"keywords","content":"DKM Cakes & Cookies,Astro,TypeScript,Vanilla CSS,portfolio,Taufan Fatahillah"}],"$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b","$L2c","$L2d","$L2e","$L2f","$L30","$L31","$L32","$L33","$L34","$L35"]}]}],null]}],"$L36"]}],"p":"$@37","v":null,"s":"$a"}},"a":"$@38","u":"$@39","b":"H9bGTkdQHJ-L-Csjb8CTM"}
+3a:I[76910,["$2","$c","$d"],"default"]
+3b:"/_next/static/chunks/00fi7gl_ku8cw.js"
+3c:"/_next/static/chunks/3-9ijv33pi0dc.js"
+3d:I[26873,["$2","$c","$d","$3b","$3c"],"default"]
+41:I[27201,["$2"],"IconMark"]
+f:["$","$L5",null,{}]
+10:["$","section",null,{"className":"flex min-h-svh items-center","children":["$","div",null,{"className":"container-section py-20","children":[["$","p",null,{"className":"label-mono text-muted-foreground","children":[["$","span",null,{"className":"text-accent","children":"404"}],["$","span",null,{"aria-hidden":"true","children":" / "}],"Not found"]}],["$","h1",null,{"className":"mt-5 max-w-[18ch] text-h1 font-semibold text-foreground","children":"Page not found."}],["$","p",null,{"className":"mt-4 max-w-[46ch] text-base leading-relaxed text-muted-foreground","children":"The page you are looking for doesn't exist or has been moved."}],["$","$L7",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 rounded-control font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-50 bg-accent text-accent-foreground hover:bg-accent/90 min-h-11 px-5 text-sm mt-8","children":[["$","$L8",null,{"icon":"$0:t:t:d:r:props:children:1:props:children:1:props:children:props:children:props:notFound:0:props:children:props:children:3:props:children:0:props:icon","size":16,"strokeWidth":1.75,"aria-hidden":"true"}],"Back to home"]}]]}]}]
+11:["$","$L3a",null,{}]
+14:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}]
+18:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}]
+1b:["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://cakfan.github.io\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Work\",\"item\":\"https://cakfan.github.io/work\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"DKM Cakes & Cookies\",\"item\":\"https://cakfan.github.io/work/dkm-cakes\"}]}"}}],["$","$L3d",null,{"work":{"slug":"dkm-cakes","featured":true,"tier":1,"category":"client-work","title":"DKM Cakes & Cookies","tagline":"E-commerce website that helped a local Jember bakery reach more customers online.","metric":{"label":"Years in business","value":"10+"},"context":"DKM Cakes & Cookies is a premium halal bakery in Jember, East Java, operating since 2013. They needed a professional online presence to showcase their products, share their story, and make it easy for customers to find location, hours, and contact information — replacing scattered social media posts with a single, trustworthy destination.","approach":"Built a multi-page static site with a dark, elegant aesthetic that reflects the brand's premium positioning. Used responsive design to ensure the site works seamlessly on mobile (where most local customers browse) and desktop. Structured content around product categories, business story, and contact/location — prioritizing the information local customers actually need.","challenges":["Balancing a premium visual feel with fast load times on mobile networks in Jember","Creating a design system that feels distinct from generic bakery templates while staying true to the brand","Ensuring Google Maps integration and contact info are immediately accessible for walk-in customers"],"results":"Delivered a production site that gives DKM Cakes a professional, trustworthy online presence. The site serves as the single source of truth for product offerings, location, and business hours — replacing fragmented social media as the primary customer touchpoint.","stack":["Astro","TypeScript","Vanilla CSS"],"liveUrl":"https://cakfan.github.io/dkmcakes/","images":["/projects/dkmcakes.jpg"],"clientMeta":{"address":"Pesona Surya Milenia B4 No 5, Kaliwates, Jember","hours":"Every day, 08:00 – 18:00 WIB","phone":"081 7080 1311"},"translations":{"id":{"tagline":"Website e-commerce yang membantu toko kue lokal Jember menjangkau lebih banyak pelanggan lewat online.","metric":{"label":"Tahun beroperasi","value":"10+"},"context":"DKM Cakes & Cookies adalah toko kue premium halal di Jember, Jawa Timur, beroperasi sejak 2013. Mereka butuh kehadiran online yang profesional untuk memamerkan produk, berbagi cerita, dan memudahkan pelanggan menemukan lokasi, jam buka, dan informasi kontak — menggantikan postingan media sosial yang berantakan jadi satu tempat yang bisa diandalkan.","approach":"Membangun situs statis multi-halaman dengan tampilan gelap dan elegan yang mencerminkan positioning premium brand. Desain responsif supaya situs berfungsi dengan baik di mobile (di mana sebagian besar pelanggan lokal browsing) maupun desktop. Konten disusun seputar kategori produk, cerita bisnis, dan kontak/lokasi — memprioritaskan informasi yang benar-benar dibutuhkan pelanggan lokal.","challenges":["Menyeimbangkan tampilan premium dengan load time yang cepat di jaringan mobile di Jember","Membuat design system yang terasa berbeda dari template toko kue generik tapi tetap setia pada brand","Memastikan integrasi Google Maps dan info kontak bisa langsung diakses oleh pelanggan yang datang langsung"],"results":"Menghadirkan situs production yang memberi DKM Cakes kehadiran online yang profesional dan terpercaya. Situs ini jadi satu sumber informasi untuk penawaran produk, lokasi, dan jam operasional — menggantikan media sosial yang berantakan sebagai titik kontak utama pelanggan.","clientMeta":{"address":"Pesona Surya Milenia B4 No 5, Kaliwates, Jember","hours":"Setiap hari, 08.00 – 18.00 WIB","phone":"081 7080 1311"}}}}}]],["$L3e","$L3f"],"$L40"]}]
+22:["$","meta","4",{"name":"creator","content":"Taufan Fatahillah"}]
+23:["$","meta","5",{"name":"robots","content":"index, follow"}]
+24:["$","link","6",{"rel":"canonical","href":"https://cakfan.github.io/work/dkm-cakes"}]
+25:["$","meta","7",{"property":"og:title","content":"DKM Cakes & Cookies — Taufan Fatahillah"}]
+26:["$","meta","8",{"property":"og:description","content":"E-commerce website that helped a local Jember bakery reach more customers online."}]
+27:["$","meta","9",{"property":"og:url","content":"https://cakfan.github.io/work/dkm-cakes"}]
+28:["$","meta","10",{"property":"og:site_name","content":"Taufan Fatahillah"}]
+29:["$","meta","11",{"property":"og:locale","content":"en_US"}]
+2a:["$","meta","12",{"property":"og:image","content":"https://cakfan.github.io/projects/dkmcakes.jpg"}]
+2b:["$","meta","13",{"property":"og:image:width","content":"1200"}]
+2c:["$","meta","14",{"property":"og:image:height","content":"630"}]
+2d:["$","meta","15",{"property":"og:image:alt","content":"DKM Cakes & Cookies screenshot"}]
+2e:["$","meta","16",{"property":"og:type","content":"website"}]
+2f:["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}]
+30:["$","meta","18",{"name":"twitter:title","content":"DKM Cakes & Cookies — Taufan Fatahillah"}]
+31:["$","meta","19",{"name":"twitter:description","content":"E-commerce website that helped a local Jember bakery reach more customers online."}]
+32:["$","meta","20",{"name":"twitter:image","content":"https://cakfan.github.io/projects/dkmcakes.jpg"}]
+33:["$","link","21",{"rel":"icon","href":"/icon.svg?icon.2z-q9-se0x_w8.svg","sizes":"any","type":"image/svg+xml"}]
+34:["$","link","22",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.0y0pb8sp362hh.png","sizes":"180x180","type":"image/png"}]
+35:["$","$L41","23",{}]
+36:["$","meta",null,{"name":"next-size-adjust","content":""}]
+42:I[97367,["$2"],"OutletBoundary"]
+a:300
+3e:["$","script","script-0",{"src":"/_next/static/chunks/00fi7gl_ku8cw.js","async":true}]
+3f:["$","script","script-1",{"src":"/_next/static/chunks/3-9ijv33pi0dc.js","async":true}]
+40:["$","$L42",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@43"}]}]
+39:true
+a:C
+43:null
+38:0
+19:"$undefined"
+15:"$undefined"
+12:"$undefined"
+9:"$undefined"
+37:"$undefined"
+1c:"$undefined"
