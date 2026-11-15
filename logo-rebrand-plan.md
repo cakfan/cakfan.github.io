@@ -201,7 +201,7 @@ Tujuh elemen ini yang membuat orang mengenali brand tanpa membaca nama:
 | 3   | **Mono label**         | uppercase, tracking `0.14em`, 11–14px              | 1× per section/slide        |
 | 4   | **Index**              | `01 /`, `02 /` di awal label                       | 1× per section/slide        |
 | 5   | **Paper & ink**        | `#F4F5F1` / `#0C0E0D`, tanpa warna ketiga          | selalu                      |
-| 6   | **Satu accent**        | `#2B3BFF` / `#9AA4FF`                              | maksimal 1× per viewport    |
+| 6   | **Satu accent**        | `#C2351F` / `#FF8A70`                              | maksimal 1× per viewport    |
 | 7   | **Handle mono**        | `@withcakfan`, tracking `0.14em`, lowercase        | 1× di footer/end card/signature |
 
 ### 4.6 Brand architecture
@@ -314,7 +314,7 @@ Rasio yang harus dijaga saat mengubah ukuran: **stroke : tinggi visual = 1 : 6.7
     <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
     <path d="M8 13H18.5" />
   </g>
-  <rect x="21" y="20.5" width="5" height="5" fill="#2B3BFF" />
+  <rect x="21" y="20.5" width="5" height="5" fill="#C2351F" />
 </svg>
 ```
 
@@ -324,7 +324,7 @@ Varian compact (avatar, favicon, watermark) memakai `width/height 5.5` di `y 20`
 
 - Kaki lengkung memakai cubic Bézier dengan tangen horizontal di ujung, sehingga square cap tetap tegak dan baseline-nya rata.
 - Titik **selalu** `rect`, tidak pernah `circle` dan tidak pernah glyph `.`.
-- Warna mark utama: `currentColor`. Warna titik: token `--accent` (light `#2B3BFF`, dark `#9AA4FF`).
+- Warna mark utama: `currentColor`. Warna titik: token `--accent` (light `#C2351F`, dark `#FF8A70`).
 - Jangan membungkus mark dengan background kecuali pada varian app icon dan avatar.
 - Untuk konteks monokrom (watermark, print), titik memakai `fill="currentColor"` — bukan dihapus.
 
@@ -407,13 +407,15 @@ Geometri di atas sudah dikalibrasi. Saat mengubah ukuran, cek empat hal:
 
 Tidak ada token baru. Logo memakai token yang sudah ada agar tidak ada drift.
 
+**Kenapa vermilion, bukan biru.** Mark ini secara harfiah adalah tanda baca. Merah koreksi adalah warna yang dipakai penyunting untuk menandai naskah selesai — jadi accent-nya membawa makna "titik akhir", bukan sekadar "warna brand". Biru elektrik adalah accent default hampir semua produk tech: aman, tetapi tidak membedakan. Vermilion juga tetap terbaca sebagai sinyal di antara paper dan ink tanpa perlu warna kedua.
+
 | Elemen          | Light     | Dark      | Token               |
 | --------------- | --------- | --------- | ------------------- |
 | Batang & palang | `#0C0E0D` | `#F2F4EF` | `--foreground`      |
-| Titik           | `#2B3BFF` | `#9AA4FF` | `--accent`          |
+| Titik           | `#C2351F` | `#FF8A70` | `--accent`          |
 | Tile app icon   | `#0C0E0D` | `#0C0E0D` | selalu ink          |
 | Mark di tile    | `#F2F4EF` | `#F2F4EF` | paper               |
-| Titik di tile   | `#9AA4FF` | `#9AA4FF` | accent dark         |
+| Titik di tile   | `#FF8A70` | `#FF8A70` | accent dark         |
 | Watermark foto  | `#F4F5F1` | `#F4F5F1` | paper, 88–92%       |
 | Credit bar      | `#F4F5F1` | `#F4F5F1` | paper (selalu terang) |
 
@@ -421,7 +423,7 @@ Tidak ada token baru. Logo memakai token yang sudah ada agar tidak ada drift.
 
 - Pada background accent, seluruh mark memakai `--accent-foreground` (monokrom). Titik tidak boleh accent di atas accent.
 - Kontras batang minimal 4.5:1 terhadap background.
-- Titik accent pada light `#2B3BFF` di atas paper lolos AA; pada dark pakai `#9AA4FF`.
+- Titik accent pada light `#C2351F` di atas paper lolos AA; pada dark pakai `#FF8A70`.
 - App icon dan avatar selalu memakai tile gelap, di tema apa pun, agar dikenali sama di semua tab dan platform.
 - Di atas foto, hanya paper/ink. Accent dilarang karena kontras tidak bisa dijamin.
 
@@ -657,7 +659,7 @@ Satu file sumber `1024×1024` cukup; turunkan ukurannya per platform dari file y
 | Background       | ink `#0C0E0D`, full-bleed (tanpa radius) |
 | Skala mark       | `26×` dari grid 32 → bbox 520 px (50.8%) |
 | Posisi           | `translate(83, 109)` sebelum scale     |
-| Titik            | compact `5.5 × 5.5` di `y 20`, accent dark `#9AA4FF` |
+| Titik            | compact `5.5 × 5.5` di `y 20`, accent dark `#FF8A70` |
 | Lingkaran aman   | diameter `0.84 × 1024` (861 px)        |
 | Clear space      | ≥ 8% diameter                          |
 
@@ -674,7 +676,7 @@ Satu file sumber `1024×1024` cukup; turunkan ukurannya per platform dari file y
       <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
       <path d="M8 13H18.5" />
     </g>
-    <rect x="21" y="20" width="5.5" height="5.5" fill="#9AA4FF" />
+    <rect x="21" y="20" width="5.5" height="5.5" fill="#FF8A70" />
   </g>
 </svg>
 ```
@@ -683,9 +685,9 @@ Satu file sumber `1024×1024` cukup; turunkan ukurannya per platform dari file y
 
 | Varian   | Background | Mark       | Titik      | Pakai untuk                                   |
 | -------- | ---------- | ---------- | ---------- | --------------------------------------------- |
-| **Ink** (kanonik) | `#0C0E0D` | `#F2F4EF` | `#9AA4FF` | semua platform, semua tema — **default** |
-| Paper    | `#F4F5F1`  | `#0C0E0D` | `#2B3BFF` | konteks cetak/terang, slide, email header      |
-| Accent   | `#2B3BFF`  | `#FFFFFF` | `#FFFFFF` | kampanye/OG saja, **bukan** avatar profil      |
+| **Ink** (kanonik) | `#0C0E0D` | `#F2F4EF` | `#FF8A70` | semua platform, semua tema — **default** |
+| Paper    | `#F4F5F1`  | `#0C0E0D` | `#C2351F` | konteks cetak/terang, slide, email header      |
+| Accent   | `#C2351F`  | `#FFFFFF` | `#FFFFFF` | kampanye/OG saja, **bukan** avatar profil      |
 | Mono     | transparan | `currentColor` | `currentColor` | watermark, footer dokumen              |
 
 **Aturan:**
@@ -783,7 +785,7 @@ Dipakai sebagai `<img>`/komponen dengan `color` diatur per konteks. Titik **sela
 | Hairline atas   | `1px` `#D5D8D1`                        |
 | Mark            | `32×32`, ink, titik `currentColor`     |
 | Handle          | §10.2 varian **plain** (tanpa kotak), `20 px` — accent sudah diwakili kotak kanan |
-| Kotak accent    | `8×8`, `#2B3BFF`, `64 px` dari kanan   |
+| Kotak accent    | `8×8`, `#C2351F`, `64 px` dari kanan   |
 | Padding kiri    | `64 px`                                |
 
 Credit bar dipakai di **semua slide tengah** carousel. Slide pertama memakai W3, slide terakhir W3 + satu CTA.
@@ -794,8 +796,8 @@ Credit bar dipakai di **semua slide tengah** carousel. Slide pertama memakai W3,
 | --------------------- | --------------- | ------------------ | -------- |
 | Foto gelap/ramai      | paper `#F4F5F1` | paper (monokrom)   | `90%`    |
 | Foto terang           | ink `#0C0E0D`   | ink (monokrom)     | `90%`    |
-| Bidang paper          | ink             | accent `#2B3BFF`   | `100%`   |
-| Bidang ink            | paper           | accent `#9AA4FF`   | `100%`   |
+| Bidang paper          | ink             | accent `#C2351F`   | `100%`   |
+| Bidang ink            | paper           | accent `#FF8A70`   | `100%`   |
 | Screenshot produk     | paper atau ink  | monokrom           | `88%`    |
 
 Cara memilih: lihat 4 sudut, pilih sudut dengan detail paling sedikit. Jika keempat sudut ramai, **jangan** memaksa W1 — pakai W2 yang menyediakan bidang bersih.
@@ -1065,7 +1067,7 @@ export default function Lockup({
     <path d="M12 8V18.5C12 21.5 14 23.5 16 23.5" />
     <path d="M8.5 13H18.5" />
   </g>
-  <rect x="21" y="20.25" width="4.5" height="4.5" fill="#9AA4FF" />
+  <rect x="21" y="20.25" width="4.5" height="4.5" fill="#FF8A70" />
 </svg>
 ```
 

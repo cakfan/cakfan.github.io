@@ -8,8 +8,8 @@ Sumber tunggal untuk avatar, watermark, dan template Instagram. SVG adalah sumbe
 | ------- | --------- | ------------------------------------------ |
 | Ink     | `#0C0E0D` | teks utama, mark di bidang terang          |
 | Paper   | `#F4F5F1` | background template, mark di bidang gelap  |
-| Accent  | `#2B3BFF` | satu kotak accent di bidang terang         |
-| Accent+ | `#9AA4FF` | accent di bidang ink / avatar              |
+| Accent  | `#C2351F` | satu kotak accent di bidang terang         |
+| Accent+ | `#FF8A70` | accent di bidang ink / avatar              |
 | Muted   | `#5A605B` | label, URL, teks sekunder di paper         |
 | Muted+  | `#A8AEA8` | teks sekunder di ink                       |
 | Hairline| `#D5D8D1` | garis 1 px di paper                        |

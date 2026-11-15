@@ -53,7 +53,7 @@ Kaki lengkung dipakai agar bentuknya terbaca sebagai `t` dan tidak terbaca sebag
 
 **Aturan mark**
 
-- Batang dan palang selalu `currentColor`. Titik selalu accent (`#2B3BFF` / `#9AA4FF`).
+- Batang dan palang selalu `currentColor`. Titik selalu accent (`#C2351F` / `#FF8A70`).
 - Ukuran minimum `16 px`. Di bawah itu pakai titik compact (`5.5 × 5.5`) atau jangan pakai mark sama sekali.
 - Clear space minimal satu titik di semua sisi; jangan menempelkan mark ke tepi container.
 - Di dalam lockup, titik mark memakai `currentColor` — accent hanya di wordmark.
@@ -71,7 +71,9 @@ Kaki lengkung dipakai agar bentuknya terbaca sebagai `t` dan tidak terbaca sebag
 
 ## 3. Warna
 
-Satu palet cool-neutral + satu accent ultramarine. Tidak ada warna kedua untuk kategori atau tag.
+Satu palet cool-neutral + satu accent vermilion. Tidak ada warna kedua untuk kategori atau tag.
+
+Vermilion dipilih karena mark ini adalah **tanda baca**: merah koreksi adalah warna yang dipakai penyunting untuk menandai halaman selesai — "titik akhir" dalam arti harfiah. Biru sengaja dihindari karena sudah menjadi accent default semua produk tech, sehingga melemahkan diferensiasi.
 
 | Token                 | Light     | Dark      | Fungsi                  |
 | --------------------- | --------- | --------- | ----------------------- |
@@ -81,7 +83,7 @@ Satu palet cool-neutral + satu accent ultramarine. Tidak ada warna kedua untuk k
 | `--muted`             | `#E9EBE5` | `#181C19` | Hover, surface sekunder |
 | `--muted-foreground`  | `#5A605B` | `#9AA29B` | Teks sekunder           |
 | `--border`            | `#D5D8D1` | `#262B27` | Garis & border          |
-| `--accent`            | `#2B3BFF` | `#9AA4FF` | Signal color            |
+| `--accent`            | `#C2351F` | `#FF8A70` | Signal color            |
 | `--accent-foreground` | `#FFFFFF` | `#0A0C0B` | Teks di atas accent     |
 
 **Aturan pemakaian accent**
@@ -95,8 +97,8 @@ Gunakan `text-accent` / `bg-accent` hanya untuk:
 
 Jangan memakai accent untuk: heading besar, body text, border massal, background section, atau tag.
 
-- Accent light `#2B3BFF` di atas `#F4F5F1` lolos WCAG AA untuk teks normal.
-- Di dark mode gunakan `#9AA4FF`; jangan menurunkan opacity accent hingga di bawah 4.5:1.
+- Accent light `#C2351F` di atas `#F4F5F1` lolos WCAG AA untuk teks normal.
+- Di dark mode gunakan `#FF8A70`; jangan menurunkan opacity accent hingga di bawah 4.5:1.
 - Tidak ada gradient dekoratif, glow, glassmorphism, atau warna kedua.
 
 ---
@@ -236,9 +238,9 @@ Avatar adalah logo yang paling sering dilihat dan paling jarang diperhatikan. Ka
 
 | Varian            | Background | Mark       | Titik      | Pakai                                   |
 | ----------------- | ---------- | ---------- | ---------- | --------------------------------------- |
-| **Ink** (kanonik) | `#0C0E0D`  | `#F2F4EF`  | `#9AA4FF`  | semua platform, semua tema — default    |
-| Paper             | `#F4F5F1`  | `#0C0E0D`  | `#2B3BFF`  | cetak, slide, email header              |
-| Accent            | `#2B3BFF`  | `#FFFFFF`  | `#FFFFFF`  | kampanye saja — **bukan** avatar profil |
+| **Ink** (kanonik) | `#0C0E0D`  | `#F2F4EF`  | `#FF8A70`  | semua platform, semua tema — default    |
+| Paper             | `#F4F5F1`  | `#0C0E0D`  | `#C2351F`  | cetak, slide, email header              |
+| Accent            | `#C2351F`  | `#FFFFFF`  | `#FFFFFF`  | kampanye saja — **bukan** avatar profil |
 | Mono              | transparan | `currentColor` | `currentColor` | watermark, footer dokumen          |
 
 **Geometri kanonik** (`1024 × 1024`, full-bleed tanpa radius)
@@ -249,7 +251,7 @@ Avatar adalah logo yang paling sering dilihat dan paling jarang diperhatikan. Ka
     <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
     <path d="M8 13H18.5" />
   </g>
-  <rect x="21" y="19.5" width="5.5" height="5.5" fill="#9AA4FF" />
+  <rect x="21" y="19.5" width="5.5" height="5.5" fill="#FF8A70" />
 </g>
 ```
 
@@ -296,8 +298,8 @@ Watermark adalah **kredit teknis**, bukan stempel: ada saat dicari, hilang saat 
 | ---------------- | --------- | ---------------- | ------- |
 | Foto gelap/ramai | `#F4F5F1` | monokrom         | `90%`   |
 | Foto terang      | `#0C0E0D` | monokrom         | `90%`   |
-| Bidang paper     | ink       | accent `#2B3BFF` | `100%`  |
-| Bidang ink       | paper     | accent `#9AA4FF` | `100%`  |
+| Bidang paper     | ink       | accent `#C2351F` | `100%`  |
+| Bidang ink       | paper     | accent `#FF8A70` | `100%`  |
 
 **Aturan**
 
