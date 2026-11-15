@@ -27,7 +27,6 @@ export function useDarkMode() {
     const stored = getStoredTheme();
     // eslint-disable-next-line react-hooks/set-state-in-effect -- sync with localStorage after mount
     setThemeState(stored);
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- sync with system preference after mount
     setIsDark(resolveDark(stored));
   }, []);
 

@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "@/lib/i18n";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
-import Monogram from "@/components/brand/monogram";
-import Wordmark from "@/components/brand/wordmark";
+import Mark from "@/components/brand/mark";
+import Lockup from "@/components/brand/lockup";
 import LanguageToggle from "@/components/layout/language-toggle";
 import ThemeToggle from "@/components/layout/theme-toggle";
 import MobileMenu, { type NavItem } from "@/components/layout/mobile-menu";
@@ -42,8 +42,14 @@ export default function SiteHeader() {
     >
       <div className="container-section flex h-14 items-center justify-between gap-4 lg:h-16">
         <div className="flex min-w-0 items-center">
-          <Monogram className="sm:hidden" />
-          <Wordmark className="hidden sm:inline-flex" />
+          <Link
+            href="/"
+            aria-label="Taufan Fatahillah — Home"
+            className="inline-flex sm:hidden"
+          >
+            <Mark animate={pathname === "/"} className="h-7 w-7" />
+          </Link>
+          <Lockup animate={pathname === "/"} className="hidden sm:inline-flex" />
         </div>
 
         <nav

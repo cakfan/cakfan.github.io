@@ -1,20 +1,24 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export default function Wordmark({
-  href = "/",
-  className,
-}: {
+type WordmarkProps = {
   href?: string | null;
   className?: string;
-}) {
+};
+
+/**
+ * Wordmark: nama lengkap lowercase + kotak accent di baseline.
+ * Titik selalu kotak (bukan glyph `.`) agar identik dengan mark.
+ */
+export default function Wordmark({ href = "/", className }: WordmarkProps) {
   const content = (
-    <>
+    <span className="inline-flex items-baseline">
       <span className="tracking-[-0.035em]">taufan fatahillah</span>
-      <span className="text-accent" aria-hidden="true">
-        .
-      </span>
-    </>
+      <span
+        aria-hidden="true"
+        className="ml-[0.07em] inline-block h-[0.16em] w-[0.16em] bg-accent"
+      />
+    </span>
   );
 
   const classes = cn(

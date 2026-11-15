@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useTranslation } from "@/lib/i18n";
 import { contactEmail } from "@/lib/site";
 import Wordmark from "@/components/brand/wordmark";
+import Mark from "@/components/brand/mark";
+import Handle from "@/components/brand/handle";
 import SocialLinks from "@/components/ui/social-links";
 
 const navigate = [
@@ -22,10 +24,18 @@ export default function SiteFooter() {
       <div className="container-section py-14 sm:py-16">
         <div className="grid gap-10 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-8">
           <div className="max-w-sm">
-            <Wordmark href="/" className="text-2xl" />
+            <div className="flex flex-col items-start gap-3">
+              <Mark className="h-8 w-8" />
+              <Wordmark href="/" className="text-2xl" />
+            </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t("footer.tagline")}
             </p>
+            <Handle
+              link
+              dot={false}
+              className="mt-4 inline-flex text-xs text-muted-foreground"
+            />
           </div>
 
           <div>
