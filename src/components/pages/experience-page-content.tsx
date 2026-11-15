@@ -1,52 +1,64 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n";
+import Container from "@/components/ui/container";
+import SectionHeading from "@/components/ui/section-heading";
+
+interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  descriptions: string[];
+}
 
 export default function ExperiencePageContent() {
   const { t, tArray } = useTranslation();
-  const experiences = tArray<{ role: string; company: string; period: string; descriptions: string[] }>("experience.items");
+  const experiences = tArray<ExperienceItem>("experience.items");
 
   return (
-    <section className="section-padding">
-      <div className="container-section max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
-          {t("experience.heading")}
-        </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12 text-balance">
-          {t("experience.subtitle")}
-        </h1>
+    <Container className="py-14 sm:py-20">
+      <SectionHeading
+        index="01"
+        label={t("experience.heading")}
+        title={t("experience.subtitle")}
+        as="h1"
+        titleClassName="text-h1"
+      />
 
-        <div className="relative">
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border" />
+      <div className="mt-12 border-t border-border">
+        {experiences.map((experience) => (
+          <article
+            key={experience.company + experience.period}
+            className="grid gap-4 border-b border-border py-8 sm:grid-cols-[10rem_1fr] sm:gap-8"
+          >
+            <p className="font-mono text-xs uppercase tracking-[0.1em] text-muted-foreground">
+              {experience.period}
+            </p>
 
-          <div className="space-y-10">
-            {experiences.map((exp, i) => (
-              <div key={exp.company + exp.period} className="relative pl-8">
-                <div
-                  className={`absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full ${
-                    i === 0
-                      ? "border-2 border-teal bg-background dot-pulse"
-                      : "border-2 border-teal/50 bg-teal/50"
-                  }`}
-                />
-                <div className="text-xs text-muted-foreground mb-1">
-                  {exp.period}
-                </div>
-                <h3 className="font-semibold">{exp.role}</h3>
-                <p className="text-sm text-teal mb-3">{exp.company}</p>
-                <ul className="text-base text-muted-foreground space-y-1.5">
-                  {exp.descriptions.map((bullet, j) => (
-                    <li key={j} className="flex gap-2 leading-relaxed">
-                      <span className="text-teal/60 shrink-0" aria-hidden="true">—</span>
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+            <div>
+              <h2 className="text-h3 font-semibold text-foreground">
+                {experience.role}
+              </h2>
+              <p className="mt-1 text-sm text-accent">{experience.company}</p>
+
+              <ul className="mt-4 space-y-2">
+                {experience.descriptions.map((description) => (
+                  <li
+                    key={description}
+                    className="flex gap-3 text-base leading-relaxed text-muted-foreground"
+                  >
+                    <span
+                      className="mt-2 h-px w-3 shrink-0 bg-border"
+                      aria-hidden="true"
+                    />
+                    <span>{description}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+        ))}
       </div>
-    </section>
+    </Container>
   );
 }

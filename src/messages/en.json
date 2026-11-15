@@ -8,7 +8,11 @@
     "contact": "Contact",
     "lightMode": "Light Mode",
     "darkMode": "Dark Mode",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "cv": "CV"
   },
   "hero": {
     "available": "Available for opportunities",
@@ -31,7 +35,22 @@
     "ctaHeading": "Let's build something that works.",
     "ctaSubtitle": "Open to full-time opportunities and meaningful projects.",
     "featuredHeading": "Latest Projects",
-    "featuredViewAll": "View all"
+    "featuredViewAll": "View all",
+    "eyebrow": "Software Engineer",
+    "selectedWork": "Selected work",
+    "selectedWorkDescription": "Client work with real users, documented as case studies.",
+    "viewAllWork": "View all work",
+    "metaBased": "Based in",
+    "metaBasedValue": "Jember, Indonesia",
+    "metaFocus": "Focus",
+    "metaFocusValue": "Web · Mobile · APIs",
+    "metaStatus": "Status",
+    "metaStatusValue": "Open to full-time",
+    "aboutLabel": "About",
+    "aboutHeading": "Engineering clarity.",
+    "aboutStrip": "I build and ship software that works — from Kotlin apps on Google Play to TypeScript SDKs and production web platforms. Clean architecture, type safety, and documentation are not extras; they are the baseline.",
+    "aboutLink": "More about me",
+    "contactLabel": "Contact"
   },
   "about": {
     "heading": "About",
@@ -121,8 +140,13 @@
     "category": {
       "local-business": "Local Business",
       "engineering": "Engineering",
-      "experiment": "Experiments"
-    }
+      "experiment": "Experiments",
+      "client-work": "Client Work"
+    },
+    "anchorLabel": "Jump to section",
+    "count": "{count} projects",
+    "caseStudy": "Case study",
+    "backToWork": "All work"
   },
   "projects": {
     "heading": "Projects",
@@ -134,7 +158,10 @@
         "demo": "https://play.google.com/store/apps/details?id=com.jabirdeveloper.halalmui",
         "github": null,
         "slug": "halal-mui",
-        "tech": ["Kotlin", "Android"]
+        "tech": [
+          "Kotlin",
+          "Android"
+        ]
       },
       {
         "name": "Harga Pangan",
@@ -142,7 +169,13 @@
         "demo": "https://harga-pangan.vercel.app",
         "github": "https://github.com/cakfan/harga-pangan",
         "slug": "harga-pangan",
-        "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "PWA"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Recharts",
+          "PWA"
+        ]
       },
       {
         "name": "Ongkir SDK",
@@ -150,7 +183,13 @@
         "demo": null,
         "github": "https://github.com/cakfan/ongkir-sdk",
         "slug": "ongkir-sdk",
-        "tech": ["TypeScript", "Bun", "Hono", "Biome", "Changesets"]
+        "tech": [
+          "TypeScript",
+          "Bun",
+          "Hono",
+          "Biome",
+          "Changesets"
+        ]
       },
       {
         "name": "Accurate MCP Server",
@@ -158,7 +197,11 @@
         "demo": null,
         "github": "https://github.com/cakfan/accurate-mcp-server",
         "slug": "accurate-mcp-server",
-        "tech": ["TypeScript", "Bun", "MCP"]
+        "tech": [
+          "TypeScript",
+          "Bun",
+          "MCP"
+        ]
       },
       {
         "name": "Chat Widget",
@@ -166,7 +209,14 @@
         "demo": "https://chat-widget-seven-lemon.vercel.app",
         "github": "https://github.com/cakfan/chat-widget",
         "slug": "chat-widget",
-        "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn-UI", "Zustand", "Zod"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn-UI",
+          "Zustand",
+          "Zod"
+        ]
       },
       {
         "name": "API UMKM Jember",
@@ -174,7 +224,13 @@
         "demo": null,
         "github": "https://github.com/cakfan/api-umkm-jember",
         "slug": "api-umkm-jember",
-        "tech": ["Bun", "Hono", "SQLite", "Zod", "OpenAPI"]
+        "tech": [
+          "Bun",
+          "Hono",
+          "SQLite",
+          "Zod",
+          "OpenAPI"
+        ]
       },
       {
         "name": "API Wilayah Indonesia",
@@ -182,7 +238,13 @@
         "demo": null,
         "github": "https://github.com/cakfan/api-wilayah-indonesia",
         "slug": "api-wilayah-indonesia",
-        "tech": ["Bun", "Hono", "SQLite", "Zod", "OpenAPI"]
+        "tech": [
+          "Bun",
+          "Hono",
+          "SQLite",
+          "Zod",
+          "OpenAPI"
+        ]
       },
       {
         "name": "DelokFilm",
@@ -190,7 +252,12 @@
         "demo": "https://delokfilm.vercel.app",
         "github": "https://github.com/cakfan/delok-film-web",
         "slug": "delokfilm",
-        "tech": ["Next.js", "TypeScript", "Shadcn-UI", "Server Actions"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Shadcn-UI",
+          "Server Actions"
+        ]
       },
       {
         "name": "DawahPlay",
@@ -198,7 +265,10 @@
         "demo": "https://dawahplay.vercel.app",
         "github": "https://github.com/cakfan",
         "slug": "dawahplay",
-        "tech": ["Next.js", "TailwindCSS"]
+        "tech": [
+          "Next.js",
+          "TailwindCSS"
+        ]
       },
       {
         "name": "E-Commerce Admin & Store",
@@ -206,7 +276,11 @@
         "demo": null,
         "github": "https://github.com/cakfan/ecommerce-admin",
         "slug": "ecommerce-admin",
-        "tech": ["Next.js", "TypeScript", "TailwindCSS"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS"
+        ]
       },
       {
         "name": "Introvesia.com",
@@ -214,7 +288,10 @@
         "demo": "https://introvesia.com",
         "github": "https://github.com/Introvesia",
         "slug": "introvesia",
-        "tech": ["Next.js", "TypeScript"]
+        "tech": [
+          "Next.js",
+          "TypeScript"
+        ]
       }
     ]
   },
@@ -368,6 +445,14 @@
     "seeWork": "See what I've built →"
   },
   "footer": {
-    "reserved": "All rights reserved."
+    "reserved": "All rights reserved.",
+    "tagline": "Software Engineer based in Jember, Indonesia.",
+    "navigate": "Navigate",
+    "contact": "Contact",
+    "elsewhere": "Elsewhere",
+    "cv": "CV",
+    "privacy": "Privacy",
+    "built": "Built with Next.js",
+    "location": "Jember, Indonesia"
   }
 }

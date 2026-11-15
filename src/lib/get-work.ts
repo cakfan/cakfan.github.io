@@ -12,6 +12,7 @@ import type {
 function sanitizeWorkItem(raw: Record<string, unknown>): WorkItem {
   return {
     slug: raw.slug as string,
+    featured: (raw.featured as boolean) ?? false,
     tier: raw.tier as WorkTier,
     category: raw.category as WorkCategory,
     title: raw.title as string,
@@ -58,8 +59,10 @@ export function getWorkByCategory(category: WorkCategory): WorkItem[] {
   return work.filter((item) => item.category === category);
 }
 
-export function getFeaturedWork(): WorkItem | undefined {
-  return work[0];
+export function getFeaturedWork(): WorkItem[] {
+  const flagged = work.filter((item) => item.featured);
+  if (flagged.length > 0) return flagged;
+  return work.filter((item) => item.tier === 1).slice(0, 2);
 }
 
 export function getAllExperience(): ExperienceItem[] {

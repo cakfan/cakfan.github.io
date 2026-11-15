@@ -22,6 +22,7 @@ export interface WorkItemTranslations {
 
 export interface WorkItem {
   slug: string;
+  featured?: boolean;
   tier: WorkTier;
   category: WorkCategory;
   title: string;

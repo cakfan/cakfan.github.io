@@ -1,68 +1,77 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
-import SocialLinks from "@/components/ui/SocialLinks";
+import { contactEmail } from "@/lib/site";
+import Container from "@/components/ui/container";
+import SectionHeading from "@/components/ui/section-heading";
+import SocialLinks from "@/components/ui/social-links";
 
 export default function ContactPageContent() {
   const { t } = useTranslation();
 
   return (
-    <section className="section-padding">
-      <div className="container-section max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
-          {t("contact.heading")}
-        </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-balance">
-          {t("contact.subtitle")}
-        </h1>
+    <Container className="py-14 sm:py-20">
+      <SectionHeading
+        index="01"
+        label={t("contact.heading")}
+        title={t("contact.subtitle")}
+        description={t("contact.description")}
+        as="h1"
+        titleClassName="text-h1"
+      />
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
-          {t("contact.description")}
-        </p>
-
-        <div className="space-y-6 mb-12">
-          <a
-            href={`mailto:${t("contact.emailAddress")}`}
-            className="group flex items-center gap-4 p-5 rounded-xl border hover:bg-muted/50 transition-colors"
-          >
-            <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-lg shrink-0">
-              @
-            </div>
-            <div>
-              <p className="font-medium group-hover:text-teal transition-colors">{t("contact.email")}</p>
-              <p className="text-sm text-muted-foreground">{t("contact.emailAddress")}</p>
-            </div>
-          </a>
-
-          <div className="flex items-center gap-4 p-5 rounded-xl border">
-            <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center shrink-0">
-              <MapPin size={18} className="text-muted-foreground" />
-            </div>
-            <div>
-              <p className="font-medium">{t("contact.locationLabel")}</p>
-              <p className="text-sm text-muted-foreground">{t("contact.locationValue")}</p>
-            </div>
+      <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        <a
+          href={`mailto:${contactEmail}`}
+          className="group flex min-h-28 flex-col justify-between gap-6 rounded-card border border-border bg-card p-5 transition-colors hover:border-foreground/30"
+        >
+          <div className="flex items-start justify-between gap-4">
+            <span className="label-mono text-muted-foreground">
+              {t("contact.email")}
+            </span>
+            <ArrowUpRight
+              size={17}
+              strokeWidth={1.75}
+              aria-hidden="true"
+              className="text-muted-foreground transition-colors group-hover:text-accent"
+            />
           </div>
-        </div>
+          <span className="text-base font-medium text-foreground transition-colors group-hover:text-accent">
+            {contactEmail}
+          </span>
+        </a>
 
-        <div>
-          <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-4">
-            {t("contact.findOnline")}
-          </h2>
-          <SocialLinks mode="contact" />
-        </div>
-
-        <div className="mt-12 pt-8 border-t">
-          <Link
-            href="/work"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            {t("contact.seeWork")}
-          </Link>
+        <div className="flex min-h-28 flex-col justify-between gap-6 rounded-card border border-border bg-card p-5">
+          <div className="flex items-start justify-between gap-4">
+            <span className="label-mono text-muted-foreground">
+              {t("contact.locationLabel")}
+            </span>
+            <MapPin size={17} strokeWidth={1.75} aria-hidden="true" className="text-muted-foreground" />
+          </div>
+          <span className="text-base font-medium text-foreground">
+            Jember, East Java, Indonesia
+          </span>
         </div>
       </div>
-    </section>
+
+      <div className="mt-12 border-t border-border pt-8">
+        <h2 className="label-mono text-muted-foreground">
+          {t("contact.findOnline")}
+        </h2>
+        <SocialLinks className="mt-3" />
+      </div>
+
+      <div className="mt-12 border-t border-border pt-8">
+        <Link
+          href="/work"
+          className="inline-flex min-h-11 items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+        >
+          {t("contact.seeWork")}
+          <ArrowRight size={15} strokeWidth={1.75} aria-hidden="true" />
+        </Link>
+      </div>
+    </Container>
   );
 }

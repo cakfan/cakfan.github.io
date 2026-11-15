@@ -2,162 +2,188 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ViewTransition } from "react";
-import { ExternalLink, Package, BookOpen } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { useTranslation } from "@/lib/i18n";
-import { assets } from "@/assets";
 import type { WorkItem } from "@/types/work";
-import TechStack from "@/components/ui/tech-stack";
-import MetricStat from "@/components/work/metric-stat";
+import TagList from "@/components/ui/tag-list";
+import Metric from "@/components/work/metric";
 
-function Tier1Card({ item }: { item: WorkItem }) {
+export function getCoverImage(item: WorkItem): string | undefined {
+  return item.images.find(
+    (image) => image && !image.includes("placeholder") && !image.endsWith(".svg")
+  );
+}
+
+export function WorkCover({
+  item,
+  index,
+  className,
+  sizes = "(max-width: 768px) 100vw, 50vw",
+}: {
+  item: WorkItem;
+  index?: string;
+  className?: string;
+  sizes?: string;
+}) {
+  const image = getCoverImage(item);
   const { t } = useTranslation();
+
+  return (
+    <div className={cn("relative overflow-hidden bg-muted", className)}>
+      {image ? (
+        <Image
+          src={image}
+          alt={`${item.title} — project screenshot`}
+          fill
+          sizes={sizes}
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+        />
+      ) : (
+        <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-6">
+          <div className="flex items-start justify-between gap-4">
+            <span className="label-mono text-accent">{index ?? "—"}</span>
+            <span className="label-mono text-right text-muted-foreground">
+              {t(`work.category.${item.category}`)}
+            </span>
+          </div>
+          <div>
+            <span className="block h-px w-10 bg-accent" aria-hidden="true" />
+            <p className="mt-4 max-w-[18ch] text-h3 font-semibold leading-tight text-foreground">
+              {item.title}
+            </p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CategoryIndex({
+  item,
+  index,
+}: {
+  item: WorkItem;
+  index?: string;
+}) {
+  const { t } = useTranslation();
+  return (
+    <div className="flex items-baseline justify-between gap-4">
+      <span className="label-mono text-muted-foreground">
+        {t(`work.category.${item.category}`)}
+      </span>
+      {index ? <span className="label-mono text-accent">{index}</span> : null}
+    </div>
+  );
+}
+
+function FeaturedCard({ item, index }: { item: WorkItem; index?: string }) {
   return (
     <Link
       href={`/work/${item.slug}`}
-      className="group block rounded-xl border bg-background overflow-hidden hover:shadow-lg transition-all duration-300"
+      className="group grid overflow-hidden rounded-card border border-border bg-card transition-colors duration-200 hover:border-foreground/30 md:grid-cols-[1.15fr_1fr]"
     >
-      <div className="grid md:grid-cols-[1fr,auto] gap-0">
-        <div className="relative aspect-video md:aspect-[4/3] overflow-hidden bg-muted">
-          {item.images[0] && (
-            <ViewTransition name={`work-image-${item.slug}`}>
-              <Image
-                src={item.images[0]}
-                alt={`${item.title} screenshot`}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
-            </ViewTransition>
-          )}
+      <WorkCover
+        item={item}
+        index={index}
+        sizes="(max-width: 768px) 100vw, 55vw"
+        className="aspect-[16/10] border-b border-border md:aspect-auto md:min-h-[22rem] md:border-b-0 md:border-r"
+      />
+
+      <div className="flex flex-col justify-between gap-8 p-5 sm:p-6">
+        <div>
+          <CategoryIndex item={item} index={index} />
+          <h3 className="mt-4 text-h3 font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
+            {item.title}
+          </h3>
+          <p className="mt-3 line-clamp-3 max-w-[48ch] text-sm leading-relaxed text-muted-foreground">
+            {item.tagline}
+          </p>
+          <TagList items={item.stack} className="mt-5" />
         </div>
 
-        <div className="p-6 md:p-8 flex flex-col justify-between min-w-0 md:max-w-sm">
-          <div>
-            <span className="text-xs font-medium text-teal uppercase tracking-widest">
-              {t("work.localBusiness")}
+        <div className="flex items-end justify-between gap-4 border-t border-border pt-4">
+          {item.metric ? (
+            <Metric value={item.metric.value} label={item.metric.label} />
+          ) : (
+            <span className="label-mono text-muted-foreground">
+              {index ? `Case ${index}` : "Case study"}
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold tracking-tight mt-2 mb-2">
-              {item.title}
-            </h3>
-            <p className="text-base text-muted-foreground leading-relaxed mb-4">
-              {item.tagline}
-            </p>
-            <TechStack items={item.stack} className="mb-4" />
-          </div>
-
-          {item.metric && (
-            <div className="pt-4 border-t">
-              <MetricStat value={item.metric.value} label={item.metric.label} />
-            </div>
           )}
+          <ArrowUpRight
+            size={18}
+            strokeWidth={1.75}
+            aria-hidden="true"
+            className="shrink-0 text-muted-foreground transition-colors group-hover:text-accent"
+          />
         </div>
       </div>
     </Link>
   );
 }
 
-function Tier2Card({ item }: { item: WorkItem }) {
-  const { t } = useTranslation();
+function DefaultCard({ item, index }: { item: WorkItem; index?: string }) {
   return (
     <Link
       href={`/work/${item.slug}`}
-      className="group block rounded-xl border bg-background overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+      className="group flex h-full flex-col overflow-hidden rounded-card border border-border bg-card transition-colors duration-200 hover:border-foreground/30"
     >
-      <div className="relative aspect-video overflow-hidden bg-muted">
-        {item.images[0] && (
-          <ViewTransition name={`work-image-${item.slug}`}>
-            <Image
-              src={item.images[0]}
-              alt={`${item.title} screenshot`}
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 384px"
-              className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-            />
-          </ViewTransition>
-        )}
-      </div>
+      <WorkCover
+        item={item}
+        index={index}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        className="aspect-[16/10] border-b border-border"
+      />
 
-      <div className="p-5">
-          <div className="flex items-start justify-between mb-2">
-          <div>
-            <span className="text-xs font-medium text-teal uppercase tracking-widest">
-              {t("work.engineering")}
-            </span>
-            <h3 className="text-base font-semibold mt-1">{item.title}</h3>
-          </div>
-          <div className="flex items-center gap-1.5 shrink-0 mt-1">
-            {item.liveUrl && (
-              <ExternalLink size={13} className="text-muted-foreground" aria-hidden="true" />
-            )}
-            {item.docsUrl && (
-              <BookOpen size={13} className="text-muted-foreground" aria-hidden="true" />
-            )}
-            {item.githubUrl && (
-              <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
-            )}
-            {item.npmUrl && (
-              <Package size={13} className="text-muted-foreground" aria-hidden="true" />
-            )}
-          </div>
-        </div>
-        <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2">
+      <div className="flex flex-1 flex-col p-5">
+        <CategoryIndex item={item} index={index} />
+        <h3 className="mt-3 text-base font-semibold text-foreground transition-colors group-hover:text-accent">
+          {item.title}
+        </h3>
+        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {item.tagline}
         </p>
-        <TechStack items={item.stack} />
+        <TagList items={item.stack} className="mt-4 pt-1" />
       </div>
     </Link>
   );
 }
 
-function Tier3Card({ item }: { item: WorkItem }) {
+function CompactCard({ item, index }: { item: WorkItem; index?: string }) {
   return (
     <Link
       href={`/work/${item.slug}`}
-      className="group flex items-center gap-4 p-3 rounded-lg border bg-background hover:bg-muted/50 transition-colors"
+      className="group flex min-h-14 items-center gap-4 border-b border-border py-3 transition-colors hover:bg-muted/50"
     >
-      <div className="relative w-16 h-12 rounded overflow-hidden bg-muted shrink-0">
-        {item.images[0] && (
-          <ViewTransition name={`work-image-${item.slug}`}>
-            <Image
-              src={item.images[0]}
-              alt={`${item.title} screenshot`}
-              fill
-              sizes="64px"
-              className="object-cover object-top"
-            />
-          </ViewTransition>
-        )}
-      </div>
+      <span className="label-mono w-8 shrink-0 text-accent">{index ?? "—"}</span>
       <div className="min-w-0 flex-1">
-        <h3 className="text-sm font-medium truncate">{item.title}</h3>
-        <p className="text-xs text-muted-foreground truncate">{item.tagline}</p>
+        <h3 className="truncate text-sm font-medium text-foreground transition-colors group-hover:text-accent">
+          {item.title}
+        </h3>
+        <p className="mt-0.5 truncate font-mono text-[11px] tracking-[0.04em] text-muted-foreground">
+          {item.stack.join(" · ")}
+        </p>
       </div>
-      <div className="flex items-center gap-1 shrink-0">
-        {item.liveUrl && (
-          <ExternalLink size={12} className="text-muted-foreground" aria-hidden="true" />
-        )}
-        {item.docsUrl && (
-          <BookOpen size={12} className="text-muted-foreground" aria-hidden="true" />
-        )}
-        {item.githubUrl && (
-          <Image src={assets.githubBlack} alt="GitHub" className="w-3 block dark:hidden" />
-        )}
-        {item.npmUrl && (
-          <Package size={12} className="text-muted-foreground" aria-hidden="true" />
-        )}
-      </div>
+      <ArrowUpRight
+        size={15}
+        strokeWidth={1.75}
+        aria-hidden="true"
+        className="shrink-0 text-muted-foreground transition-colors group-hover:text-accent"
+      />
     </Link>
   );
 }
 
-export default function WorkCard({ item }: { item: WorkItem }) {
-  switch (item.tier) {
-    case 1:
-      return <Tier1Card item={item} />;
-    case 2:
-      return <Tier2Card item={item} />;
-    case 3:
-      return <Tier3Card item={item} />;
-  }
+export default function WorkCard({
+  item,
+  variant = "default",
+  index,
+}: {
+  item: WorkItem;
+  variant?: "featured" | "default" | "compact";
+  index?: string;
+}) {
+  if (variant === "featured") return <FeaturedCard item={item} index={index} />;
+  if (variant === "compact") return <CompactCard item={item} index={index} />;
+  return <DefaultCard item={item} index={index} />;
 }

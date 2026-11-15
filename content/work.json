@@ -270,6 +270,7 @@
   },
   {
     "slug": "dkm-cakes",
+    "featured": true,
     "tier": 1,
     "category": "client-work",
     "title": "DKM Cakes & Cookies",
@@ -320,6 +321,7 @@
   },
   {
     "slug": "emasaji",
+    "featured": true,
     "tier": 1,
     "category": "client-work",
     "title": "EmasAji",

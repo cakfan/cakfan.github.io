@@ -17,10 +17,10 @@ export default function PrivacyPolicyPageContent() {
   return (
     <section className="section-padding">
       <div className="container-section max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
+        <p className="label-mono text-muted-foreground mb-3">
           Legal
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-balance">
+        <h1 className="text-h1 font-semibold mb-8">
           Privacy Policy
         </h1>
         <p className="text-sm text-muted-foreground mb-12">
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPageContent() {
         </p>
 
         <div className="space-y-6 text-base lg:text-lg text-muted-foreground leading-[1.75] text-pretty">
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             1. Introduction
           </h2>
           <p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPageContent() {
             Google Play Store.
           </p>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             2. Data We Collect
           </h2>
           <div>
@@ -61,7 +61,7 @@ export default function PrivacyPolicyPageContent() {
             </ul>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             3. Advertising
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             4. Third-Party Services
           </h2>
           <div className="overflow-x-auto">
@@ -120,7 +120,7 @@ export default function PrivacyPolicyPageContent() {
             </table>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             5. Data Storage &amp; Security
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -130,7 +130,7 @@ export default function PrivacyPolicyPageContent() {
             <li>No personal information collected</li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             6. Children&apos;s Privacy
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -138,7 +138,7 @@ export default function PrivacyPolicyPageContent() {
             <li>Does not knowingly collect personal information from children</li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             7. Changes to This Policy
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -147,7 +147,7 @@ export default function PrivacyPolicyPageContent() {
             <li>Continued use constitutes acceptance of changes</li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             8. Contact
           </h2>
           <p>

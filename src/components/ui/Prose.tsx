@@ -1,14 +1,22 @@
-export default function Prose({ text }: { text: string }) {
+import { cn } from "@/lib/utils";
+
+export default function Prose({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) {
   return (
-    <>
-      {text.split(/\n{2,}/).map((paragraph, i) => (
+    <div className={cn("max-w-[68ch] space-y-5", className)}>
+      {text.split(/\n{2,}/).map((paragraph, index) => (
         <p
-          key={i}
-          className="text-lg text-muted-foreground leading-[1.75] whitespace-pre-line text-pretty mb-5 last:mb-0"
+          key={index}
+          className="whitespace-pre-line text-base leading-[1.75] text-muted-foreground text-pretty sm:text-[1.0625rem]"
         >
           {paragraph}
         </p>
       ))}
-    </>
+    </div>
   );
 }

@@ -27,10 +27,10 @@ export default function TapScanPrivacyPolicyPageContent() {
   return (
     <section className="section-padding">
       <div className="container-section max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
+        <p className="label-mono text-muted-foreground mb-3">
           Legal
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-balance">
+        <h1 className="text-h1 font-semibold mb-8">
           TapScan Privacy Policy
         </h1>
         <p className="text-sm text-muted-foreground mb-12">
@@ -38,7 +38,7 @@ export default function TapScanPrivacyPolicyPageContent() {
         </p>
 
         <div className="space-y-6 text-base lg:text-lg text-muted-foreground leading-[1.75] text-pretty">
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             1. Introduction
           </h2>
           <p>
@@ -48,7 +48,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             Google Play Store.
           </p>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             2. Data We Collect
           </h2>
           <p>
@@ -75,7 +75,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             3. Camera and Document Processing
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -94,7 +94,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             4. Sharing and Exports
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -113,7 +113,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             5. Purchases
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -130,7 +130,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             6. Advertising
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -161,7 +161,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             7. Third-Party Services
           </h2>
           <div className="overflow-x-auto">
@@ -200,7 +200,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </table>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             8. Data Storage and Retention
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -218,7 +218,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             9. Children&apos;s Privacy
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -229,7 +229,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             10. Changes to This Policy
           </h2>
           <ul className="list-disc pl-6 space-y-1">
@@ -241,7 +241,7 @@ export default function TapScanPrivacyPolicyPageContent() {
             </li>
           </ul>
 
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground pt-4">
+          <h2 className="text-h3 font-semibold text-foreground pt-4">
             11. Contact
           </h2>
           <p>

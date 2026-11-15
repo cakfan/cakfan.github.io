@@ -1,25 +1,20 @@
 import type { Metadata } from "next";
-import { Newsreader, Geist } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import BackToTopButton from "@/components/BackToTopButton";
 import { I18nProvider } from "@/lib/i18n";
+import { siteUrl } from "@/lib/site";
 
-const newsreader = Newsreader({
-  variable: "--font-heading",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const geist = Geist({
-  variable: "--font-body",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
-
-const siteUrl = "https://cakfan.github.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -83,10 +78,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
       <head>
-        <meta name="theme-color" content="oklch(14% 0.005 80)" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="oklch(97.5% 0.002 90)" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0A0C0B" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#F4F5F1" media="(prefers-color-scheme: light)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -123,11 +122,9 @@ export default function RootLayout({
               (function() {
                 try {
                   var theme = localStorage.getItem('theme');
-                  if (theme === 'light') {
-                    document.documentElement.classList.remove('dark');
-                  } else {
-                    document.documentElement.classList.add('dark');
-                  }
+                  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  var isDark = theme === 'dark' || ((theme === 'system' || !theme) && systemDark);
+                  document.documentElement.classList.toggle('dark', isDark);
                   var locale = localStorage.getItem('locale');
                   if (locale === 'id' || locale === 'en') {
                     document.documentElement.lang = locale;
@@ -138,19 +135,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${newsreader.variable} ${geist.variable} antialiased`}>
-        <I18nProvider>
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:rounded-md"
-          >
-            Skip to content
-          </a>
-          <Navbar />
-          <main id="main-content">{children}</main>
-          <Footer />
-          <BackToTopButton />
-        </I18nProvider>
+      <body>
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

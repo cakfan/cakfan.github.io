@@ -1,36 +1,27 @@
-import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Page Not Found",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+import Container from "@/components/ui/container";
+import { ButtonLink } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <section className="section-padding">
-      <div className="container-section text-center">
-        <p className="text-teal font-semibold tracking-widest uppercase text-sm mb-4">
-          404
+    <section className="flex min-h-svh items-center">
+      <Container className="py-20">
+        <p className="label-mono text-muted-foreground">
+          <span className="text-accent">404</span>
+          <span aria-hidden="true"> / </span>
+          Not found
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-balance">
-          Page not found
+        <h1 className="mt-5 max-w-[18ch] text-h1 font-semibold text-foreground">
+          Page not found.
         </h1>
-        <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+        <p className="mt-4 max-w-[46ch] text-base leading-relaxed text-muted-foreground">
           The page you are looking for doesn&apos;t exist or has been moved.
         </p>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
-        >
-          <ArrowLeft size={16} />
+        <ButtonLink href="/" className="mt-8">
+          <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" />
           Back to home
-        </Link>
-      </div>
+        </ButtonLink>
+      </Container>
     </section>
   );
 }

@@ -1,60 +1,71 @@
 "use client";
 
-import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import { getSiteConfig } from "@/lib/get-work";
+import Container from "@/components/ui/container";
+import SectionHeading from "@/components/ui/section-heading";
+import { ButtonLink } from "@/components/ui/button";
+
+const techGroups = [
+  { labelKey: "about.frontEnd", valueKey: "about.frontEndList" },
+  { labelKey: "about.backEnd", valueKey: "about.backEndList" },
+  { labelKey: "about.tools", valueKey: "about.toolsList" },
+];
 
 export default function AboutPageContent() {
   const { t } = useTranslation();
   const config = getSiteConfig();
 
-  return (
-    <section className="section-padding">
-      <div className="container-section max-w-3xl mx-auto">
-        <p className="text-sm font-semibold text-teal tracking-widest uppercase mb-3">
-          {t("about.heading")}
-        </p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-balance">
-          {t("about.subtitle")}
-        </h1>
+  const intro = t("about.bio1")
+    .replace("{name}", config.name)
+    .replace("{title}", config.title);
 
-        <div className="space-y-6 text-base lg:text-lg text-muted-foreground leading-[1.75] text-pretty">
-          <p>{t("about.bio1").replace("{name}", config.name).replace("{title}", config.title)}</p>
+  return (
+    <Container className="py-14 sm:py-20">
+      <SectionHeading
+        index="01"
+        label={t("about.heading")}
+        title={t("about.subtitle")}
+        description={intro}
+        as="h1"
+        titleClassName="text-h1"
+      />
+
+      <div className="mt-12 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+        <div className="max-w-[66ch] space-y-5 text-base leading-[1.75] text-muted-foreground sm:text-[1.0625rem]">
           <p>{t("about.bio2")}</p>
           <p>{t("about.bio3")}</p>
           <p>{t("about.bio4")}</p>
-          <p>{t("about.bio5")}</p>
+          <p className="text-foreground">{t("about.bio5")}</p>
         </div>
 
-        <div className="mt-12 pt-8 border-t">
-          <h2 className="text-xs font-semibold text-teal tracking-widest uppercase mb-4">
+        <aside>
+          <h2 className="label-mono text-muted-foreground">
             {t("about.techHeading")}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-            <div>
-              <h3 className="font-medium mb-1">{t("about.frontEnd")}</h3>
-              <p className="text-muted-foreground">{t("about.frontEndList")}</p>
-            </div>
-            <div>
-              <h3 className="font-medium mb-1">{t("about.backEnd")}</h3>
-              <p className="text-muted-foreground">{t("about.backEndList")}</p>
-            </div>
-            <div>
-              <h3 className="font-medium mb-1">{t("about.tools")}</h3>
-              <p className="text-muted-foreground">{t("about.toolsList")}</p>
-            </div>
-          </div>
-        </div>
+          <dl className="mt-4 border-t border-border">
+            {techGroups.map((group) => (
+              <div
+                key={group.labelKey}
+                className="border-b border-border py-4"
+              >
+                <dt className="text-sm font-medium text-foreground">
+                  {t(group.labelKey)}
+                </dt>
+                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {t(group.valueKey)}
+                </dd>
+              </div>
+            ))}
+          </dl>
 
-        <div className="mt-12 pt-8 border-t">
-          <Link
-            href="/work"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
+          <ButtonLink href="/work" variant="ghost" className="mt-6 px-0">
             {t("about.seeWork")}
-          </Link>
-        </div>
+            <ArrowRight size={15} strokeWidth={1.75} aria-hidden="true" />
+          </ButtonLink>
+        </aside>
       </div>
-    </section>
+    </Container>
   );
 }
