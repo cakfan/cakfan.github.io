@@ -5,17 +5,19 @@ type MarkProps = {
   /** Beri judul hanya bila mark berdiri sendiri; di dalam lockup biarkan dekoratif. */
   title?: string;
   dot?: "accent" | "current";
-  /** Titik lebih besar untuk ukuran tampil <= 48px (favicon, avatar, watermark). */
-  compact?: boolean;
   /** Animasi gambar-satu-kali; hanya untuk initial load halaman utama. */
   animate?: boolean;
 };
 
+/**
+ * Mark: bingkai persegi + titik accent di tengah.
+ * Bingkai = frame yang sudah ditutup, titik = "titik akhir".
+ * Sengaja tanpa huruf: pada 16 px, batang + palang apa pun terbaca seperti salib.
+ */
 export default function Mark({
   className,
   title,
   dot = "accent",
-  compact = false,
   animate = false,
 }: MarkProps) {
   return (
@@ -32,14 +34,13 @@ export default function Mark({
       aria-label={title}
     >
       <g stroke="currentColor" strokeWidth={3} strokeLinecap="square" fill="none">
-        <path d="M12 7V18.5C12 22 14.5 24 17.5 24" pathLength={1} />
-        <path d="M8 13H18.5" pathLength={1} />
+        <path d="M6.5 6.5H25.5V25.5H6.5Z" pathLength={1} />
       </g>
       <rect
-        x={21}
-        y={compact ? 20 : 20.5}
-        width={compact ? 5.5 : 5}
-        height={compact ? 5.5 : 5}
+        x={13.25}
+        y={13.25}
+        width={5.5}
+        height={5.5}
         className={dot === "accent" ? "fill-accent" : "fill-current"}
       />
     </svg>

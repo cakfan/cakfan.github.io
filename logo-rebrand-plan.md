@@ -16,13 +16,13 @@ Rebrand ini mengubah titik (`.`) dari **aksen tipografis** menjadi **identitas i
 
 > **Mark tidak lagi menempel pada teks. Titik menjadi mark.**
 
-Hasil akhirnya: satu monogram geometris (`t` + titik kotak), satu wordmark dengan titik kotak yang identik, satu sistem lockup, satu favicon yang tidak bergantung font, satu **avatar yang dikenali di 32 px**, satu **watermark yang konsisten di setiap post**, dan satu filosofi yang bisa dijelaskan dalam satu kalimat.
+Hasil akhirnya: satu mark geometris (bingkai + titik kotak), satu wordmark dengan titik kotak yang identik, satu sistem lockup, satu favicon yang tidak bergantung font, satu **avatar yang dikenali di 32 px**, satu **watermark yang konsisten di setiap post**, dan satu filosofi yang bisa dijelaskan dalam satu kalimat.
 
 ### 1.1 Apa yang berubah
 
 | Aspek          | Sekarang                                        | Setelah rebrand                                            |
 | -------------- | ----------------------------------------------- | ---------------------------------------------------------- |
-| Mark           | tidak ada (hanya teks `tf.`)                    | monogram `t` + titik kotak, geometri 32×32                 |
+| Mark           | tidak ada (hanya teks `tf.`)                    | bingkai + titik kotak, geometri 32×32                      |
 | Wordmark       | Geist 600 + glyph `.` accent                    | Geist 600 + **kotak** accent (bukan glyph)                 |
 | Titik          | bulat, ukuran mengikuti font                    | **kotak**, ukuran tetap, satu-satunya elemen accent        |
 | Favicon        | `<text>` + font sistem                          | path murni, render identik di semua OS                     |
@@ -94,20 +94,21 @@ Software tidak bernilai karena ditulis, tetapi karena **bekerja**. Titik adalah 
 
 | Elemen     | Nama       | Makna                                                                | Perilaku visual                                  |
 | ---------- | ---------- | -------------------------------------------------------------------- | ------------------------------------------------ |
-| Vertikal   | **Batang** | Proses: kerja lurus, tanpa jalan pintas, dari atas ke bawah          | garis tegak, stroke seragam, ujung siku          |
-| Horizontal | **Palang** | Struktur: antarmuka yang menghubungkan sistem dengan manusia         | garis horizontal, memotong batang di satu titik  |
-| Kotak      | **Titik**  | Hasil: satu-satunya bagian berwarna, satu-satunya hal yang "selesai" | kotak accent, duduk di baseline, tidak pernah dua |
+| Persegi    | **Bingkai** | Ruang kerja: halaman, kanvas, frame yang menampung proses            | persegi tertutup, stroke seragam, sudut siku     |
+| Kotak      | **Titik**  | Hasil: satu-satunya bagian berwarna, satu-satunya hal yang "selesai" | kotak accent, di pusat bingkai, tidak pernah dua |
 
-Batang dan palang selalu memakai warna teks (`currentColor`). Titik selalu accent. Artinya: **proses itu netral, hasil itu yang diberi warna.** Tidak ada elemen lain yang boleh berwarna.
+Bingkai selalu memakai warna teks (`currentColor`). Titik selalu accent. Artinya: **proses itu netral, hasil itu yang diberi warna.** Tidak ada elemen lain yang boleh berwarna.
 
-### 3.3 Inisial sebagai bentuk, bukan huruf
+### 3.3 Bukan huruf, bukan inisial
 
-`t` dan `f` berbagi satu batang tegak. Mark ini mengambil batang bersama itu, lalu meringkas seluruh inisial menjadi **satu batang, satu palang, satu titik**. Dua huruf, satu fondasi. Tiga disiplin (web, mobile, API), satu cara kerja.
+Versi pertama mark ini memakai huruf `t`. Yang membatalkannya bukan selera, tetapi pengujian: pada 16–24 px bentuk itu terbaca sebagai **salib**, dan pada 48 px ke atas baru terlihat seperti huruf. Logo yang maknanya berubah tergantung ukuran adalah logo yang belum selesai.
+
+Mark akhirnya melepas huruf sepenuhnya — **satu bingkai, satu titik**. Tidak ada inisial yang perlu ditebak, tidak ada asosiasi yang perlu diluruskan. Bingkai adalah halaman; titik adalah tanda bahwa halaman itu selesai. Satu kalimat, dua elemen.
 
 ### 3.4 Manifesto (dipakai di About, OG, dan dokumentasi)
 
 1. Struktur dulu, dekorasi belakangan.
-2. Satu garis, satu titik, satu warna.
+2. Satu bingkai, satu titik, satu warna.
 3. Yang kecil harus tetap benar saat diperkecil.
 4. Kalau tidak membantu memahami, itu bukan bagian dari logo.
 5. Selesai lebih baik daripada mengesankan.
@@ -232,24 +233,27 @@ Jika salah satu gagal, perbaiki sistem — jangan menambah dekorasi.
 
 ### 5.1 Arah terpilih — "Titik Akhir / The Full Stop"
 
-**Bentuk:** monogram huruf `t` yang digambar dengan tiga elemen saja — batang tegak berkaki lengkung ke kanan, palang horizontal, dan satu kotak accent di baseline setelah kaki.
+**Bentuk:** satu bingkai persegi dan satu kotak accent di tengahnya. Dua elemen, satu arti.
 
 ```
-        │
-   ─────┼────
-        │
-        ╰──▪
+   ┌─────────┐
+   │         │
+   │    ▪    │
+   │         │
+   └─────────┘
 ```
 
 **Kenapa ini yang dipilih:**
 
 1. **Bukan logo huruf.** Ini tanda baca yang dijadikan mark. Hampir semua portfolio developer memakai inisial, bracket, atau kursor terminal.
 2. **Kontinu, bukan ganti total.** Titik accent sudah ada di brand lama. Rebrand ini menaikkannya dari aksen menjadi identitas — pengunjung lama masih mengenali, pengunjung baru melihat bentuk yang tegas.
-3. **Skala ekstrem.** Tiga bentuk dengan stroke seragam tetap terbaca di 16 px dan tetap rapi di 512 px.
+3. **Skala ekstrem.** Dua bentuk dengan stroke seragam tidak punya detail yang bisa hilang: tetap utuh di 16 px dan tetap rapi di 512 px.
 4. **Satu accent per viewport.** Titik adalah satu-satunya elemen berwarna di seluruh situs. Ini memperkuat aturan accent yang sudah ada, bukan menambah aturan baru.
-5. **Bisa dijelaskan dalam satu kalimat.** "Titik adalah tanda bahwa pekerjaan sudah selesai." Logo yang butuh paragraf untuk dijelaskan biasanya belum selesai.
+5. **Bisa dijelaskan dalam satu kalimat.** "Bingkai adalah halaman; titik adalah tanda bahwa halaman itu sudah selesai." Logo yang butuh paragraf untuk dijelaskan biasanya belum selesai.
 
-**Kalibrasi wajib: kaki lengkung.** Arah pertama memakai batang lurus sampai baseline. Hasilnya terbaca sebagai **salib**, bukan huruf `t` — makna yang tidak diinginkan dan tidak berhubungan dengan brand. Kaki yang melengkung ke kanan di 6 unit terakhir menegaskan bentuk huruf tanpa menambah elemen keempat. Palang juga digeser ke `x 8–18.5` agar tidak lagi simetris seperti salib.
+**Kalibrasi wajib: huruf dibuang.** Versi pertama memakai huruf `t` geometris. Masalahnya bukan selera: pada 16–24 px, batang tegak + palang horizontal selalu terbaca sebagai **salib**, dan itu asosiasi yang tidak ada hubungannya dengan brand. Kaki lengkung hanya menyelamatkan bentuk di atas 48 px. Solusinya bukan memperbaiki huruf, tetapi berhenti memakai huruf — bingkai memberi bentuk yang bisa diingat tanpa perlu inisial.
+
+**Kenapa bingkai, bukan hanya titik.** Titik saja adalah bentuk paling murni, tetapi dua hal menggagalkannya: ia tidak bisa dibedakan dari ikon aplikasi lain, dan ia bertabrakan dengan titik penutup di wordmark — lockup akan menampilkan dua titik berdampingan. Bingkai memberi titik itu **wadah**, sehingga mark dan wordmark tetap terbaca sebagai dua hal berbeda.
 
 **Keputusan kunci: titik berbentuk kotak, bukan bulat.**
 
@@ -265,11 +269,11 @@ Dua konteks tersulit untuk sebuah logo adalah **crop lingkaran** dan **foto yang
 
 | Uji | Kenapa lolos |
 | --- | --- |
-| Crop lingkaran | Bounding box mark `20 × 20` dari artboard 32 (62% × 62%). Diagonal terjauh 28.3 unit (88% artboard). Pada avatar skala `26×`, bbox menjadi 520 px dan diagonal 735 px — masih di dalam lingkaran aman 861 px. |
+| Crop lingkaran | Bingkai luar `22 × 22` unit (69% artboard). Pada avatar skala `28×`, bingkai menjadi 616 px dan setengah diagonalnya 218 px — jauh di dalam jari-jari aman 512 px. |
 | Tanpa accent | Titik adalah **bentuk**, bukan warna. Dalam monokrom, mark tetap utuh — hanya kehilangan satu-satunya warna. |
-| Di atas foto | Bentuknya hanya 3 elemen; cukup satu versi monokrom paper untuk semua foto, tanpa outline. |
-| 32 px | Tiga bentuk, stroke 1:6. Tidak ada detail yang hilang. |
-| Grayscale/print | Kontras batang–paper ≥ 4.5:1, tercetak hitam putih tetap terbaca. |
+| Di atas foto | Bentuknya hanya 2 elemen; cukup satu versi monokrom paper untuk semua foto, tanpa outline. |
+| 32 px | Dua bentuk, stroke 1:6.3. Tidak ada detail yang hilang. |
+| Grayscale/print | Kontras bingkai–paper ≥ 4.5:1, tercetak hitam putih tetap terbaca. |
 
 ### 5.3 Alternatif yang dipertimbangkan
 
@@ -294,35 +298,29 @@ Jangan mengambil inspirasi dari: logo SaaS dengan gradient mesh, maskot, huruf m
 | Parameter        | Nilai                                   | Catatan                                     |
 | ---------------- | --------------------------------------- | ------------------------------------------- |
 | Artboard         | `32 × 32`                               | sama dengan favicon, memudahkan 1:1          |
-| Stroke           | `3` (= 1/10 bbox)                       | stroke seragam untuk semua elemen            |
+| Stroke           | `3`                                     | stroke seragam untuk semua elemen            |
 | Cap              | `square`                                | sudut siku, sesuai bahasa visual             |
-| Batang           | `y 7 → 18.5`, kaki melengkung ke `(17.5, 24)` | visual 5.5 → 25.5 (tinggi 20)         |
-| Panjang palang   | `10.5` (`x 8 → 18.5`)                   | visual 6.5 → 20, condong ke kiri             |
-| Posisi palang    | `y = 13`                                | sedikit di atas tengah, meniru `t`           |
-| Titik            | kotak `5 × 5` di `x 21, y 20.5`         | bawah kotak = baseline visual (25.5)         |
-| Titik (compact)  | kotak `5.5 × 5.5` di `x 21, y 20`       | untuk avatar, favicon, watermark ≤48 px      |
-| Jarak titik      | `2` dari ujung kaki                     | cukup rapat agar terbaca satu unit           |
+| Bingkai          | `19 × 19` di `x 6.5, y 6.5`             | visual (dengan stroke) `5 → 27`              |
+| Ruang dalam      | `16 × 16`                               | jarak bingkai ke titik `5.25` di tiap sisi   |
+| Titik            | kotak `5.5 × 5.5` di `x 13.25, y 13.25` | tepat di pusat geometri (16, 16)             |
 
-Rasio yang harus dijaga saat mengubah ukuran: **stroke : tinggi visual = 1 : 6.7**, **titik : stroke ≈ 1.7 : 1**.
+Rasio yang harus dijaga saat mengubah ukuran: **stroke : bingkai = 1 : 6.3**, **titik : stroke = 1.83 : 1**.
 
 ### 6.2 SVG mark (sumber kebenaran)
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"
      role="img" aria-label="Taufan Fatahillah">
-  <g stroke="currentColor" stroke-width="3" stroke-linecap="square">
-    <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-    <path d="M8 13H18.5" />
-  </g>
-  <rect x="21" y="20.5" width="5" height="5" fill="#C2351F" />
+  <path d="M6.5 6.5H25.5V25.5H6.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+  <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="#C2351F" />
 </svg>
 ```
 
-Varian compact (avatar, favicon, watermark) memakai `width/height 5.5` di `y 20`.
+Tidak ada varian compact: geometri ini sudah terbaca di 16 px tanpa penyesuaian. Di dalam tile (favicon, avatar) seluruh grup diperkecil `0.9` agar bingkai tidak menempel ke sudut tile.
 
 **Aturan teknis:**
 
-- Kaki lengkung memakai cubic Bézier dengan tangen horizontal di ujung, sehingga square cap tetap tegak dan baseline-nya rata.
+- Bingkai digambar sebagai `path` tertutup, bukan `rect`, agar `pathLength={1}` dan animasi draw bekerja tanpa varian browser.
 - Titik **selalu** `rect`, tidak pernah `circle` dan tidak pernah glyph `.`.
 - Warna mark utama: `currentColor`. Warna titik: token `--accent` (light `#C2351F`, dark `#FF8A70`).
 - Jangan membungkus mark dengan background kecuali pada varian app icon dan avatar.
@@ -330,29 +328,29 @@ Varian compact (avatar, favicon, watermark) memakai `width/height 5.5` di `y 20`
 
 ### 6.3 Koreksi optis
 
-Geometri di atas sudah dikalibrasi. Saat mengubah ukuran, cek empat hal:
+Geometri ini **simetris**, jadi tidak ada pergeseran optis yang diperlukan. Saat mengubah ukuran, cek empat hal:
 
-1. **Ketebalan titik.** Kotak 5 px di sebelah stroke 3 px terasa lebih berat secara optis. Jangan menurunkan ukuran; turunkan hanya jika mark dipakai di bawah 24 px.
-2. **Jarak titik.** Pada 16 px, jarak 2 unit bisa hilang. Varian compact memakai titik `5.5` agar tetap terbaca.
-3. **Alignment baseline.** Bawah kotak harus sejajar dengan ujung bawah kaki (25.5), bukan dengan palang. Karena itu `y = 20.5` untuk titik 5 px dan `y = 20` untuk titik 5.5 px.
-4. **Berat visual kiri-kanan.** Batang + palang condong ke kiri; titik menyeimbangkan di kanan. Bounding box mark sudah center secara matematis di avatar (bbox `252–772`), jadi tidak perlu geser tambahan.
+1. **Ketebalan bingkai.** Jangan menurunkan stroke di bawah `3`: di bawah itu bingkai mulai hilang pada 16 px. Jangan menaikkannya: titik akan tenggelam.
+2. **Ukuran titik.** `5.5` adalah batas bawah. Titik `5` masih terbaca di 128 px ke atas, tetapi menghilang lebih cepat dari bingkai saat diperkecil.
+3. **Pusat.** Titik harus tepat di `(16, 16)`. Pergeseran 0.5 unit sudah terlihat sebagai ketidakseimbangan pada 512 px.
+4. **Skala di dalam tile.** Selalu `0.9` dari artboard penuh, dengan translate `1.6` di kedua sumbu. Tanpa itu bingkai menempel ke tepi tile dan terlihat seperti border, bukan mark.
 
 ### 6.4 Clear space
 
-- Minimum: **satu sisi titik** (`5/32` dari tinggi mark) di semua sisi.
+- Minimum: **setengah sisi titik** (`2.75/32` dari tinggi mark) di semua sisi.
 - Untuk mark di dalam header, minimum `12px` dari elemen lain.
 - Tidak ada teks atau garis yang boleh masuk area clear space.
-- Di avatar: clear space efektif = **8%** dari diameter.
+- Di avatar: clear space efektif = **20%** dari diameter (bingkai 60%, sisa 40% dibagi dua).
 
 ### 6.5 Ukuran minimum
 
 | Varian         | Minimum      | Catatan                                    |
 | -------------- | ------------ | ------------------------------------------ |
-| Mark           | `16 × 16 px` | favicon; gunakan varian compact            |
+| Mark           | `16 × 16 px` | favicon; geometri tunggal, tanpa varian optis |
 | Lockup         | `96 px` lebar | di bawah itu pakai mark saja              |
 | Wordmark       | `14 px` tinggi huruf | titik kotak tetap 2 px minimum      |
-| App icon       | `32 × 32 px` | tile + padding 20%                         |
-| Avatar         | `32 × 32 px` tampil | sumber 1024, varian compact          |
+| App icon       | `32 × 32 px` | mark di skala `0.9`                         |
+| Avatar         | `32 × 32 px` tampil | sumber 1024, mark 60% sisi tile      |
 | Watermark      | `24 × 24 px` tampil | monokrom, tanpa titik accent di foto |
 
 ---
@@ -363,7 +361,7 @@ Geometri di atas sudah dikalibrasi. Saat mengubah ukuran, cek empat hal:
 | --- | ------------------- | --------------------------------- | -------------------------------------- | ---------------------------------- |
 | 1   | **Lockup primary**  | mark + wordmark, horizontal       | header desktop ≥ sm                    | `components/brand/lockup.tsx`      |
 | 2   | **Wordmark**        | teks + titik kotak                | footer besar, OG, CV header            | `components/brand/wordmark.tsx`    |
-| 3   | **Mark**            | monogram saja                     | header mobile, bullet, UI              | `components/brand/mark.tsx`        |
+| 3   | **Mark**            | bingkai + titik saja              | header mobile, bullet, UI              | `components/brand/mark.tsx`        |
 | 4   | **Stacked lockup**  | mark di atas wordmark             | footer, OG, cover CV, cover IG         | komposisi                          |
 | 5   | **App icon**        | mark di atas tile ink, radius 6   | favicon, apple-touch, PWA              | `src/app/icon.svg`                 |
 | 6   | **Avatar**          | mark di atas tile ink, full-bleed | Instagram, LinkedIn, GitHub, X, YouTube | `public/brand/social/avatar-*`     |
@@ -391,7 +389,7 @@ Geometri di atas sudah dikalibrasi. Saat mengubah ukuran, cek empat hal:
 | Header website < sm   | Mark 28 px          | titik accent                              |
 | Footer website        | Stacked lockup + handle | brand moment, handle signature       |
 | Favicon / tab         | App icon            | tile gelap, semua tema                   |
-| **Avatar sosial**     | Avatar ink          | tanpa wordmark, varian compact           |
+| **Avatar sosial**     | Avatar ink          | tanpa wordmark, mark 60% tile            |
 | OG image              | Stacked lockup + credit line | 1200×630                        |
 | **Feed IG**           | Watermark corner    | 34 px, paper 90% di atas foto            |
 | **Carousel IG**       | Credit bar          | tinggi 84 px, hairline atas              |
@@ -411,7 +409,7 @@ Tidak ada token baru. Logo memakai token yang sudah ada agar tidak ada drift.
 
 | Elemen          | Light     | Dark      | Token               |
 | --------------- | --------- | --------- | ------------------- |
-| Batang & palang | `#0C0E0D` | `#F2F4EF` | `--foreground`      |
+| Bingkai         | `#0C0E0D` | `#F2F4EF` | `--foreground`      |
 | Titik           | `#C2351F` | `#FF8A70` | `--accent`          |
 | Tile app icon   | `#0C0E0D` | `#0C0E0D` | selalu ink          |
 | Mark di tile    | `#F2F4EF` | `#F2F4EF` | paper               |
@@ -422,7 +420,7 @@ Tidak ada token baru. Logo memakai token yang sudah ada agar tidak ada drift.
 **Aturan:**
 
 - Pada background accent, seluruh mark memakai `--accent-foreground` (monokrom). Titik tidak boleh accent di atas accent.
-- Kontras batang minimal 4.5:1 terhadap background.
+- Kontras bingkai minimal 4.5:1 terhadap background.
 - Titik accent pada light `#C2351F` di atas paper lolos AA; pada dark pakai `#FF8A70`.
 - App icon dan avatar selalu memakai tile gelap, di tema apa pun, agar dikenali sama di semua tab dan platform.
 - Di atas foto, hanya paper/ink. Accent dilarang karena kontras tidak bisa dijamin.
@@ -657,13 +655,13 @@ Satu file sumber `1024×1024` cukup; turunkan ukurannya per platform dari file y
 | ---------------- | -------------------------------------- |
 | Kanvas           | `1024 × 1024`                          |
 | Background       | ink `#0C0E0D`, full-bleed (tanpa radius) |
-| Skala mark       | `26×` dari grid 32 → bbox 520 px (50.8%) |
-| Posisi           | `translate(83, 109)` sebelum scale     |
-| Titik            | compact `5.5 × 5.5` di `y 20`, accent dark `#FF8A70` |
+| Skala mark       | `28×` dari grid 32 → bingkai 616 px (60.2%) |
+| Posisi           | `translate(64, 64)` sebelum scale     |
+| Titik            | `5.5 × 5.5` accent dark `#FF8A70`      |
 | Lingkaran aman   | diameter `0.84 × 1024` (861 px)        |
-| Clear space      | ≥ 8% diameter                          |
+| Clear space      | ≥ 20% diameter                         |
 
-**Kenapa `translate(83, 109)`:** bbox mark `6.5–26 × 5.5–25.5` dari grid 32 diskalakan `26×` lalu digeser `83, 109` menghasilkan bbox `252–772` di kanvas 1024 — center matematis `512, 512`. Titik yang menggantung di kanan sudah memberi bobot visual yang cukup, sehingga tidak perlu pergeseran optis tambahan. Diagonal bbox 735 px masih di dalam lingkaran aman 861 px.
+**Kenapa `translate(64, 64)`:** bingkai luar `5–27` dari grid 32 diskalakan `28×` menempati `204–820` di kanvas 1024 — center matematis `512, 512`, tanpa pergeseran optis karena bentuknya simetris. Bingkai 60% sisi tile menyisakan margin `204 px` di setiap sisi; setengah diagonal bingkai hanya `218 px`, jauh di dalam lingkaran aman `430 px` (jari-jari).
 
 ### 11.3 SVG avatar (kanonik)
 
@@ -671,12 +669,9 @@ Satu file sumber `1024×1024` cukup; turunkan ukurannya per platform dari file y
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"
      role="img" aria-label="Taufan Fatahillah">
   <rect width="1024" height="1024" fill="#0C0E0D" />
-  <g transform="translate(83 109) scale(26)">
-    <g fill="none" stroke="#F2F4EF" stroke-width="3" stroke-linecap="square">
-      <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-      <path d="M8 13H18.5" />
-    </g>
-    <rect x="21" y="20" width="5.5" height="5.5" fill="#FF8A70" />
+  <g transform="translate(64 64) scale(28)">
+    <path d="M6.5 6.5H25.5V25.5H6.5Z" fill="none" stroke="#F2F4EF" stroke-width="3" stroke-linecap="square" />
+    <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="#FF8A70" />
   </g>
 </svg>
 ```
@@ -759,11 +754,8 @@ W3 adalah satu-satunya tempat wordmark boleh muncul di feed.
 <!-- public/brand/social/watermark-mark.svg -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
      width="34" height="34" fill="none" color="#0C0E0D" aria-hidden="true">
-  <g stroke="currentColor" stroke-width="3" stroke-linecap="square">
-    <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-    <path d="M8 13H18.5" />
-  </g>
-  <rect x="21" y="20" width="5.5" height="5.5" fill="currentColor" />
+  <path d="M6.5 6.5H25.5V25.5H6.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+  <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="currentColor" />
 </svg>
 ```
 
@@ -887,7 +879,7 @@ Motion hanya boleh **sekali**, saat mark pertama kali muncul di halaman utama. T
 
 | Tahap | Elemen          | Durasi | Easing   |
 | ----- | --------------- | ------ | -------- |
-| 1     | batang + palang | 200 ms | ease-out |
+| 1     | bingkai (draw)  | 200 ms | ease-out |
 | 2     | titik (fade)    | 120 ms | ease-out, delay 120 ms |
 
 - Implementasi: `pathLength="1"` + `stroke-dasharray: 1` / `stroke-dashoffset: 1` untuk garis, `opacity` untuk titik — di CSS `.brand-draw`, hanya aktif lewat prop `animate` pada `Mark`/`Lockup`.
@@ -976,12 +968,10 @@ export default function Mark({
   className,
   title,
   dot = "accent",
-  compact = false,
 }: {
   className?: string;
   title?: string;
   dot?: "accent" | "current";
-  compact?: boolean;
 }) {
   return (
     <svg
@@ -993,14 +983,13 @@ export default function Mark({
       aria-label={title}
     >
       <g stroke="currentColor" strokeWidth={3} strokeLinecap="square" fill="none">
-        <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-        <path d="M8 13H18.5" />
+        <path d="M6.5 6.5H25.5V25.5H6.5Z" pathLength={1} />
       </g>
       <rect
-        x={21}
-        y={compact ? 20 : 20.5}
-        width={compact ? 5.5 : 5}
-        height={compact ? 5.5 : 5}
+        x={13.25}
+        y={13.25}
+        width={5.5}
+        height={5.5}
         className={dot === "accent" ? "fill-accent" : "fill-current"}
       />
     </svg>
@@ -1063,11 +1052,10 @@ export default function Lockup({
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img"
      aria-label="Taufan Fatahillah">
   <rect width="32" height="32" rx="6" fill="#0C0E0D" />
-  <g stroke="#F2F4EF" stroke-width="2.5" stroke-linecap="square" fill="none">
-    <path d="M12 8V18.5C12 21.5 14 23.5 16 23.5" />
-    <path d="M8.5 13H18.5" />
+  <g transform="translate(1.6 1.6) scale(0.9)">
+    <path d="M6.5 6.5H25.5V25.5H6.5Z" fill="none" stroke="#F2F4EF" stroke-width="3" stroke-linecap="square" />
+    <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="#FF8A70" />
   </g>
-  <rect x="21" y="20.25" width="4.5" height="4.5" fill="#FF8A70" />
 </svg>
 ```
 
@@ -1075,8 +1063,8 @@ Catatan:
 - Tile gelap dipilih agar favicon konsisten di light dan dark mode.
 - `rx="6"` mengikuti `--radius-control` yang diskalakan ke 32.
 - Tidak ada `<text>` — path murni, sehingga tidak bergantung font.
-- Stroke `2.5` (bukan `3`) agar ruang negatif di dalam tile tetap terbaca di 16 px; geometri path identik dengan mark, hanya diskalakan `23.5/24`.
-- Padding visual ±21%, dikalibrasi optis, bukan matematis.
+- Mark memakai geometri yang sama, hanya diskalakan `0.9` agar bingkai tidak menempel ke sudut tile. Tidak ada perubahan stroke — di 16 px stroke efektif tetap `1.35 px`.
+- Margin efektif `6.1` unit (19%) di semua sisi.
 
 ### 15.5 OG image (1200×630)
 
@@ -1107,14 +1095,14 @@ Simpan sumber sebagai SVG, rasterize ke `public/og.png` saat build manual. Janga
 **Bentuk**
 
 - [ ] Mark terbaca di 16, 24, 32, 64, 512 px.
-- [ ] Titik tetap terpisah dari palang di 16 px.
+- [ ] Titik tetap terpisah dari bingkai di 16 px.
 - [ ] Tidak ada bentuk yang pecah saat di-zoom browser.
 - [ ] Mark seimbang secara optis di dalam lingkaran avatar.
 
 **Warna**
 
 - [ ] Light, dark, grayscale, dan di atas accent.
-- [ ] Batang ≥ 4.5:1 terhadap background.
+- [ ] Bingkai ≥ 4.5:1 terhadap background.
 - [ ] Tidak ada dua titik accent dalam satu komposisi.
 
 **Avatar**
@@ -1200,7 +1188,7 @@ Jangan mengganti favicon dan avatar sebelum mark final, karena browser, platform
 
 ## 19. Satu Kalimat untuk Ditulis di Mana Pun
 
-> **Satu garis untuk proses, satu palang untuk struktur, satu titik untuk pekerjaan yang selesai.**
+> **Satu bingkai untuk ruang kerja, satu titik untuk pekerjaan yang selesai.**
 
 Dan di bawahnya, selalu:
 

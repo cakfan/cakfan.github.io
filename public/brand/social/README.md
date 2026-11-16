@@ -14,6 +14,10 @@ Sumber tunggal untuk avatar, watermark, dan template Instagram. SVG adalah sumbe
 | Muted+  | `#A8AEA8` | teks sekunder di ink                       |
 | Hairline| `#D5D8D1` | garis 1 px di paper                        |
 
+## Mark
+
+Bingkai persegi `19 × 19` + titik `5.5 × 5.5` di pusat grid 32. Sumber kebenaran ada di `src/components/brand/mark.tsx`. Di avatar mark diskalakan `28×` dan menempati 60% sisi tile; di dalam tile favicon diskalakan `0.9` agar bingkai tidak menempel ke sudut.
+
 ## Aturan
 
 1. **Satu accent per komposisi.** Kalau kotak sudut dipakai, titik di mark dan wordmark memakai `currentColor`.

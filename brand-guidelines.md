@@ -23,7 +23,7 @@ Identitas terdiri dari tiga bagian yang tidak boleh saling menggantikan:
 
 | Bagian   | Bentuk                                              | Peran                        |
 | -------- | --------------------------------------------------- | ---------------------------- |
-| **Mark** | huruf `t` geometris + satu titik kotak di baseline  | ikon, avatar, favicon        |
+| **Mark** | bingkai persegi + satu titik kotak di tengah       | ikon, avatar, favicon        |
 | **Wordmark** | `taufan fatahillah` + titik kotak               | nama, header, OG             |
 | **Handle** | `@withcakfan` mono + titik kotak opsional         | alamat, credit, footer       |
 
@@ -36,25 +36,23 @@ Identitas terdiri dari tiga bagian yang tidak boleh saling menggantikan:
 | Footer           | mark 32 px di atas wordmark + handle     | `Wordmark`, `Mark`, `Handle`          |
 | Favicon          | mark paper di atas tile ink, 32×32       | `src/app/icon.svg`                    |
 | Apple icon       | tile ink penuh, 180×180                  | `src/app/apple-icon.png`              |
-| Avatar           | mark compact di tile ink                 | `public/brand/social/avatar-ink-1024.png` |
+| Avatar           | mark 60% tile di atas tile ink           | `public/brand/social/avatar-ink-1024.png` |
 | OG / sosial      | stacked lockup                           | `public/og.png`, `public/brand/social/` |
 
 **Anatomi mark** (grid 32, stroke 3, `stroke-linecap: square`)
 
 ```svg
-<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square">
-  <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />   <!-- batang + kaki lengkung -->
-  <path d="M8 13H18.5" />                          <!-- palang -->
-</g>
-<rect x="21" y="19.5" width="5" height="5" fill="currentColor" /> <!-- titik -->
+<path d="M6.5 6.5H25.5V25.5H6.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="square" fill="none" /> <!-- bingkai -->
+<rect x="13.25" y="13.25" width="5.5" height="5.5" fill="currentColor" />                                          <!-- titik -->
 ```
 
-Kaki lengkung dipakai agar bentuknya terbaca sebagai `t` dan tidak terbaca sebagai salib. Titik duduk di baseline, sejajar ujung kaki.
+Bingkai = halaman/frame yang sudah ditutup; titik = akhir kalimat. Mark **tidak memakai huruf**: pada 16–24 px, batang vertikal + palang horizontal apa pun akan terbaca sebagai salib, dan huruf pertama nama adalah pilihan paling generik untuk sebuah portfolio.
 
 **Aturan mark**
 
-- Batang dan palang selalu `currentColor`. Titik selalu accent (`#C2351F` / `#FF8A70`).
-- Ukuran minimum `16 px`. Di bawah itu pakai titik compact (`5.5 × 5.5`) atau jangan pakai mark sama sekali.
+- Bingkai selalu `currentColor`. Titik selalu accent (`#C2351F` / `#FF8A70`).
+- Ukuran minimum `16 px`. Tidak ada varian optis: stroke 3 pada grid 32 masih terbaca ± 1.5 px di 16 px.
+- Di dalam tile (favicon, avatar) mark diperkecil `0.9` agar bingkai tidak menempel ke sudut tile.
 - Clear space minimal satu titik di semua sisi; jangan menempelkan mark ke tepi container.
 - Di dalam lockup, titik mark memakai `currentColor` — accent hanya di wordmark.
 - Jangan memutar, memiringkan, memberi outline, atau memecah mark menjadi beberapa warna.
@@ -246,16 +244,13 @@ Avatar adalah logo yang paling sering dilihat dan paling jarang diperhatikan. Ka
 **Geometri kanonik** (`1024 × 1024`, full-bleed tanpa radius)
 
 ```svg
-<g transform="translate(83 109) scale(26)">
-  <g fill="none" stroke="#F2F4EF" stroke-width="3" stroke-linecap="square">
-    <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-    <path d="M8 13H18.5" />
-  </g>
-  <rect x="21" y="19.5" width="5.5" height="5.5" fill="#FF8A70" />
+<g transform="translate(64 64) scale(28)">
+  <path d="M6.5 6.5H25.5V25.5H6.5Z" fill="none" stroke="#F2F4EF" stroke-width="3" stroke-linecap="square" />
+  <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="#FF8A70" />
 </g>
 ```
 
-Posisi digeser optis, bukan center matematis: massa batang ada di kiri dan titik di kanan-bawah, sehingga bounding box center ≠ pusat visual. Mark menempati ± 42% diameter lingkaran aman.
+Mark terpusat secara matematis, bukan optis: bentuknya simetris, jadi tidak ada yang perlu digeser. Bingkai luar `22 × 22` unit pada skala `28` menempati `616 px` — **60% sisi tile**, dengan margin `204 px` di setiap sisi.
 
 **Aturan**
 

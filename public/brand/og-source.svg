@@ -6,11 +6,8 @@
 
   <!-- mark: 72px, optis di tengah -->
   <g transform="translate(563.4 185.1) scale(2.25)">
-    <g fill="none" stroke="#0C0E0D" stroke-width="3" stroke-linecap="square">
-      <path d="M12 7V18.5C12 22 14.5 24 17.5 24" />
-      <path d="M8 13H18.5" />
-    </g>
-    <rect x="21" y="20.5" width="5" height="5" fill="#0C0E0D" />
+    <path d="M6.5 6.5H25.5V25.5H6.5Z" fill="none" stroke="#0C0E0D" stroke-width="3" stroke-linecap="square" />
+    <rect x="13.25" y="13.25" width="5.5" height="5.5" fill="#0C0E0D" />
   </g>
 
   <!-- wordmark: lebar 392 + gap 3.8 + kotak 8.64 = 404.4, mulai di 397.8 -->
