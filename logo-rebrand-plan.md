@@ -306,6 +306,10 @@ Jangan mengambil inspirasi dari: logo SaaS dengan gradient mesh, maskot, huruf m
 
 Rasio yang harus dijaga saat mengubah ukuran: **stroke : bingkai = 1 : 6.3**, **titik : stroke = 1.83 : 1**.
 
+**Kenapa bukan golden ratio.** Angka-angka ini tidak diturunkan dari φ, tetapi dari grid piksel. Pada favicon 16 px satu unit = `0.5 px`, sehingga stroke `3` menjadi `1.5 px` dan titik `5.5` menjadi `2.75 px` — keduanya jatuh tepat di tengah piksel. Bingkai `6.5 → 25.5` menempatkan tepi di tengah piksel pada setiap skala bulat, jadi tepinya tajam tanpa bergantung pada hinting. Deret φ (`19.78`, `6.11`, `4.72`) memaksa koordinat pecahan; hasilnya tepi bingkai berubah abu-abu di 16 px, dan itu satu-satunya ukuran yang benar-benar menentukan.
+
+Selain itu, komposisi ini hanya punya dua elemen. Dengan dua bentuk, hampir semua angka bisa dipaskan ke φ secara kebetulan (bingkai `19/32 = 0.594` memang dekat ke `1/φ = 0.618`), jadi klaim φ di sini hanya akan jadi hiasan dokumentasi. Yang mengikat adalah keterbacaan di ukuran terkecil, bukan proporsi klasik.
+
 ### 6.2 SVG mark (sumber kebenaran)
 
 ```svg

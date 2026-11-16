@@ -52,6 +52,7 @@ Bingkai = halaman/frame yang sudah ditutup; titik = akhir kalimat. Mark **tidak 
 
 - Bingkai selalu `currentColor`. Titik selalu accent (`#C2351F` / `#FF8A70`).
 - Ukuran minimum `16 px`. Tidak ada varian optis: stroke 3 pada grid 32 masih terbaca ± 1.5 px di 16 px.
+- Angka dipilih dari grid piksel, bukan deret golden ratio — lihat `logo-rebrand-plan.md` §6.1.
 - Di dalam tile (favicon, avatar) mark diperkecil `0.9` agar bingkai tidak menempel ke sudut tile.
 - Clear space minimal satu titik di semua sisi; jangan menempelkan mark ke tepi container.
 - Di dalam lockup, titik mark memakai `currentColor` — accent hanya di wordmark.
